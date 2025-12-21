@@ -12,10 +12,9 @@ export default function ShoulderPage() {
     <Container className="py-16 sm:py-20">
       <h1 className="text-3xl font-semibold tracking-tight">Hombro</h1>
       <p className="mt-4 max-w-2xl text-foreground/70">
-        Manejo de lesiones del manguito rotador, tendinopatías y dolor de
-        hombro con enfoque integral.
+        Trato lesiones del manguito rotador, tendinopatías y dolor de hombro
+        con enfoque integral.
       </p>
     </Container>
   );
 }
-

@@ -17,7 +17,7 @@ export default function ContactPage() {
     <Container className="py-16 sm:py-20">
       <h1 className="text-3xl font-semibold tracking-tight">Contacto</h1>
       <p className="mt-4 max-w-2xl text-foreground/70">
-        Escríbenos para agendar una cita o resolver tus dudas.
+        Escríbeme para agendar una cita o resolver tus dudas.
       </p>
 
       <div className="mt-10 grid gap-10 lg:grid-cols-2">
@@ -67,11 +67,11 @@ export default function ContactPage() {
             </dl>
           </div>
 
-          <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm shadow-black/[.02] dark:border-white/10 dark:bg-white/[.03] dark:shadow-none">
-            <h2 className="text-base font-semibold tracking-tight">Ubicación</h2>
-            <p className="mt-2 text-sm text-foreground/70">
-              Consultorio en Fortune Plaza, Av. Eloy Alfaro N29-235 (Quito).
-            </p>
+        <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm shadow-black/[.02] dark:border-white/10 dark:bg-white/[.03] dark:shadow-none">
+          <h2 className="text-base font-semibold tracking-tight">Ubicación</h2>
+          <p className="mt-2 text-sm text-foreground/70">
+            Mi consultorio está en Fortune Plaza, Av. Eloy Alfaro N29-235 (Quito).
+          </p>
             <div className="mt-4 overflow-hidden rounded-2xl border border-black/10">
               <iframe
                 title="Mapa del consultorio"
@@ -83,14 +83,14 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm shadow-black/[.02] dark:border-white/10 dark:bg-white/[.03] dark:shadow-none">
-            <h2 className="text-base font-semibold tracking-tight">
-              Hospitales donde opera
-            </h2>
-            <p className="mt-2 text-sm text-foreground/70">
-              Cirugías en hospitales de referencia en Quito, según tu caso y
-              disponibilidad.
-            </p>
+        <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm shadow-black/[.02] dark:border-white/10 dark:bg-white/[.03] dark:shadow-none">
+          <h2 className="text-base font-semibold tracking-tight">
+            Hospitales donde opero
+          </h2>
+          <p className="mt-2 text-sm text-foreground/70">
+            Realizo cirugías en hospitales de referencia en Quito, según tu
+            caso y disponibilidad.
+          </p>
             <ul className="mt-4 grid gap-2 text-sm text-foreground/70">
               <li>Hospital Metropolitano</li>
               <li>Hospital de los Valles</li>
@@ -101,10 +101,10 @@ export default function ContactPage() {
 
         <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm shadow-black/[.02] dark:border-white/10 dark:bg-white/[.03] dark:shadow-none">
           <h2 className="text-base font-semibold tracking-tight">
-            Enviar un mensaje
+            Enviarme un mensaje
           </h2>
           <p className="mt-2 text-sm text-foreground/70">
-            Completa el formulario y te responderemos lo antes posible.
+            Completa el formulario y te responderé lo antes posible.
           </p>
           <div className="mt-6">
             <ContactForm />

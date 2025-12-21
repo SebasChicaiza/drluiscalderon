@@ -12,15 +12,15 @@ export default function CareerPage() {
       <div className="grid gap-12">
         <section>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
-            Sobre el Dr. Luis Calderón
+            Sobre mi trayectoria
           </p>
           <h1 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
             Trayectoria y enfoque médico
           </h1>
           <p className="mt-4 max-w-3xl text-sm leading-6 text-foreground/70 sm:text-base">
-            Traumatólogo con más de 15 años de experiencia, profesor de la USFQ
-            y miembro de AO Foundation e ISAKOS. Especialista en cirugía de
-            rodilla, cadera, hombro y tobillo, con enfoque en artroscopia,
+            Soy traumatólogo con más de 15 años de experiencia, profesor de la
+            USFQ y miembro de AO Foundation e ISAKOS. Me especializo en cirugía
+            de rodilla, cadera, hombro y tobillo, con enfoque en artroscopia,
             preservación articular y cirugía robótica.
           </p>
           <p className="mt-4 max-w-3xl text-sm leading-6 text-foreground/70 sm:text-base">
@@ -41,8 +41,8 @@ export default function CareerPage() {
             Atención de Clase Mundial en Quito
           </h2>
           <p className="mt-4 text-sm leading-6 text-foreground/70 sm:text-base">
-            Quito ofrece tecnología médica avanzada y costos más accesibles para
-            pacientes internacionales. Aquí recibes atención especializada con
+            En Quito te ofrezco tecnología médica avanzada y costos más
+            accesibles para pacientes internacionales. Te atiendo con
             estándares comparables a clínicas de Estados Unidos, con un ahorro
             aproximado del 60% al 70%.
           </p>
@@ -90,7 +90,7 @@ export default function CareerPage() {
             <div className="rounded-2xl border border-black/10 bg-background p-6">
               <h3 className="text-base font-semibold tracking-tight">Idiomas</h3>
               <p className="mt-3 text-sm text-foreground/70">
-                Atención en español. Coordinamos asistencia en inglés si lo
+                Atiendo en español y puedo coordinar asistencia en inglés si la
                 necesitas.
               </p>
             </div>
@@ -103,7 +103,7 @@ export default function CareerPage() {
           </h2>
           <p className="mt-2 text-sm text-foreground/70">
             Si buscas una evaluación especializada o planeas tu cirugía en
-            Quito, agenda una cita y recibe una propuesta personalizada.
+            Quito, agenda una cita conmigo y recibe una propuesta personalizada.
           </p>
         </section>
       </div>

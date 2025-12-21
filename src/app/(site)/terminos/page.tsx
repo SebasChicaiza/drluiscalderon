@@ -12,10 +12,9 @@ export default function TermsPage() {
         Términos y condiciones
       </h1>
       <p className="mt-4 max-w-2xl text-foreground/70">
-        Placeholder de términos y condiciones. Reemplaza este contenido con el
-        texto legal correspondiente.
+        Aquí detallo los términos y condiciones de mis servicios, el uso del
+        sitio y las responsabilidades de atención médica.
       </p>
     </Container>
   );
 }
-

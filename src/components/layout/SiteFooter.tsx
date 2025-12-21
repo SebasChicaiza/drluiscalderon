@@ -6,7 +6,10 @@ import { Container } from "./Container";
 export function SiteFooter() {
   const year = new Date().getFullYear();
   const phoneHref = `tel:${site.contact.phone.replace(/\s+/g, "")}`;
-  const whatsappHref = `https://wa.me/${site.contact.whatsapp.replace(/[^\d]/g, "")}`;
+  const whatsappHref = `https://wa.me/${site.contact.whatsapp.replace(
+    /[^\d]/g,
+    ""
+  )}`;
   const emailHref = `mailto:${site.contact.email}`;
   const mapHref =
     "https://www.google.com/maps?q=-0.19319111976258832,-78.49135299097524";
@@ -15,9 +18,15 @@ export function SiteFooter() {
     <footer className="bg-[#0b2a45] text-white">
       <Container className="py-16">
         <div className="flex flex-col items-center text-center">
-          <p className="text-3xl font-semibold tracking-tight sm:text-4xl">
-            {site.name}
-          </p>
+          <div className="relative h-32 w-[220px] sm:h-36 sm:w-[260px]">
+            <Image
+              src="/assets/logodrluis-blanco.webp"
+              alt="Logo Dr. Luis Calderón"
+              fill
+              sizes="260px"
+              className="object-contain"
+            />
+          </div>
           <p className="mt-2 text-xs font-semibold uppercase tracking-[0.35em] text-white/70">
             {site.profession}
           </p>
@@ -28,25 +37,25 @@ export function SiteFooter() {
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-6 opacity-70 sm:gap-10">
           <Image
-            src="/assets/ao-fundation.webp"
+            src="/assets/ao-logoblanco.webp"
             alt="AO Foundation"
             width={72}
             height={72}
-            className="h-10 w-auto object-contain sm:h-12"
+            className="h-10 w-auto object-contain sm:h-20"
           />
           <Image
-            src="/assets/isakos.webp"
+            src="/assets/logo-isakosblanco.webp"
             alt="ISAKOS"
             width={140}
             height={72}
-            className="h-9 w-auto object-contain sm:h-11"
+            className="h-9 w-auto object-contain sm:h-20"
           />
           <Image
-            src="/assets/logo-usfq.webp"
+            src="/assets/logousfq-blanco.webp"
             alt="USFQ"
-            width={140}
-            height={72}
-            className="h-9 w-auto object-contain sm:h-11"
+            width={200}
+            height={100}
+            className="h-12 w-auto object-contain sm:h-25"
           />
         </div>
 
@@ -83,7 +92,7 @@ export function SiteFooter() {
 
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
-              Hospitales donde opera
+              Hospitales donde opero
             </h3>
             <ul className="mt-4 grid gap-2 text-sm text-white/70">
               <li>Hospital Metropolitano</li>
@@ -91,7 +100,7 @@ export function SiteFooter() {
               <li>Centros especializados en Quito</li>
             </ul>
             <p className="mt-4 text-sm text-white/70">
-              Coordinación de cirugías según tu diagnóstico.
+              Coordino cirugías según tu diagnóstico.
             </p>
           </div>
 

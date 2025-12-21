@@ -12,7 +12,7 @@ export default function SpecialtiesPage() {
     <Container className="py-16 sm:py-20">
       <h1 className="text-3xl font-semibold tracking-tight">Especialidades</h1>
       <p className="mt-4 max-w-2xl text-foreground/70">
-        Selecciona un área para ver más detalles.
+        Selecciona un área para conocer cómo puedo ayudarte.
       </p>
 
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -34,4 +34,3 @@ export default function SpecialtiesPage() {
     </Container>
   );
 }
-

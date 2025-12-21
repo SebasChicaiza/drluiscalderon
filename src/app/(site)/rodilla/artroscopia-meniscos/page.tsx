@@ -15,13 +15,13 @@ export default function ArthroscopyMeniscusPage() {
           Meniscos y artroscopia
         </h1>
         <p className="mt-4 text-sm text-foreground/70 sm:text-base">
-          La artroscopia es una cirugía mínimamente invasiva que permite tratar
+          Realizo artroscopia como cirugía mínimamente invasiva para tratar
           lesiones de menisco y limpiar la articulación con dos incisiones
           pequeñas.
         </p>
         <p className="mt-3 text-sm text-foreground/70 sm:text-base">
-          Resolvemos casos de costo operacion menisco y limpieza articular con
-          un enfoque seguro, rápido y personalizado.
+          Resuelvo casos de costo operacion menisco y limpieza articular con un
+          enfoque seguro, rápido y personalizado.
         </p>
       </div>
 

@@ -12,10 +12,9 @@ export default function SpinePage() {
     <Container className="py-16 sm:py-20">
       <h1 className="text-3xl font-semibold tracking-tight">Columna</h1>
       <p className="mt-4 max-w-2xl text-foreground/70">
-        Evaluación de hernias discales, dolor lumbar y planes de tratamiento
+        Evalúo hernias discales y dolor lumbar, y defino planes de tratamiento
         conservador o quirúrgico según tu caso.
       </p>
     </Container>
   );
 }
-

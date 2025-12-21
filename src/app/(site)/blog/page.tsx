@@ -6,7 +6,7 @@ import { blogPosts } from "@/content/blog";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Artículos sobre traumatología, rodilla, recuperación y bienestar articular.",
+    "Artículos que escribo sobre traumatología, rodilla, recuperación y bienestar articular.",
 };
 
 export default function BlogPage() {
@@ -14,8 +14,8 @@ export default function BlogPage() {
     <Container className="py-16 sm:py-20">
       <h1 className="text-3xl font-semibold tracking-tight">Blog</h1>
       <p className="mt-4 max-w-2xl text-foreground/70">
-        Información médica confiable para cuidar tus articulaciones y prevenir
-        lesiones.
+        Comparto información médica confiable para cuidar tus articulaciones y
+        prevenir lesiones.
       </p>
 
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -35,4 +35,3 @@ export default function BlogPage() {
     </Container>
   );
 }
-

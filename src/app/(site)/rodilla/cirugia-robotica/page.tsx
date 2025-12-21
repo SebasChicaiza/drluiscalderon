@@ -36,16 +36,17 @@ export default function RoboticSurgeryPage() {
           <h1 className="text-3xl font-semibold tracking-tight">
             Cirugía robótica de rodilla
           </h1>
-          <p className="mt-4 text-sm text-foreground/70 sm:text-base">
-            La cirugía robótica permite una alineación milimétrica y un abordaje
-            más preciso, lo que se traduce en menos dolor y una recuperación más
-            rápida. Ideal para casos de artrosis o desgaste avanzado.
-          </p>
-          <p className="mt-3 text-sm text-foreground/70 sm:text-base">
-            Si buscas información sobre cirugia robotica rodilla precio o
-            beneficios robotica ecuador, aquí encontrarás una guía clara y
-            personalizada según tu caso.
-          </p>
+        <p className="mt-4 text-sm text-foreground/70 sm:text-base">
+          Utilizo cirugía robótica para lograr una alineación milimétrica y un
+          abordaje más preciso, lo que se traduce en menos dolor y una
+          recuperación más rápida. Es ideal para casos de artrosis o desgaste
+          avanzado.
+        </p>
+        <p className="mt-3 text-sm text-foreground/70 sm:text-base">
+          Si buscas información sobre cirugia robotica rodilla precio o
+          beneficios robotica ecuador, puedo orientarte con una guía clara y
+          personalizada según tu caso.
+        </p>
         </div>
 
       <div className="mt-10 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
@@ -54,8 +55,8 @@ export default function RoboticSurgeryPage() {
             Video explicativo
           </h2>
           <p className="mt-2 text-sm text-foreground/70">
-            Inserta aquí un video donde el Dr. Luis Calderón explica el uso del
-            robot y el proceso quirúrgico.
+            Inserta aquí mi video explicando el uso del robot y el proceso
+            quirúrgico.
           </p>
           <div className="mt-4 flex h-48 items-center justify-center rounded-2xl border border-dashed border-black/20 text-sm text-foreground/50">
             Video en preparación
@@ -113,7 +114,7 @@ export default function RoboticSurgeryPage() {
           </h2>
           <p className="mt-2 text-sm text-foreground/70">
             El valor depende del grado de desgaste, tipo de implante y plan
-            quirúrgico. Incluye honorarios médicos, hospitalización y controles.
+            quirúrgico. Incluye mis honorarios, hospitalización y controles.
           </p>
           <div className="mt-4 rounded-xl border border-black/10 bg-black/[.02] p-4 text-sm text-foreground/70">
             Agenda una valoración para recibir un rango personalizado.

@@ -11,8 +11,8 @@ export default function KneePage() {
     <Container className="py-16 sm:py-20">
       <h1 className="text-3xl font-semibold tracking-tight">Rodilla</h1>
       <p className="mt-4 max-w-2xl text-foreground/70">
-        Tratamientos, diagnósticos y procedimientos especializados para dolor
-        de rodilla, artrosis, lesiones de menisco y cirugía de reemplazo.
+        Aquí evalúo y trato dolor de rodilla, artrosis, lesiones de menisco y
+        casos que requieren cirugía de reemplazo.
       </p>
 
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

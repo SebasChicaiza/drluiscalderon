@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 type Testimonial = {
   name: string;
@@ -17,9 +17,21 @@ function chunk<T>(items: T[], size: number) {
 }
 
 export function TestimonialsCarousel({ items }: { items: Testimonial[] }) {
-  const pages = useMemo(() => chunk(items, 3), [items]);
+  const [chunkSize, setChunkSize] = useState(3);
   const [index, setIndex] = useState(0);
+  const pages = useMemo(() => chunk(items, chunkSize), [items, chunkSize]);
   const total = pages.length;
+ 
+  useEffect(() => {
+    const update = () => setChunkSize(window.innerWidth < 640 ? 1 : 3);
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+ 
+  useEffect(() => {
+    setIndex(0);
+  }, [chunkSize]);
 
   if (total === 0) return null;
 
@@ -89,4 +101,3 @@ export function TestimonialsCarousel({ items }: { items: Testimonial[] }) {
     </div>
   );
 }
-

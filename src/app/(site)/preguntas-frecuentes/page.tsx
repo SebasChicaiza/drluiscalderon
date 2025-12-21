@@ -4,19 +4,19 @@ import { Container } from "@/components/layout/Container";
 export const metadata: Metadata = {
   title: "Preguntas frecuentes",
   description:
-    "Respuestas rápidas sobre traumatología, cirugía de rodilla y atención médica en Quito.",
+    "Respondo preguntas frecuentes sobre traumatología, cirugía de rodilla y atención médica en Quito.",
 };
 
 const faqs = [
   {
-    question: "¿Qué tipo de lesiones trata el especialista?",
+    question: "¿Qué tipo de lesiones trato?",
     answer:
-      "El Dr. Luis Calderón se especializa en lesiones de rodilla (meniscos, ligamentos, artrosis), así como cirugía robótica y preservación articular. También atiende cadera, hombro y columna.",
+      "Me especializo en lesiones de rodilla (meniscos, ligamentos, artrosis), cirugía robótica y preservación articular. También atiendo cadera, hombro y columna.",
   },
   {
     question: "¿Qué es la cirugía robótica y qué ventajas ofrece?",
     answer:
-      "Es una técnica avanzada que permite precisión submilimétrica en la colocación de prótesis, resultando en menos dolor y una recuperación más rápida para el paciente.",
+      "Es una técnica avanzada que utilizo para lograr precisión submilimétrica en la colocación de prótesis, con menos dolor y una recuperación más rápida.",
   },
 ];
 
@@ -45,7 +45,7 @@ export default function FaqPage() {
           Preguntas frecuentes
         </h1>
         <p className="mt-4 max-w-2xl text-foreground/70">
-          Resolvemos dudas comunes sobre tratamientos, cirugía y recuperación.
+          Resuelvo dudas comunes sobre tratamientos, cirugía y recuperación.
         </p>
 
         <div className="mt-10 grid gap-6">
@@ -67,4 +67,3 @@ export default function FaqPage() {
     </>
   );
 }
-

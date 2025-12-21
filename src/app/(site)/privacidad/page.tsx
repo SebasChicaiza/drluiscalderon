@@ -12,11 +12,9 @@ export default function PrivacyPage() {
         Política de privacidad
       </h1>
       <p className="mt-4 max-w-2xl text-foreground/70">
-        Placeholder de la política de privacidad. Reemplaza este contenido con
-        el texto legal correspondiente (tratamiento de datos, contacto, cookies,
-        etc.).
+        Aquí explico cómo manejo tus datos personales, cómo contacto contigo y
+        cómo utilizo cookies para mejorar tu experiencia.
       </p>
     </Container>
   );
 }
-

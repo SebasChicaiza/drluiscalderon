@@ -10,10 +10,9 @@ export default function HipPage() {
     <Container className="py-16 sm:py-20">
       <h1 className="text-3xl font-semibold tracking-tight">Cadera</h1>
       <p className="mt-4 max-w-2xl text-foreground/70">
-        Contenido placeholder para cadera (evaluación, tratamiento y
-        rehabilitación).
+        Aquí comparto cómo evalúo y trato problemas de cadera, incluyendo
+        opciones de rehabilitación.
       </p>
     </Container>
   );
 }
-

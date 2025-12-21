@@ -143,8 +143,8 @@ export default function HomePage() {
                   <span className="block">y vive sin dolor</span>
                 </h1>
                 <p className="mt-3 text-sm font-medium leading-6 text-white/90 sm:text-base sm:mr-20">
-                  Dr. Luis Calderón: Especialista en Cirugía y Preservación de
-                  Rodilla en Quito.
+                  Soy el Dr. Luis Calderón, especialista en cirugía y
+                  preservación de rodilla en Quito.
                 </p>
               </div>
               <Link
@@ -174,7 +174,7 @@ export default function HomePage() {
                 </p>
                 <div className="mt-4 space-y-4 text-sm leading-6 text-foreground/70 sm:text-base">
                   <p>
-                    Traumatólogo en Quito con más de 15 años de experiencia,
+                    Soy traumatólogo en Quito con más de 15 años de experiencia,
                     profesor de la USFQ y especialista en cirugía de rodilla,
                     cadera, hombro y tobillo.
                   </p>
@@ -300,6 +300,117 @@ export default function HomePage() {
 
           <div className="mt-10">
             <TestimonialsCarousel items={testimonials} />
+          </div>
+        </Container>
+      </section>
+
+      <section className="relative overflow-hidden bg-[#f4fbfc] py-16 sm:py-20">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(43,151,162,0.2),transparent_45%),radial-gradient(circle_at_80%_10%,rgba(11,42,69,0.15),transparent_45%)]" />
+        <Container className="relative z-10">
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div className="relative">
+              <div className="relative overflow-hidden rounded-[28px] bg-[#0b2a45] p-8 text-white shadow-2xl shadow-black/[.2] sm:p-10 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+                <div className="absolute -right-10 -top-10 h-36 w-36 rounded-full bg-brand/40 blur-2xl" />
+                <div className="absolute -left-10 bottom-8 h-28 w-28 rounded-full bg-white/10 blur-2xl" />
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/70">
+                  Guía de Rodilla Vol. 1 - 2024
+                </p>
+                <h3 className="mt-4 text-2xl font-semibold leading-tight sm:text-3xl">
+                  Recupera tu movilidad con ejercicios prácticos y consejos
+                  médicos.
+                </h3>
+                <p className="mt-4 text-sm text-white/75">
+                  Preparé esta guía para que entiendas tu dolor de rodilla y
+                  empieces a mejorar desde casa con respaldo médico.
+                </p>
+                <a
+                  href="/assets/Cuida tus rodillas con el Dr. Luis Calderón.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  download
+                  className="mt-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/80 transition hover:bg-white/20"
+                >
+                  PDF gratuito
+                  <span className="text-[0.65em] text-white/60">VER</span>
+                </a>
+              </div>
+            </div>
+
+            <div className="motion-safe:animate-[fade-up_1s_ease-out_both]">
+              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
+                Mis recomendaciones
+              </p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+                ¿Te duele la rodilla? Descarga mi guía gratuita con ejercicios y
+                consejos.
+              </h2>
+              <p className="mt-4 text-sm leading-6 text-foreground/70 sm:text-base">
+                Además recibirás mi dieta para reducir inflamación y un video
+                donde te explico cómo acelerar tu recuperación.
+              </p>
+
+              <form className="mt-6 grid gap-3 sm:grid-cols-[1fr_auto]">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Tu correo electrónico"
+                  className="h-12 w-full rounded-full border border-black/10 bg-white px-5 text-sm outline-none focus:border-black/30"
+                />
+                <button
+                  type="button"
+                  className="inline-flex h-12 items-center justify-center rounded-full bg-brand px-6 text-sm font-semibold text-white hover:opacity-90"
+                >
+                  Descargar guía
+                </button>
+              </form>
+              <p className="mt-3 text-xs text-foreground/60">
+                Sin spam. Puedes darte de baja cuando quieras.
+              </p>
+
+              <div className="mt-8 grid gap-4 lg:grid-cols-2">
+                <div className="relative rounded-2xl border border-dashed border-black/20 bg-white p-5 shadow-sm shadow-black/[.03]">
+                  <h3 className="text-base font-semibold tracking-tight text-foreground">
+                    Dieta creada por mí
+                  </h3>
+                  <p className="mt-2 text-sm text-foreground/70">
+                    Plan alimenticio para reducir inflamación y proteger tus
+                    articulaciones.
+                  </p>
+                  <p className="mt-4 text-xs font-semibold uppercase tracking-[0.3em] text-foreground/40">
+                    Próximo PDF
+                  </p>
+                  <div className="mt-2 inline-flex h-9 items-center justify-center rounded-full border border-brand/30 px-4 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+                    Guardar en breve
+                  </div>
+                </div>
+                <div className="rounded-2xl border border-black/10 bg-white p-5 shadow-sm shadow-black/[.03]">
+                  <h3 className="text-base font-semibold tracking-tight text-foreground">
+                    Video exclusivo
+                  </h3>
+                  <div className="mt-3 overflow-hidden rounded-2xl border border-black/5 bg-black/5">
+                    <iframe
+                      className="h-40 w-full"
+                      src="https://www.youtube.com/embed/STM0fe1r1qU"
+                      title="Video del Dr. Luis Calderón - Cirugía de rodilla"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                  <p className="mt-3 text-sm text-foreground/70">
+                    Explicación clara mía sobre cuidados, ejercicios y cómo me
+                    preparo antes de una cirugía.
+                  </p>
+                  <a
+                    href="https://www.youtube.com/watch?v=STM0fe1r1qU"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-3 inline-flex text-sm font-semibold text-brand underline"
+                  >
+                    Ver en YouTube →
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </Container>
       </section>

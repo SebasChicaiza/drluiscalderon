@@ -12,10 +12,9 @@ export default function FootAnklePage() {
     <Container className="py-16 sm:py-20">
       <h1 className="text-3xl font-semibold tracking-tight">Pie y tobillo</h1>
       <p className="mt-4 max-w-2xl text-foreground/70">
-        Evaluación de esguinces, inestabilidad y deformidades del pie con
-        tratamientos personalizados y rehabilitación dirigida.
+        Evalúo esguinces, inestabilidad y deformidades del pie con tratamientos
+        personalizados y rehabilitación dirigida.
       </p>
     </Container>
   );
 }
-

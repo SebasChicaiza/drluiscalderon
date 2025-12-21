@@ -11,9 +11,8 @@ export default function AboutPage() {
     <Container className="py-16 sm:py-20">
       <h1 className="text-3xl font-semibold tracking-tight">Sobre mí</h1>
       <p className="mt-4 max-w-2xl text-foreground/70">
-        Aquí puedes contar tu trayectoria, enfoque de atención, formación y
-        experiencia. Este texto es un placeholder para que lo reemplaces con la
-        información real del doctor.
+        Aquí comparto mi trayectoria, enfoque de atención, formación y
+        experiencia.
       </p>
 
       <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -34,4 +33,3 @@ export default function AboutPage() {
     </Container>
   );
 }
-

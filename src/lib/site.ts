@@ -2,7 +2,7 @@ export const site = {
   name: "Dr. Luis Calderón",
   profession: "Traumatólogo - Cirugía de Rodilla",
   description:
-    "Traumatólogo en Quito especializado en cirugía de rodilla, artroscopia y preservación articular. Atención médica centrada en el paciente.",
+    "Soy traumatólogo en Quito especializado en cirugía de rodilla, artroscopia y preservación articular. Atiendo con un enfoque centrado en cada paciente.",
   url: "https://drluiscalderon.com",
   image: "/assets/foto-drluis.webp",
   logo: {

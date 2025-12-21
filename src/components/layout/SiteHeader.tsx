@@ -70,8 +70,8 @@ export function SiteHeader() {
       <div className="bg-brand text-white">
         <Container className="flex items-center justify-center py-2 text-center text-xs font-semibold sm:text-sm">
           <Link href="/trayectoria#turismo-medico" className="hover:opacity-90">
-            Paciente Internacional? Descubre por qué operarte en Quito (Ahorro +
-            Tecnología Robótica) 🇺🇸 🇪🇨
+            Paciente Internacional? Te explico por qué operarte en Quito
+            (Ahorro + Tecnología Robótica) 🇺🇸 🇪🇨
           </Link>
         </Container>
       </div>

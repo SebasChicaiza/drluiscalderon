@@ -16,13 +16,12 @@ export default function KneeArthrosisPage() {
         </h1>
         <p className="mt-4 text-sm text-foreground/70 sm:text-base">
           La artrosis es el desgaste progresivo del cartílago que causa dolor,
-          rigidez y limitación para caminar. Evaluamos tu caso para determinar
-          si necesitas tratamiento conservador o cirugía de reemplazo.
+          rigidez y limitación para caminar. Evalúo tu caso para determinar si
+          necesitas tratamiento conservador o cirugía de reemplazo.
         </p>
         <p className="mt-3 text-sm text-foreground/70 sm:text-base">
           Si presentas dolor rodilla adultos mayores o buscas información sobre
-          protesis de rodilla costo, agenda una valoración especializada en
-          Quito.
+          protesis de rodilla costo, agenda una valoración conmigo en Quito.
         </p>
       </div>
 
@@ -51,8 +50,8 @@ export default function KneeArthrosisPage() {
             Testimonio de paciente
           </h2>
           <p className="mt-2 text-sm text-foreground/70">
-            Inserta aquí el testimonio de un paciente mayor que volvió a caminar
-            sin dolor tras su cirugía de rodilla.
+            Aquí compartiré el testimonio de un paciente mayor que volvió a
+            caminar sin dolor tras su cirugía de rodilla conmigo.
           </p>
           <div className="mt-4 rounded-xl border border-dashed border-black/20 p-4 text-sm text-foreground/50">
             Testimonio en preparación

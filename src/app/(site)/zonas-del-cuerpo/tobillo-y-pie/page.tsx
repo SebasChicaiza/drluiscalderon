@@ -10,10 +10,9 @@ export default function AnkleFootPage() {
     <Container className="py-16 sm:py-20">
       <h1 className="text-3xl font-semibold tracking-tight">Tobillo y pie</h1>
       <p className="mt-4 max-w-2xl text-foreground/70">
-        Contenido placeholder para tobillo y pie (esguinces, tendinopatías,
-        manejo del dolor).
+        Aquí explico cómo evalúo esguinces, tendinopatías y manejo del dolor en
+        tobillo y pie.
       </p>
     </Container>
   );
 }
-

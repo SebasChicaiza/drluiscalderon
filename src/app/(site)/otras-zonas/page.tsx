@@ -20,8 +20,8 @@ export default function OtherAreasPage() {
     <Container className="py-16 sm:py-20">
       <h1 className="text-3xl font-semibold tracking-tight">Otras zonas</h1>
       <p className="mt-4 max-w-2xl text-foreground/70">
-        Traumatología integral para diferentes articulaciones y lesiones del
-        aparato locomotor.
+        Brindo traumatología integral para diferentes articulaciones y lesiones
+        del aparato locomotor.
       </p>
 
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -41,4 +41,3 @@ export default function OtherAreasPage() {
     </Container>
   );
 }
-
