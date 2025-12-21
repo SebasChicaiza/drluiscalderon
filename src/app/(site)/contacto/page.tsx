@@ -75,7 +75,7 @@ export default function ContactPage() {
             <div className="mt-4 overflow-hidden rounded-2xl border border-black/10">
               <iframe
                 title="Mapa del consultorio"
-                src="https://www.google.com/maps?q=Av.%20Eloy%20Alfaro%20N29-235%20Fortune%20Plaza%20Quito&output=embed"
+                src="https://www.google.com/maps?q=-0.19319111976258832,-78.49135299097524&output=embed"
                 className="h-64 w-full"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

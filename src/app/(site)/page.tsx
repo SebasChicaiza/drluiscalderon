@@ -1,11 +1,130 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
-import { specialties } from "@/content/especialidades";
+import { TestimonialsCarousel } from "@/components/sections/TestimonialsCarousel";
+import { site } from "@/lib/site";
+
+const physicianJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  name: "Dr. Luis Calderón",
+  image: new URL(site.image, site.url).toString(),
+  description:
+    "Traumatólogo especialista en cirugía de rodilla, artroscopia y cirugía robótica en Quito. Profesor de la USFQ con más de 15 años de experiencia.",
+  medicalSpecialty: ["Orthopedic", "Toxicologic"],
+  availableService: [
+    {
+      "@type": "MedicalProcedure",
+      name: "Cirugía Robótica de Rodilla",
+    },
+    {
+      "@type": "MedicalProcedure",
+      name: "Artroscopia de Rodilla",
+    },
+    {
+      "@type": "MedicalProcedure",
+      name: "Prótesis de Rodilla",
+    },
+  ],
+  address: {
+    "@type": "PostalAddress",
+    streetAddress:
+      "Av. Eloy Alfaro N29-235, Edificio Fortune Plaza, Piso 11, Oficina 1103",
+    addressLocality: "Quito",
+    addressRegion: "Pichincha",
+    postalCode: "170102",
+    addressCountry: "EC",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: -0.19319111976258832,
+    longitude: -78.49135299097524,
+  },
+  telephone: site.contact.phone.replace(/\s+/g, ""),
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+  ],
+  priceRange: "$$",
+  memberOf: [
+    { "@type": "Organization", name: "USFQ" },
+    { "@type": "Organization", name: "AO Foundation" },
+    { "@type": "Organization", name: "ISAKOS" },
+  ],
+  url: site.url,
+};
+
+const traumaAreas = [
+  {
+    title: "Problemas de rodilla",
+    href: "/rodilla",
+    image: "/assets/lesion-rodilla.webp",
+    tone: "#268b95",
+  },
+  {
+    title: "Problemas de cadera y columna",
+    href: "/otras-zonas/columna",
+    image: "/assets/lesion-cadera.webp",
+    tone: "#34a6b1",
+  },
+  {
+    title: "Problemas hombro, codo y muñeca",
+    href: "/otras-zonas/hombro",
+    image: "/assets/lesion-hombro.webp",
+    tone: "#8ed3dc",
+  },
+  {
+    title: "Problemas de pierna, pie y tobillo",
+    href: "/otras-zonas/pie-y-tobillo",
+    image: "/assets/lesion-tobillo.webp",
+    tone: "#6fc1cc",
+  },
+];
+
+const testimonials = [
+  {
+    name: "C. C.",
+    title: "Me encantó el profesionalismo",
+    body: "Me dio un diagnóstico completo a mi molestia y gracias a sus tratamientos he podido recuperarme. Su atención es personalizada y amable. Gracias Doctor Calderón. Totalmente recomendado.",
+  },
+  {
+    name: "C. O.",
+    title: "Excelente médico, muy comprometido con su vocación y sus pacientes",
+    body: "Además de ser un gran ser humano, operó el brazo roto de mi hijo y quedó perfecto.",
+  },
+  {
+    name: "M. V.",
+    title: "Atención personalizada con una explicación clara sobre el problema",
+    body: "Buenas recomendaciones con nada de medicina y bien aconsejado. Gracias Doctor Calderón.",
+  },
+  {
+    name: "R. Q.",
+    title: "Atención increíble y personalizada",
+    body: "Su atención fue increíble y muy personalizada. Me ayudó a resolver el problema que tenía. Se nota su experiencia y trayectoria. Estoy muy contento con su ayuda, Dr. Calderón.",
+  },
+  {
+    name: "P. M.",
+    title: "Nos sentimos muy cómodas con su atención",
+    body: 'Atendió a mis 2 hijas por dolor de rodillas. Ellas dijeron: "Mami nos gustó mucho la atención del doctor, mantiene su profesionalismo, es chistoso y nos quitó el miedo". Super recomendado.',
+  },
+  {
+    name: "F. B.",
+    title: "Recuperación y progreso real",
+    body: "Tenía un problema en la rodilla y no mejoraba con otros médicos. El Dr. Calderón me examinó a fondo, revisó exámenes y explicó el plan de recuperación. Hoy veo progreso real y estoy mejor. Excelente médico.",
+  },
+];
 
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianJsonLd) }}
+      />
       <section className="border-b border-black/10">
         <div className="relative w-full overflow-hidden lg:h-160 sm:h-100">
           <Image
@@ -118,39 +237,69 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section>
-        <Container className="py-16 sm:py-20">
-          <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <h2 className="text-2xl font-semibold tracking-tight">
-                Especialidades
-              </h2>
-              <p className="mt-2 text-foreground/70">
-                Áreas de atención y enfoque clínico.
-              </p>
-            </div>
+      <section className="bg-white">
+        <Container className="py-14 sm:py-20">
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
+              Atención de primera
+            </p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+              Especialidades en{" "}
+              <span className="italic text-foreground/80">traumatología</span>
+            </h2>
+          </div>
+        </Container>
+
+        <div className="grid w-full grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
+          {traumaAreas.map((area, index) => (
             <Link
-              href="/especialidades"
-              className="text-sm font-medium text-foreground/70 hover:text-foreground"
+              key={area.title}
+              href={area.href}
+              style={{
+                backgroundColor: area.tone,
+                animationDelay: `${index * 120}ms`,
+              }}
+              className="group relative min-h-[320px] overflow-hidden px-8 py-12 text-white transition-transform duration-300 motion-safe:animate-[fade-up_0.8s_ease-out_both] hover:-translate-y-1 sm:min-h-[380px] lg:min-h-[440px] xl:min-h-[500px]"
             >
-              Ver todas
+              <div
+                className="absolute inset-0 bg-cover bg-center transition-[clip-path,transform] duration-[2200ms] ease-[cubic-bezier(0.22,1,0.36,1)] [clip-path:circle(40%_at_50%_62%)] group-hover:[clip-path:circle(150%_at_50%_62%)] group-hover:scale-[1.02]"
+                style={{ backgroundImage: `url(${area.image})` }}
+              />
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.12),rgba(0,0,0,0.45))] opacity-0 transition-opacity duration-[2200ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:opacity-100" />
+              <div className="relative z-10 flex items-start justify-between gap-4">
+                <h3 className="text-lg font-semibold leading-snug sm:text-xl">
+                  {area.title}
+                </h3>
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/40 text-lg transition-transform duration-300 group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+
+              <div className="relative z-10 mt-10 flex justify-center" />
             </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden bg-[#0b2a45] py-16 sm:py-20">
+        <Image
+          src="/assets/consultorio.webp"
+          alt="Consultorio del Dr. Luis Calderón"
+          fill
+          sizes="100vw"
+          className="object-cover opacity-90 z-0"
+        />
+        <div className="absolute inset-0 z-10 bg-[linear-gradient(180deg,rgba(11,42,69,0.35),rgba(11,42,69,0.65))]" />
+        <Container className="relative z-20">
+          <div className="text-center text-white">
+            <p className="text-sm italic text-white/80">Testimonios</p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+              Los mejores resultados
+            </h2>
           </div>
 
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {specialties.slice(0, 3).map((specialty) => (
-              <div
-                key={specialty.slug}
-                className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm shadow-black/[.02] dark:border-white/10 dark:bg-white/[.03] dark:shadow-none"
-              >
-                <h3 className="text-base font-semibold tracking-tight">
-                  {specialty.title}
-                </h3>
-                <p className="mt-2 text-sm leading-6 text-foreground/70">
-                  {specialty.summary}
-                </p>
-              </div>
-            ))}
+          <div className="mt-10">
+            <TestimonialsCarousel items={testimonials} />
           </div>
         </Container>
       </section>

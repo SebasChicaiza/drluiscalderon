@@ -138,10 +138,7 @@ export function SiteHeader() {
               href="/contacto"
               className="inline-flex items-center justify-center rounded-full bg-brand px-6 py-2 text-sm font-semibold leading-tight text-white shadow-sm shadow-black/[.08] hover:opacity-90"
             >
-              <span className="text-center">
-                <span className="block">Agendar una</span>
-                <span className="block">cita</span>
-              </span>
+              Agendar cita
             </Link>
             <Link
               href={phoneHref}
@@ -260,7 +257,7 @@ export function SiteHeader() {
                   className="inline-flex h-11 items-center justify-center rounded-full bg-brand px-6 text-sm font-semibold text-white hover:opacity-90"
                   onClick={() => setMobileOpen(false)}
                 >
-                  Agendar una cita
+                  Agendar cita
                 </Link>
                 <Link
                   href={phoneHref}

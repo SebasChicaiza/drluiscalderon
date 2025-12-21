@@ -2,22 +2,25 @@ export const site = {
   name: "Dr. Luis Calderón",
   profession: "Traumatólogo - Cirugía de Rodilla",
   description:
-    "Atención médica centrada en el paciente, con enfoque preventivo, diagnóstico oportuno y seguimiento continuo.",
+    "Traumatólogo en Quito especializado en cirugía de rodilla, artroscopia y preservación articular. Atención médica centrada en el paciente.",
+  url: "https://drluiscalderon.com",
+  image: "/assets/foto-drluis.webp",
   logo: {
     src: "/assets/logodrluis.webp",
     alt: "Dr. Luis Calderón",
   },
   consultation: {
     modality: "Presencial y online",
-    location: "Ciudad / Clínica (actualiza esta información)",
-    schedule: "Lun–Vie 09:00–18:00 (actualiza esta información)",
+    location:
+      "Av. Eloy Alfaro N29-235 entre Alemania e Italia. Fortune Plaza, piso 11.",
+    schedule: "Lun–Vie 09:00–18:00",
   },
   contact: {
     phone: "+593 998041843",
     whatsapp: "+593 998041843",
     email: "drluiscalderon@gmail.com",
     address:
-      "Av. Eloy Alfaro N29-235 entre Alemania e Italia. Edificio Fortune Plaza. Piso 11. Oficina 1103. Quito – Ecuador.",
+      "Av. Eloy Alfaro N29-235 entre Alemania e Italia.\nEdificio Fortune Plaza. Piso 11. Oficina 1103.\nQuito – Ecuador.",
   },
 } as const;
 
@@ -39,7 +42,7 @@ export const navigation: NavigationItem[] = [
     ],
   },
   {
-    label: "Otras zonas",
+    label: "Otras Zonas",
     href: "/otras-zonas",
     children: [
       { label: "Cadera", href: "/otras-zonas/cadera" },
