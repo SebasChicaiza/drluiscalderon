@@ -126,17 +126,17 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianJsonLd) }}
       />
       <section className="border-b border-black/10">
-        <div className="relative w-full overflow-hidden lg:h-160 sm:h-100">
+        <div className="relative w-full overflow-hidden min-h-[70vh] sm:min-h-[70vh] lg:min-h-[75vh]">
           <Image
             src="/assets/heroimgcouple.webp"
             alt="Pareja caminando en la playa al atardecer"
             fill
             priority
-            sizes="200vw"
+            sizes="100vw"
             className="object-cover"
           />
-          <div className="relative ml-20 z-10 flex min-h-[360px] items-end sm:min-h-[440px] lg:min-h-[520px] ">
-            <div className="m-4 flex max-w-sm flex-col gap-4 sm:m-10 sm:max-w-md">
+          <div className="relative z-10 flex min-h-[70vh] items-end px-4 pb-8 sm:min-h-[70vh] sm:px-10 sm:pb-12 lg:min-h-[75vh] lg:px-16">
+            <div className="flex w-full max-w-[320px] flex-col gap-4 sm:max-w-md">
               <div className="rounded-[26px] bg-[#c9b3a1]/85 p-6 text-white shadow-lg shadow-black/[.12] backdrop-blur-sm sm:p-8">
                 <h1 className="text-2xl font-semibold leading-tight sm:text-3xl">
                   <span className="block">Recupera tu movilidad</span>
@@ -149,7 +149,7 @@ export default function HomePage() {
               </div>
               <Link
                 href="/contacto"
-                className="inline-flex h-12 w-[20rem] items-center justify-center rounded-full bg-brand px-8 text-[1.2rem] font-semibold text-white shadow-md shadow-black/[.12] hover:opacity-90"
+                className="inline-flex h-12 w-full items-center justify-center rounded-full bg-brand px-8 text-base font-semibold text-white shadow-md shadow-black/[.12] hover:opacity-90 sm:w-[20rem] sm:text-lg"
               >
                 Agendar Valoración
               </Link>
@@ -157,9 +157,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="bg-brand -mt-2 flex min-h-[90vh] items-center py-10 sm:py-16">
-        <div className="w-full pl-4 sm:pl-8 lg:pl-10 pr-0">
-          <div className="ml-auto flex min-h-[70vh] w-full max-w-[100rem] items-center rounded-[36px] bg-white px-6 py-12 shadow-xl shadow-black/[.08] sm:px-10 sm:py-14 lg:px-12 lg:py-16">
+      <section className="bg-brand -mt-2 flex items-center py-10 sm:min-h-[90vh] sm:py-16">
+        <div className="w-full px-4 sm:pl-8 sm:pr-0 lg:pl-10">
+          <div className="flex w-full rounded-[28px] bg-white px-6 py-10 shadow-xl shadow-black/[.08] sm:ml-auto sm:min-h-[70vh] sm:items-center sm:rounded-[36px] sm:px-10 sm:py-14 lg:px-12 lg:py-16">
             <div className="grid w-full gap-10 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-12">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
@@ -194,7 +194,7 @@ export default function HomePage() {
                   </p>
                 </div>
 
-                <div className="mt-8 flex flex-wrap items-center gap-3 opacity-50 sm:gap-15 md:max-w-lg">
+                <div className="mt-8 flex flex-wrap items-center gap-3 opacity-50 sm:gap-6 md:gap-8 md:max-w-lg">
                   <Image
                     src="/assets/ao-fundation.webp"
                     alt="AO Foundation"
@@ -262,10 +262,10 @@ export default function HomePage() {
               className="group relative min-h-[320px] overflow-hidden px-8 py-12 text-white transition-transform duration-300 motion-safe:animate-[fade-up_0.8s_ease-out_both] hover:-translate-y-1 sm:min-h-[380px] lg:min-h-[440px] xl:min-h-[500px]"
             >
               <div
-                className="absolute inset-0 bg-cover bg-center transition-[clip-path,transform] duration-[2200ms] ease-[cubic-bezier(0.22,1,0.36,1)] [clip-path:circle(40%_at_50%_62%)] group-hover:[clip-path:circle(150%_at_50%_62%)] group-hover:scale-[1.02]"
+                className="absolute inset-0 bg-cover bg-center transition-[clip-path,transform] duration-[2200ms] ease-[cubic-bezier(0.22,1,0.36,1)] [clip-path:inset(0)] sm:[clip-path:circle(40%_at_50%_62%)] sm:group-hover:[clip-path:circle(150%_at_50%_62%)] sm:group-hover:scale-[1.02]"
                 style={{ backgroundImage: `url(${area.image})` }}
               />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.12),rgba(0,0,0,0.45))] opacity-0 transition-opacity duration-[2200ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:opacity-100" />
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.2),rgba(0,0,0,0.55))] opacity-40 transition-opacity duration-[2200ms] ease-[cubic-bezier(0.22,1,0.36,1)] sm:opacity-0 sm:group-hover:opacity-100" />
               <div className="relative z-10 flex items-start justify-between gap-4">
                 <h3 className="text-lg font-semibold leading-snug sm:text-xl">
                   {area.title}
