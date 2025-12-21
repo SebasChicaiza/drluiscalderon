@@ -37,8 +37,10 @@ export const navigation: NavigationItem[] = [
     href: "/rodilla",
     children: [
       { label: "Cirugía robótica", href: "/rodilla/cirugia-robotica" },
-      { label: "Prótesis y artrosis", href: "/rodilla/protesis-artrosis" },
+      { label: "Artrosis y prótesis", href: "/rodilla/artrosis-protesis" },
       { label: "Meniscos y artroscopia", href: "/rodilla/artroscopia-meniscos" },
+      { label: "Ligamentos y LCA", href: "/rodilla/ligamento-cruzado-lca" },
+      { label: "Deformidades y crecimiento", href: "/rodilla/deformidades-crecimiento" },
     ],
   },
   {

@@ -4,28 +4,28 @@ import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 
 export const metadata: Metadata = {
-  title: "Tratamiento de meniscos",
+  title: "Deformidades de rodilla en crecimiento",
   description:
-    "Tratamiento de meniscos y artroscopia en Quito. Evaluación de roturas deportivas o por desgaste y decisiones entre sutura o menisectomía.",
+    "Corrección de piernas arqueadas y dolor de crecimiento en Quito. Tratamiento temprano para evitar artrosis precoz.",
 };
 
-export default function ArthroscopyMeniscusPage() {
+export default function GrowthDeformitiesPage() {
   return (
     <div className="space-y-16 sm:space-y-20">
       <section className="relative overflow-hidden bg-white py-14">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_10%_20%,rgba(43,151,162,0.2),transparent_45%),radial-gradient(circle_at_90%_10%,rgba(11,42,69,0.1),transparent_40%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(43,151,162,0.18),transparent_45%),radial-gradient(circle_at_88%_15%,rgba(11,42,69,0.12),transparent_40%)]" />
         <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-4">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
-              Meniscos y artroscopia
+              Deformidades
             </p>
-            <h1 className="text-3xl font-semibold leading-tight text-foreground sm:text-4xl">
-              Tratamiento de Meniscos: ¿Reparar o Recortar?
+            <h1 className="text-3xl font-semibold leading-tight sm:text-4xl">
+              Corrección de piernas arqueadas y dolor en adolescentes deportistas.
             </h1>
             <p className="max-w-3xl text-sm leading-7 text-foreground/70 sm:text-base">
-              El menisco es el amortiguador de tu rodilla. Las roturas pueden ser
-              traumáticas o por desgaste y generan atrapamiento o bloqueo. Decido
-              entre sutura preservadora o menisectomía parcial según tu resonancia.
+              Las piernas en “O” o “X” no son solo estética: aceleran la artrosis
+              y afectan el rendimiento. Evaluación temprana, alineación guiada y
+              rehabilitación para evitar desgaste prematuro.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
@@ -45,12 +45,12 @@ export default function ArthroscopyMeniscusPage() {
             </div>
           </div>
           <div className="relative">
-            <div className="absolute -left-6 -top-6 h-24 w-24 rounded-full bg-brand/15 blur-2xl" />
+            <div className="absolute -left-6 -top-8 h-24 w-24 rounded-full bg-brand/15 blur-2xl" />
             <div className="absolute -right-4 bottom-6 h-20 w-20 rounded-full bg-[#0b2a45]/15 blur-2xl" />
             <div className="relative mx-auto max-w-[380px] overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
               <Image
-                src="/assets/lesion-rodilla.webp"
-                alt="Dolor de menisco en la rodilla"
+                src="/assets/lesion-tobillo.webp"
+                alt="Alineación de piernas"
                 width={900}
                 height={700}
                 className="h-full w-full object-cover"
@@ -64,19 +64,19 @@ export default function ArthroscopyMeniscusPage() {
         <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-              ¿Cuándo necesitas cirugía de menisco?
+              Dolor de crecimiento vs. lesión (Osgood-Schlatter / Sinding-Larsen)
             </h2>
             <p className="text-sm leading-7 text-foreground/70 sm:text-base">
-              No todas las lesiones requieren quirófano. Con tu resonancia decido
-              si una sutura preserva el menisco o si una menisectomía parcial es
-              la mejor opción. Preservar protege el cartílago y la estabilidad.
+              Si tu hijo siente dolor al saltar o correr, puede ser inflamación del
+              tendón en crecimiento. Evalúo clínica y radiológicamente para definir
+              reposo activo, fisioterapia y contención.
             </p>
             <div className="grid gap-3 sm:grid-cols-2">
               {[
-                "Bloqueo o atrapamiento al caminar.",
-                "Dolor al girar o ponerse en cuclillas.",
-                "Derrames frecuentes y sensación de inestabilidad.",
-                "Roturas complejas o asociadas a artrosis.",
+                "Dolor en tuberosidad tibial al saltar o arrodillarse.",
+                "Rigidez matutina y dificultad para el deporte.",
+                "Desequilibrio en la marcha por genu varo/valgo.",
+                "Antecedente familiar de deformidades o artrosis precoz.",
               ].map((item) => (
                 <div
                   key={item}
@@ -89,56 +89,54 @@ export default function ArthroscopyMeniscusPage() {
           </div>
           <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18]">
             <h3 className="text-lg font-semibold tracking-tight">
-              Pregunta frecuente
+              Pregunta esencial
             </h3>
             <p className="mt-3 text-sm text-white/80">
-              ¿Cuánto cuesta una operación de meniscos en Quito?
+              ¿Cuándo debo corregir las piernas arqueadas?
             </p>
             <p className="mt-3 text-sm text-white/80">
-              El costo varía según la técnica (sutura preservadora vs.
-              menisectomía parcial) y estudios de imagen. Acepto seguros
-              privados, planes internacionales y pago directo para darte claridad
-              desde la primera consulta.
+              Detectar la deformidad antes del desgaste es clave. Si hay dolor,
+              desequilibrio en la marcha o limitación deportiva, planifico
+              ortesis o cirugía guiada para proteger la articulación.
             </p>
-            <div className="mt-4 rounded-2xl bg-white/10 px-4 py-3 text-sm font-semibold text-white">
-              Guía práctica: criterios para operar y plan de rehabilitación.
-            </div>
           </div>
         </Container>
       </section>
 
       <section className="bg-[#f8fbfc] py-12">
-        <Container className="grid gap-10 lg:grid-cols-[1fr_1fr]">
+        <Container className="grid gap-8 lg:grid-cols-[1fr_1fr]">
           <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
-            <h3 className="text-lg font-semibold tracking-tight text-foreground">
-              Protocolos mínimamente invasivos
+            <h3 className="text-base font-semibold tracking-tight text-foreground">
+              ¿Por qué conectar con artrosis?
             </h3>
-            <p className="mt-2 text-sm leading-6 text-foreground/70">
-              Trabajo con artroscopia dirigida, dos pequeñas incisiones y visión
-              directa. Evaluamos, limpiamos la articulación y reparamos el menisco
-              con menos dolor y un retorno más rápido a tus rutinas.
+            <p className="mt-3 text-sm text-foreground/70">
+              Si no se corrige a tiempo, la mala alineación deriva en artrosis
+              prematura. Coordino con mi área de artrosis para prevenir
+              complicaciones futuras.
             </p>
+            <Link
+              href="/rodilla/artrosis-protesis"
+              className="mt-3 inline-flex text-sm font-semibold text-brand underline"
+            >
+              Ver soluciones para artrosis →
+            </Link>
           </div>
           <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
-            <h3 className="text-lg font-semibold tracking-tight text-foreground">
-              Recuperación guiada
+            <h3 className="text-base font-semibold tracking-tight text-foreground">
+              Plan de acción
             </h3>
-            <p className="mt-2 text-sm leading-6 text-foreground/70">
-              Incluye fisioterapia dirigida, fortalecimiento del cuádriceps y
-              seguimiento para que vuelvas a caminar, correr o jugar sin miedo.
-            </p>
-            <div className="mt-4 grid gap-2 text-sm text-foreground/70">
+            <div className="mt-4 grid gap-3 text-sm text-foreground/70">
               <div className="flex items-start gap-2">
                 <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand" />
-                Carga progresiva y control de inflamación.
+                Evaluación clínica y estudios de imagen.
               </div>
               <div className="flex items-start gap-2">
                 <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand" />
-                Reeducación de la marcha y propiocepción.
+                Órtesis, fisioterapia y control de crecimiento.
               </div>
               <div className="flex items-start gap-2">
                 <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand" />
-                Plan de retorno deportivo con hitos claros.
+                Cirugía guiada en casos severos para reorientar la carga.
               </div>
             </div>
           </div>
@@ -146,19 +144,18 @@ export default function ArthroscopyMeniscusPage() {
       </section>
 
       <section className="bg-white">
-        <Container className="mb-16 rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25]">
+        <Container className="rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25]">
           <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div className="space-y-3">
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70">
-                Mis recomendaciones
+                Lead magnet
               </p>
               <h3 className="text-2xl font-semibold leading-tight sm:text-3xl">
-                ¿Quieres profundizar? Descarga gratis mi Guía de Rodilla Vol. 1 -
-                2024.
+                Planea la recuperación con mi Guía de Rodilla Vol. 1 - 2024.
               </h3>
               <p className="text-sm text-white/80">
-                Explico criterios entre sutura y menisectomía, ejercicios clave y
-                preguntas que debes hacer antes de operarte.
+                Protocolos para adolescentes, ejercicios y casos reales de
+                corrección alineada.
               </p>
               <a
                 href="/assets/Cuida tus rodillas con el Dr. Luis Calderón.pdf"
@@ -170,11 +167,11 @@ export default function ArthroscopyMeniscusPage() {
               </a>
             </div>
             <div className="rounded-[24px] border border-white/15 bg-white/10 px-4 py-5 text-sm text-white/85">
-              <p className="font-semibold">Lo que encontrarás</p>
+              <p className="font-semibold">Incluye</p>
               <ul className="mt-2 grid gap-2">
-                <li>• Señales para operar y cuándo no hacerlo.</li>
-                <li>• Rutina de rehabilitación y tiempos estimados.</li>
-                <li>• Checklist de preguntas para tu cirujano.</li>
+                <li>• Cuándo usar órtesis y cuándo operar.</li>
+                <li>• Ejercicios seguros en crecimiento.</li>
+                <li>• Señales de alarma de artrosis temprana.</li>
               </ul>
             </div>
           </div>

@@ -4,28 +4,28 @@ import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 
 export const metadata: Metadata = {
-  title: "Tratamiento de meniscos",
+  title: "Reconstrucción de LCA",
   description:
-    "Tratamiento de meniscos y artroscopia en Quito. Evaluación de roturas deportivas o por desgaste y decisiones entre sutura o menisectomía.",
+    "Reconstrucción del ligamento cruzado anterior en Quito. Protocolos acelerados para deportistas y atención de inestabilidad rotuliana.",
 };
 
-export default function ArthroscopyMeniscusPage() {
+export default function LigamentPage() {
   return (
     <div className="space-y-16 sm:space-y-20">
       <section className="relative overflow-hidden bg-white py-14">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_10%_20%,rgba(43,151,162,0.2),transparent_45%),radial-gradient(circle_at_90%_10%,rgba(11,42,69,0.1),transparent_40%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(43,151,162,0.2),transparent_45%),radial-gradient(circle_at_85%_15%,rgba(11,42,69,0.12),transparent_40%)]" />
         <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-4">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
-              Meniscos y artroscopia
+              Ligamentos
             </p>
-            <h1 className="text-3xl font-semibold leading-tight text-foreground sm:text-4xl">
-              Tratamiento de Meniscos: ¿Reparar o Recortar?
+            <h1 className="text-3xl font-semibold leading-tight sm:text-4xl">
+              Reconstrucción de LCA y retorno al deporte.
             </h1>
             <p className="max-w-3xl text-sm leading-7 text-foreground/70 sm:text-base">
-              El menisco es el amortiguador de tu rodilla. Las roturas pueden ser
-              traumáticas o por desgaste y generan atrapamiento o bloqueo. Decido
-              entre sutura preservadora o menisectomía parcial según tu resonancia.
+              La rotura del LCA es la pesadilla del deportista: giros bruscos,
+              hinchazón inmediata y sensación de “rodilla floja”. Te acompaño con
+              protocolos acelerados para volver con confianza.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
@@ -45,12 +45,12 @@ export default function ArthroscopyMeniscusPage() {
             </div>
           </div>
           <div className="relative">
-            <div className="absolute -left-6 -top-6 h-24 w-24 rounded-full bg-brand/15 blur-2xl" />
+            <div className="absolute -left-6 -top-8 h-24 w-24 rounded-full bg-brand/15 blur-2xl" />
             <div className="absolute -right-4 bottom-6 h-20 w-20 rounded-full bg-[#0b2a45]/15 blur-2xl" />
             <div className="relative mx-auto max-w-[380px] overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
               <Image
-                src="/assets/lesion-rodilla.webp"
-                alt="Dolor de menisco en la rodilla"
+                src="/assets/lesion-hombro.webp"
+                alt="Lesión deportiva"
                 width={900}
                 height={700}
                 className="h-full w-full object-cover"
@@ -64,101 +64,89 @@ export default function ArthroscopyMeniscusPage() {
         <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-              ¿Cuándo necesitas cirugía de menisco?
+              Inestabilidad rotuliana: ¿sientes que la rodilla “se te sale”?
             </h2>
             <p className="text-sm leading-7 text-foreground/70 sm:text-base">
-              No todas las lesiones requieren quirófano. Con tu resonancia decido
-              si una sutura preserva el menisco o si una menisectomía parcial es
-              la mejor opción. Preservar protege el cartílago y la estabilidad.
+              En jóvenes y mujeres es común que la rótula no deslice en su surco.
+              Fortalecimiento, alineación precisa y, si es necesario, reconstrucción
+              anatómica del LCA para estabilizar.
             </p>
-            <div className="grid gap-3 sm:grid-cols-2">
-              {[
-                "Bloqueo o atrapamiento al caminar.",
-                "Dolor al girar o ponerse en cuclillas.",
-                "Derrames frecuentes y sensación de inestabilidad.",
-                "Roturas complejas o asociadas a artrosis.",
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-foreground/75 shadow-sm shadow-black/[.04]"
-                >
-                  {item}
-                </div>
-              ))}
-            </div>
+            <h3 className="text-lg font-semibold tracking-tight text-foreground">
+              Tendinopatías: no todo es hueso
+            </h3>
+            <p className="text-sm leading-7 text-foreground/70 sm:text-base">
+              El dolor frontal puede ser tendinitis rotuliana. Diferenciarlo es
+              clave para definir reposo activo, fisioterapia o cirugía.
+            </p>
           </div>
           <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18]">
             <h3 className="text-lg font-semibold tracking-tight">
-              Pregunta frecuente
+              Pregunta crucial
             </h3>
             <p className="mt-3 text-sm text-white/80">
-              ¿Cuánto cuesta una operación de meniscos en Quito?
+              ¿Cuánto tiempo tomo volver a jugar después de reconstruir el LCA?
             </p>
             <p className="mt-3 text-sm text-white/80">
-              El costo varía según la técnica (sutura preservadora vs.
-              menisectomía parcial) y estudios de imagen. Acepto seguros
-              privados, planes internacionales y pago directo para darte claridad
-              desde la primera consulta.
+              Con protocolos acelerados recuperas estabilidad en 4-6 meses según
+              tu deporte. Incluye fisioterapia guiada, ortesis y monitoreo cercano
+              para evitar recaídas.
             </p>
-            <div className="mt-4 rounded-2xl bg-white/10 px-4 py-3 text-sm font-semibold text-white">
-              Guía práctica: criterios para operar y plan de rehabilitación.
-            </div>
           </div>
         </Container>
       </section>
 
       <section className="bg-[#f8fbfc] py-12">
-        <Container className="grid gap-10 lg:grid-cols-[1fr_1fr]">
+        <Container className="grid gap-8 lg:grid-cols-[1fr_1fr]">
           <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
-            <h3 className="text-lg font-semibold tracking-tight text-foreground">
-              Protocolos mínimamente invasivos
+            <h3 className="text-base font-semibold tracking-tight text-foreground">
+              Protocolos de recuperación acelerada
             </h3>
-            <p className="mt-2 text-sm leading-6 text-foreground/70">
-              Trabajo con artroscopia dirigida, dos pequeñas incisiones y visión
-              directa. Evaluamos, limpiamos la articulación y reparamos el menisco
-              con menos dolor y un retorno más rápido a tus rutinas.
-            </p>
-          </div>
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
-            <h3 className="text-lg font-semibold tracking-tight text-foreground">
-              Recuperación guiada
-            </h3>
-            <p className="mt-2 text-sm leading-6 text-foreground/70">
-              Incluye fisioterapia dirigida, fortalecimiento del cuádriceps y
-              seguimiento para que vuelvas a caminar, correr o jugar sin miedo.
-            </p>
-            <div className="mt-4 grid gap-2 text-sm text-foreground/70">
+            <div className="mt-4 grid gap-3 text-sm text-foreground/70">
               <div className="flex items-start gap-2">
                 <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand" />
-                Carga progresiva y control de inflamación.
+                Fase 1: control de inflamación y movilidad inicial.
               </div>
               <div className="flex items-start gap-2">
                 <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand" />
-                Reeducación de la marcha y propiocepción.
+                Fase 2: fuerza y estabilidad con propiocepción.
               </div>
               <div className="flex items-start gap-2">
                 <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand" />
-                Plan de retorno deportivo con hitos claros.
+                Fase 3: retorno progresivo al deporte con métricas claras.
               </div>
             </div>
+          </div>
+          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
+            <h3 className="text-base font-semibold tracking-tight text-foreground">
+              Mi enfoque integral
+            </h3>
+            <p className="mt-3 text-sm text-foreground/70">
+              Cirugía mínimamente invasiva, rehabilitación temprana y coaching de
+              retorno deportivo para que vuelvas a competir con seguridad.
+            </p>
+            <Link
+              href="/contacto"
+              className="mt-4 inline-flex h-12 items-center justify-center rounded-full bg-brand px-5 text-sm font-semibold text-white transition hover:opacity-90"
+            >
+              Agenda tu plan de retorno
+            </Link>
           </div>
         </Container>
       </section>
 
       <section className="bg-white">
-        <Container className="mb-16 rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25]">
+        <Container className="rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25]">
           <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div className="space-y-3">
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70">
-                Mis recomendaciones
+                Lead magnet
               </p>
               <h3 className="text-2xl font-semibold leading-tight sm:text-3xl">
-                ¿Quieres profundizar? Descarga gratis mi Guía de Rodilla Vol. 1 -
-                2024.
+                Descarga mi Guía de Rodilla Vol. 1 - 2024.
               </h3>
               <p className="text-sm text-white/80">
-                Explico criterios entre sutura y menisectomía, ejercicios clave y
-                preguntas que debes hacer antes de operarte.
+                Plan de recuperación del LCA, cuidados, ejercicios y checklist
+                antes de volver a la cancha.
               </p>
               <a
                 href="/assets/Cuida tus rodillas con el Dr. Luis Calderón.pdf"
@@ -170,11 +158,11 @@ export default function ArthroscopyMeniscusPage() {
               </a>
             </div>
             <div className="rounded-[24px] border border-white/15 bg-white/10 px-4 py-5 text-sm text-white/85">
-              <p className="font-semibold">Lo que encontrarás</p>
+              <p className="font-semibold">Incluye</p>
               <ul className="mt-2 grid gap-2">
-                <li>• Señales para operar y cuándo no hacerlo.</li>
-                <li>• Rutina de rehabilitación y tiempos estimados.</li>
-                <li>• Checklist de preguntas para tu cirujano.</li>
+                <li>• Línea de tiempo de rehabilitación.</li>
+                <li>• Ejercicios clave por fases.</li>
+                <li>• Señales de alerta para no recaer.</li>
               </ul>
             </div>
           </div>

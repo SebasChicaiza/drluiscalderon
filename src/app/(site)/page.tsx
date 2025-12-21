@@ -397,8 +397,8 @@ export default function HomePage() {
                     />
                   </div>
                   <p className="mt-3 text-sm text-foreground/70">
-                    Explicación clara mía sobre cuidados, ejercicios y cómo me
-                    preparo antes de una cirugía.
+                    Explicación clara mía sobre cuidados, ejercicios y cómo
+                    puedes cuidar tu rodilla.
                   </p>
                   <a
                     href="https://www.youtube.com/watch?v=STM0fe1r1qU"

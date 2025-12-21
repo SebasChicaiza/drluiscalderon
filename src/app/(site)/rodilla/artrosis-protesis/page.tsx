@@ -4,28 +4,28 @@ import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 
 export const metadata: Metadata = {
-  title: "Tratamiento de meniscos",
+  title: "Soluciones para artrosis de rodilla",
   description:
-    "Tratamiento de meniscos y artroscopia en Quito. Evaluación de roturas deportivas o por desgaste y decisiones entre sutura o menisectomía.",
+    "Soluciones para la artrosis de rodilla en Quito: alternativas conservadoras, artroscopia, prótesis total o parcial y cirugía robótica.",
 };
 
-export default function ArthroscopyMeniscusPage() {
+export default function KneeArthrosisPage() {
   return (
     <div className="space-y-16 sm:space-y-20">
       <section className="relative overflow-hidden bg-white py-14">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_10%_20%,rgba(43,151,162,0.2),transparent_45%),radial-gradient(circle_at_90%_10%,rgba(11,42,69,0.1),transparent_40%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(43,151,162,0.18),transparent_45%),radial-gradient(circle_at_85%_15%,rgba(11,42,69,0.12),transparent_40%)]" />
         <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-4">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
-              Meniscos y artroscopia
+              Artrosis
             </p>
-            <h1 className="text-3xl font-semibold leading-tight text-foreground sm:text-4xl">
-              Tratamiento de Meniscos: ¿Reparar o Recortar?
+            <h1 className="text-3xl font-semibold leading-tight sm:text-4xl">
+              Soluciones para la Artrosis de Rodilla: vive sin dolor.
             </h1>
             <p className="max-w-3xl text-sm leading-7 text-foreground/70 sm:text-base">
-              El menisco es el amortiguador de tu rodilla. Las roturas pueden ser
-              traumáticas o por desgaste y generan atrapamiento o bloqueo. Decido
-              entre sutura preservadora o menisectomía parcial según tu resonancia.
+              El desgaste cartilaginoso causa rigidez y crujidos, pero no tienes
+              que resignarte. Diagnóstico temprano, fortalecimiento y, cuando se
+              necesita, prótesis robótica para recuperar tu movilidad.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
@@ -45,15 +45,15 @@ export default function ArthroscopyMeniscusPage() {
             </div>
           </div>
           <div className="relative">
-            <div className="absolute -left-6 -top-6 h-24 w-24 rounded-full bg-brand/15 blur-2xl" />
-            <div className="absolute -right-4 bottom-6 h-20 w-20 rounded-full bg-[#0b2a45]/15 blur-2xl" />
+            <div className="absolute -left-8 -top-10 h-28 w-28 rounded-full bg-brand/20 blur-2xl" />
+            <div className="absolute -right-6 bottom-10 h-20 w-20 rounded-full bg-[#0b2a45]/15 blur-2xl" />
             <div className="relative mx-auto max-w-[380px] overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
               <Image
-                src="/assets/lesion-rodilla.webp"
-                alt="Dolor de menisco en la rodilla"
+                src="/assets/heroimgcouple.webp"
+                alt="Caminar sin dolor de rodilla"
                 width={900}
-                height={700}
-                className="h-full w-full object-cover"
+                height={720}
+                className="h-full w-full object-cover object-center"
               />
             </div>
           </div>
@@ -64,19 +64,20 @@ export default function ArthroscopyMeniscusPage() {
         <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-              ¿Cuándo necesitas cirugía de menisco?
+              ¿Es la prótesis mi única opción?
             </h2>
             <p className="text-sm leading-7 text-foreground/70 sm:text-base">
-              No todas las lesiones requieren quirófano. Con tu resonancia decido
-              si una sutura preserva el menisco o si una menisectomía parcial es
-              la mejor opción. Preservar protege el cartílago y la estabilidad.
+              Explico los grados de artrosis. Con diagnóstico temprano y cambios
+              de estilo de vida (fortalecimiento, peso saludable, fisioterapia)
+              podemos detener el progreso. La prótesis llega cuando hay dolor
+              constante y restricción funcional.
             </p>
             <div className="grid gap-3 sm:grid-cols-2">
               {[
-                "Bloqueo o atrapamiento al caminar.",
-                "Dolor al girar o ponerse en cuclillas.",
-                "Derrames frecuentes y sensación de inestabilidad.",
-                "Roturas complejas o asociadas a artrosis.",
+                "Enfoque conservador: fisioterapia, control del peso, analgésicos.",
+                "Infiltraciones selectivas para aliviar dolor y ganar movilidad.",
+                "Cirugía de preservación articular en casos localizados.",
+                "Prótesis parcial o total si el cartílago ya está agotado.",
               ].map((item) => (
                 <div
                   key={item}
@@ -89,20 +90,19 @@ export default function ArthroscopyMeniscusPage() {
           </div>
           <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18]">
             <h3 className="text-lg font-semibold tracking-tight">
-              Pregunta frecuente
+              Cirugía Robótica: tu as bajo la manga
             </h3>
             <p className="mt-3 text-sm text-white/80">
-              ¿Cuánto cuesta una operación de meniscos en Quito?
+              La robótica optimiza la colocación de la prótesis para que dure más
+              y duela menos. Reproduce tu biomecánica y mejora el balance
+              ligamentario.
             </p>
-            <p className="mt-3 text-sm text-white/80">
-              El costo varía según la técnica (sutura preservadora vs.
-              menisectomía parcial) y estudios de imagen. Acepto seguros
-              privados, planes internacionales y pago directo para darte claridad
-              desde la primera consulta.
-            </p>
-            <div className="mt-4 rounded-2xl bg-white/10 px-4 py-3 text-sm font-semibold text-white">
-              Guía práctica: criterios para operar y plan de rehabilitación.
-            </div>
+            <Link
+              href="/rodilla/cirugia-robotica"
+              className="mt-4 inline-flex text-sm font-semibold text-white underline decoration-white/60 decoration-2 underline-offset-4"
+            >
+              Conoce cómo el robot mejora tu prótesis →
+            </Link>
           </div>
         </Container>
       </section>
@@ -110,37 +110,28 @@ export default function ArthroscopyMeniscusPage() {
       <section className="bg-[#f8fbfc] py-12">
         <Container className="grid gap-10 lg:grid-cols-[1fr_1fr]">
           <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
-            <h3 className="text-lg font-semibold tracking-tight text-foreground">
-              Protocolos mínimamente invasivos
+            <h3 className="text-base font-semibold tracking-tight text-foreground">
+              Pregunta frecuente
             </h3>
-            <p className="mt-2 text-sm leading-6 text-foreground/70">
-              Trabajo con artroscopia dirigida, dos pequeñas incisiones y visión
-              directa. Evaluamos, limpiamos la articulación y reparamos el menisco
-              con menos dolor y un retorno más rápido a tus rutinas.
+            <p className="mt-3 text-sm text-foreground/70">
+              ¿Qué opciones tengo además de una prótesis?
+            </p>
+            <p className="mt-2 text-sm text-foreground/70">
+              Conservo tu rodilla a través de fisioterapia especializada,
+              infiltraciones y cirugía de preservación articular. Solo cuando el
+              cartílago ya está severamente dañado propongo reemplazo total o
+              parcial.
             </p>
           </div>
           <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
-            <h3 className="text-lg font-semibold tracking-tight text-foreground">
-              Recuperación guiada
+            <h3 className="text-base font-semibold tracking-tight text-foreground">
+              Testimonio de pacientes mayores
             </h3>
-            <p className="mt-2 text-sm leading-6 text-foreground/70">
-              Incluye fisioterapia dirigida, fortalecimiento del cuádriceps y
-              seguimiento para que vuelvas a caminar, correr o jugar sin miedo.
+            <p className="mt-3 text-sm text-foreground/70">
+              Controlamos el dolor y retomamos movilidad antes de pensar en
+              cirugía. Cuando es el momento, usamos tecnología robótica para un
+              resultado duradero.
             </p>
-            <div className="mt-4 grid gap-2 text-sm text-foreground/70">
-              <div className="flex items-start gap-2">
-                <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand" />
-                Carga progresiva y control de inflamación.
-              </div>
-              <div className="flex items-start gap-2">
-                <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand" />
-                Reeducación de la marcha y propiocepción.
-              </div>
-              <div className="flex items-start gap-2">
-                <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand" />
-                Plan de retorno deportivo con hitos claros.
-              </div>
-            </div>
           </div>
         </Container>
       </section>
@@ -153,12 +144,11 @@ export default function ArthroscopyMeniscusPage() {
                 Mis recomendaciones
               </p>
               <h3 className="text-2xl font-semibold leading-tight sm:text-3xl">
-                ¿Quieres profundizar? Descarga gratis mi Guía de Rodilla Vol. 1 -
-                2024.
+                ¿Quieres profundizar? Descarga mi Guía de Rodilla Vol. 1 - 2024.
               </h3>
               <p className="text-sm text-white/80">
-                Explico criterios entre sutura y menisectomía, ejercicios clave y
-                preguntas que debes hacer antes de operarte.
+                Cómo preparar tu rodilla, qué ejercicios hacer y cuándo la
+                prótesis robótica es la mejor opción.
               </p>
               <a
                 href="/assets/Cuida tus rodillas con el Dr. Luis Calderón.pdf"
@@ -170,11 +160,11 @@ export default function ArthroscopyMeniscusPage() {
               </a>
             </div>
             <div className="rounded-[24px] border border-white/15 bg-white/10 px-4 py-5 text-sm text-white/85">
-              <p className="font-semibold">Lo que encontrarás</p>
+              <p className="font-semibold">Incluye</p>
               <ul className="mt-2 grid gap-2">
-                <li>• Señales para operar y cuándo no hacerlo.</li>
-                <li>• Rutina de rehabilitación y tiempos estimados.</li>
-                <li>• Checklist de preguntas para tu cirujano.</li>
+                <li>• Señales de progresión de artrosis.</li>
+                <li>• Estrategias de alivio conservador.</li>
+                <li>• Checklist para decidir prótesis robótica.</li>
               </ul>
             </div>
           </div>
