@@ -1,112 +1,289 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import { Container } from "@/components/layout/Container";
-import { site } from "@/lib/site";
+import { Counter } from "@/components/ui/Counter";
+import { Reveal } from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
-  title: "Trayectoria",
+  title: "Trayectoria | Dr. Luis Calderón",
+  description:
+    "Conoce la trayectoria del Dr. Luis Calderón: traumatólogo, cirujano y profesor universitario en Quito con más de 15 años formando especialistas.",
+};
+
+const stats = [
+  { value: 15, prefix: "+", label: "Años de experiencia clínica" },
+  { value: 300, prefix: "+", label: "Cirugías anuales" },
+  { value: 2500, prefix: "+", label: "Pacientes atendidos al año" },
+  { value: 100, suffix: "%", label: "Compromiso académico" },
+];
+
+const timeline = [
+  {
+    year: "2025",
+    title: "Máster en Cirugía Avanzada de Rodilla (en curso)",
+    desc: "La formación nunca termina. Magister en Educación para enseñar mejor.",
+  },
+  {
+    year: "2014 - Presente",
+    title: "Director y Profesor de Posgrado de Traumatología (USFQ) y Tutor UCE",
+    desc: "Formando a la siguiente generación de especialistas.",
+  },
+  {
+    year: "2018",
+    title: "Miembro ISAKOS",
+    desc: "Estándares internacionales en artroscopia y cirugía de rodilla.",
+  },
+  {
+    year: "2015",
+    title: "Delegado de Educación AO Foundation",
+    desc: "Líder en educación de trauma y preservación articular.",
+  },
+  {
+    year: "2014 - 2015",
+    title: "Jefe de Ortopedia, Hospital Carlos Andrade Marín (HECAM)",
+    desc: "Liderazgo en cirugía de alta complejidad.",
+  },
+  {
+    year: "2003",
+    title: "Mejor egresado – Doctor en Medicina y Cirugía (PUCE)",
+    desc: "Excelencia académica desde el inicio.",
+  },
+];
+
+const profileSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  mainEntity: {
+    "@type": "Person",
+    name: "Dr. Luis Calderón",
+    jobTitle: "Traumatólogo y Profesor Universitario",
+    worksFor: [
+      {
+        "@type": "Organization",
+        name: "Universidad San Francisco de Quito (USFQ)",
+      },
+      {
+        "@type": "Hospital",
+        name: "Hospital Carlos Andrade Marín (Ex-Jefe Servicio)",
+      },
+    ],
+    alumniOf: [
+      {
+        "@type": "CollegeOrUniversity",
+        name: "Pontificia Universidad Católica del Ecuador",
+      },
+      { "@type": "CollegeOrUniversity", name: "AO Foundation" },
+    ],
+    memberOf: [
+      { "@type": "Organization", name: "ISAKOS" },
+      { "@type": "Organization", name: "AO Trauma Ecuador" },
+    ],
+  },
 };
 
 export default function CareerPage() {
   return (
-    <Container className="py-16 sm:py-20">
-      <div className="grid gap-12">
-        <section>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
-            Sobre mi trayectoria
-          </p>
-          <h1 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Trayectoria y enfoque médico
-          </h1>
-          <p className="mt-4 max-w-3xl text-sm leading-6 text-foreground/70 sm:text-base">
-            Soy traumatólogo con más de 15 años de experiencia, profesor de la
-            USFQ y miembro de AO Foundation e ISAKOS. Me especializo en cirugía
-            de rodilla, cadera, hombro y tobillo, con enfoque en artroscopia,
-            preservación articular y cirugía robótica.
-          </p>
-          <p className="mt-4 max-w-3xl text-sm leading-6 text-foreground/70 sm:text-base">
-            No me conformo con operar. Me comprometo a que vuelvas a vivir sin
-            dolor con precisión científica, tecnología avanzada y un plan
-            personalizado para tu recuperación.
-          </p>
-          <p className="mt-4 max-w-3xl text-sm leading-6 text-foreground/70 sm:text-base">
-            {site.description}
-          </p>
-        </section>
+    <div className="bg-white text-foreground">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profileSchema) }}
+      />
 
-        <section
-          id="turismo-medico"
-          className="scroll-mt-28 rounded-3xl border border-black/10 bg-white p-8 shadow-sm shadow-black/[.04] sm:p-10"
-        >
-          <h2 className="text-2xl font-semibold tracking-tight">
-            Atención de Clase Mundial en Quito
-          </h2>
-          <p className="mt-4 text-sm leading-6 text-foreground/70 sm:text-base">
-            En Quito te ofrezco tecnología médica avanzada y costos más
-            accesibles para pacientes internacionales. Te atiendo con
-            estándares comparables a clínicas de Estados Unidos, con un ahorro
-            aproximado del 60% al 70%.
-          </p>
-
-          <div className="mt-6 overflow-hidden rounded-2xl border border-black/10">
-            <table className="w-full text-left text-sm">
-              <thead className="bg-black/[.03] text-foreground">
-                <tr>
-                  <th className="px-4 py-3 font-semibold">Servicio</th>
-                  <th className="px-4 py-3 font-semibold">Estados Unidos</th>
-                  <th className="px-4 py-3 font-semibold">Quito</th>
-                </tr>
-              </thead>
-              <tbody className="text-foreground/70">
-                <tr className="border-t border-black/10">
-                  <td className="px-4 py-3">Cirugía de rodilla</td>
-                  <td className="px-4 py-3">USD 30k - 60k</td>
-                  <td className="px-4 py-3">USD 10k - 20k</td>
-                </tr>
-                <tr className="border-t border-black/10">
-                  <td className="px-4 py-3">Artroscopia / meniscos</td>
-                  <td className="px-4 py-3">USD 12k - 25k</td>
-                  <td className="px-4 py-3">USD 4k - 9k</td>
-                </tr>
-                <tr className="border-t border-black/10">
-                  <td className="px-4 py-3">Prótesis total</td>
-                  <td className="px-4 py-3">USD 40k - 80k</td>
-                  <td className="px-4 py-3">USD 12k - 25k</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="mt-8 grid gap-6 lg:grid-cols-2">
-            <div className="rounded-2xl border border-black/10 bg-background p-6">
-              <h3 className="text-base font-semibold tracking-tight">
-                Logística para pacientes internacionales
-              </h3>
-              <ul className="mt-3 grid gap-2 text-sm text-foreground/70">
-                <li>Hoteles cercanos: Swissotel, Dann Carlton, Go Quito.</li>
-                <li>Zona segura y de fácil acceso desde el aeropuerto.</li>
-                <li>Acompañamiento en tu proceso pre y post operatorio.</li>
-              </ul>
+      <section className="relative overflow-hidden bg-[#0b1417] text-white">
+        <div className="absolute inset-0 bg-fixed bg-cover bg-center opacity-70" style={{ backgroundImage: "url(/assets/consultorio.webp)" }} />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/45 to-black/75" />
+        <Container className="relative z-10 grid gap-10 py-16 sm:py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <Reveal>
+            <div className="space-y-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
+                El maestro detrás del bisturí
+              </p>
+              <h1 className="text-4xl font-bold leading-tight sm:text-5xl">
+                Dr. Luis Calderón: Traumatólogo, Cirujano y Profesor Universitario en Quito.
+              </h1>
+              <p className="text-lg leading-7 text-white/80 sm:max-w-2xl">
+                Más de 15 años formando a nuevos especialistas y devolviendo la movilidad a mis pacientes con rigor científico y calidad humana.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="/contacto"
+                  className="inline-flex h-11 items-center justify-center rounded-full bg-brand px-6 text-sm font-semibold text-white shadow-lg shadow-black/20 transition hover:-translate-y-0.5"
+                >
+                  Agenda una cita
+                </Link>
+                <Link
+                  href="/rodilla/cirugia-robotica"
+                  className="inline-flex h-11 items-center justify-center rounded-full border border-white/30 px-6 text-sm font-semibold text-white/90 hover:bg-white/10"
+                >
+                  Ver tecnología
+                </Link>
+              </div>
             </div>
-            <div className="rounded-2xl border border-black/10 bg-background p-6">
-              <h3 className="text-base font-semibold tracking-tight">Idiomas</h3>
-              <p className="mt-3 text-sm text-foreground/70">
-                Atiendo en español y puedo coordinar asistencia en inglés si la
-                necesitas.
+          </Reveal>
+          <Reveal>
+            <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-white/5 shadow-2xl shadow-black/30">
+              <Image
+                src="/assets/foto-drluis.webp"
+                alt="Dr. Luis Calderón en acción"
+                width={1200}
+                height={900}
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+            </div>
+          </Reveal>
+        </Container>
+      </section>
+
+      <section className="bg-brand">
+        <Container className="py-10 sm:py-14">
+          <Reveal>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {stats.map((item) => (
+                <Counter
+                  key={item.label}
+                  value={item.value}
+                  prefix={item.prefix}
+                  suffix={item.suffix}
+                  label={item.label}
+                />
+              ))}
+            </div>
+          </Reveal>
+        </Container>
+      </section>
+
+      <Container className="py-14 sm:py-18 space-y-14">
+        <Reveal>
+          <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+            <div className="space-y-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
+                Mi filosofía
+              </p>
+              <h2 className="text-3xl font-semibold leading-tight sm:text-4xl">
+                Tratarte como a mi propia familia.
+              </h2>
+              <p className="text-base leading-7 text-foreground/75">
+                Entiendo que operarse es una decisión difícil. Mi promesa es simple: ética y claridad. No recibirás términos médicos confusos, sino una explicación precisa de tu diagnóstico.
+              </p>
+              <p className="text-base leading-7 text-foreground/75">
+                Como profesor universitario, mi vocación es enseñar; te explicaré tu lesión para decidir juntos la mejor ruta, cuidándote con la misma dedicación que ofrecería a mis seres queridos.
               </p>
             </div>
+            <div className="flex items-center justify-center">
+              <div className="aspect-square w-full max-w-[420px] rounded-full bg-brand p-5 sm:max-w-[480px] sm:p-6">
+                <div className="relative h-full w-full overflow-hidden rounded-full bg-white/10">
+                  <Image
+                    src="/assets/foto-drluis.webp"
+                    alt="Dr. Luis Calderón con modelo anatómico"
+                    fill
+                    sizes="(min-width: 1024px) 480px, 100vw"
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
+        </Reveal>
 
-        <section className="rounded-2xl border border-black/10 bg-background p-6">
-          <h2 className="text-base font-semibold tracking-tight">
-            Agenda tu valoración
-          </h2>
-          <p className="mt-2 text-sm text-foreground/70">
-            Si buscas una evaluación especializada o planeas tu cirugía en
-            Quito, agenda una cita conmigo y recibe una propuesta personalizada.
-          </p>
-        </section>
-      </div>
-    </Container>
+        <Reveal>
+          <div className="rounded-[28px] border border-black/10 bg-white p-8 shadow-lg shadow-black/[.06]">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
+              Trayectoria académica
+            </p>
+            <div className="mt-6 grid gap-8 lg:grid-cols-[0.3fr_0.7fr]">
+              <div className="relative hidden lg:block">
+                <div className="absolute left-4 top-0 h-full w-[3px] rounded-full bg-gradient-to-b from-brand via-brand/60 to-brand/20" />
+              </div>
+              <div className="space-y-6">
+                {timeline.map((item, idx) => (
+                  <div key={item.title} className="relative pl-8">
+                    <span className="absolute left-0 top-2 h-3 w-3 rounded-full bg-brand shadow-[0_0_0_6px_rgba(43,151,162,0.15)]" />
+                    <p className="text-sm font-semibold text-brand">{item.year}</p>
+                    <h3 className="text-lg font-semibold leading-snug text-foreground">
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-6 text-foreground/70">
+                      {item.desc}
+                    </p>
+                    {idx !== timeline.length - 1 ? (
+                      <div className="absolute left-1.5 top-6 h-[90%] w-px bg-brand/30" />
+                    ) : null}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Reveal>
+
+        <Reveal>
+          <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div className="rounded-[26px] border border-black/10 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-7 text-white shadow-2xl shadow-black/20">
+              <h2 className="text-2xl font-semibold">Diagnóstico preciso con tecnología avanzada.</h2>
+              <p className="mt-3 text-sm leading-6 text-white/80">
+                Además de la cirugía, cuento con certificación en Ecografía Musculoesquelética (UNIR). Esto me permite diagnosticar lesiones de tejidos blandos en el consultorio, sin esperas, complementando mi práctica en cirugía robótica.
+              </p>
+              <p className="mt-3 text-sm leading-6 text-white/80">
+                La tecnología es una extensión de mi ojo clínico: combina ecografía, planeación 3D y cirugía asistida para resultados más seguros.
+              </p>
+              <Link
+                href="/rodilla/cirugia-robotica"
+                className="mt-5 inline-flex h-11 items-center justify-center rounded-full bg-white px-5 text-sm font-semibold text-brand shadow-lg shadow-black/15 hover:bg-white/90"
+              >
+                Ver cirugía robótica
+              </Link>
+            </div>
+            <div className="relative overflow-hidden rounded-[28px] border border-black/8 bg-white shadow-lg shadow-black/[.08]">
+              <Image
+                src="/assets/consultorio.webp"
+                alt="Tecnología y diagnóstico en consultorio"
+                width={1200}
+                height={800}
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+            </div>
+          </div>
+        </Reveal>
+      </Container>
+
+      <section className="bg-[#f3f5f6]">
+        <Container className="py-10 sm:py-12">
+          <Reveal>
+            <div className="flex flex-wrap items-center justify-center gap-10 opacity-80">
+              <Image
+                src="/assets/logo-usfq1.webp"
+                alt="USFQ"
+                width={140}
+                height={60}
+                className="h-10 w-auto object-contain"
+              />
+              <Image
+                src="/assets/ao-fundation.webp"
+                alt="AO Foundation"
+                width={120}
+                height={60}
+                className="h-10 w-auto object-contain"
+              />
+              <Image
+                src="/assets/isakos.webp"
+                alt="ISAKOS"
+                width={160}
+                height={60}
+                className="h-10 w-auto object-contain"
+              />
+              <Image
+                src="/assets/logodrluis.webp"
+                alt="HECAM"
+                width={120}
+                height={60}
+                className="h-10 w-auto object-contain"
+              />
+            </div>
+          </Reveal>
+        </Container>
+      </section>
+    </div>
   );
 }

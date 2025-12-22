@@ -38,9 +38,15 @@ export const navigation: NavigationItem[] = [
     children: [
       { label: "Cirugía robótica", href: "/rodilla/cirugia-robotica" },
       { label: "Artrosis y prótesis", href: "/rodilla/artrosis-protesis" },
-      { label: "Meniscos y artroscopia", href: "/rodilla/artroscopia-meniscos" },
+      {
+        label: "Meniscos y artroscopia",
+        href: "/rodilla/artroscopia-meniscos",
+      },
       { label: "Ligamentos y LCA", href: "/rodilla/ligamento-cruzado-lca" },
-      { label: "Deformidades y crecimiento", href: "/rodilla/deformidades-crecimiento" },
+      {
+        label: "Deformidades y crecimiento",
+        href: "/rodilla/deformidades-crecimiento",
+      },
     ],
   },
   {
@@ -49,9 +55,7 @@ export const navigation: NavigationItem[] = [
     children: [
       { label: "Cadera", href: "/otras-zonas/cadera" },
       { label: "Columna", href: "/otras-zonas/columna" },
-      { label: "Hombro", href: "/otras-zonas/hombro" },
-      { label: "Codo", href: "/otras-zonas/codo" },
-      { label: "Muñeca", href: "/otras-zonas/muneca" },
+      { label: "Hombro, codo y muñeca", href: "/otras-zonas/parte-superior" },
       { label: "Pie y tobillo", href: "/otras-zonas/pie-y-tobillo" },
     ],
   },

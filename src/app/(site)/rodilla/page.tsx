@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
+import { Reveal } from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
   title: "Centro de rodilla en Quito",
@@ -39,22 +40,24 @@ const sections = [
 export default function KneePage() {
   return (
     <Container className="py-16 sm:py-20">
-      <div className="max-w-4xl motion-safe:animate-[fade-up_0.9s_ease-out_both]">
-        <p className="text-xs font-semibold uppercase tracking-[0.4em] text-foreground/70">
-          Rodilla
-        </p>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-          Especializado en Cirugía y Rehabilitación de Rodilla
-        </h1>
-        <p className="mt-4 text-sm leading-7 text-foreground/70 sm:text-base">
-          Las rodillas son clave para tu movilidad. Desde lesiones deportivas
-          hasta desgaste por edad, mi enfoque combina tecnología robótica con
-          preservación articular y rehabilitación personalizada.
-        </p>
-      </div>
+      <Reveal>
+        <div className="max-w-4xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-foreground/70">
+            Rodilla
+          </p>
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+            Especializado en Cirugía y Rehabilitación de Rodilla
+          </h1>
+          <p className="mt-4 text-sm leading-7 text-foreground/70 sm:text-base">
+            Las rodillas son clave para tu movilidad. Desde lesiones deportivas
+            hasta desgaste por edad, mi enfoque combina tecnología robótica con
+            preservación articular y rehabilitación personalizada.
+          </p>
+        </div>
+      </Reveal>
 
       <section className="mt-12 grid gap-10 rounded-[32px] bg-gradient-to-br from-white via-[#f4fbfc] to-white p-4 lg:grid-cols-[1.05fr_1.15fr] lg:items-start lg:p-6">
-        <div className="space-y-6 motion-safe:animate-[fade-up_1s_ease-out_both]">
+        <div className="space-y-6">
           <div className="space-y-4">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
               Especializado en cirugía y rehabilitación

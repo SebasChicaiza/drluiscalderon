@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
+import { Reveal } from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
   title: "Cirugía Robótica de Rodilla en Quito: Precisión milimétrica",
@@ -63,7 +64,8 @@ export default function RoboticSurgeryPage() {
         <section className="relative overflow-hidden rounded-[36px] bg-white px-4 py-14 shadow-2xl sm:px-8">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(43,151,162,0.15),transparent_45%),radial-gradient(circle_at_80%_10%,rgba(11,42,69,0.12),transparent_45%)]" />
           <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+            <Reveal>
+              <div className="space-y-4">
               <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand">
                 Tecnología robótica
               </p>
@@ -103,7 +105,8 @@ export default function RoboticSurgeryPage() {
                   Descargar guía
                 </Link>
               </div>
-            </div>
+              </div>
+            </Reveal>
             <div className="relative">
               <div className="absolute -left-10 -top-8 h-28 w-28 rounded-full bg-brand/20 blur-2xl sm:h-36 sm:w-36" />
               <div className="absolute -right-6 bottom-4 h-24 w-24 rounded-full bg-[#0b2a45]/15 blur-2xl sm:h-32 sm:w-32" />

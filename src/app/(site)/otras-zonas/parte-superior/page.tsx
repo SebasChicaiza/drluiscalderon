@@ -4,33 +4,33 @@ import { Reveal } from "@/components/ui/Reveal";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Pie y tobillo | Dr. Luis Calderón",
+  title: "Miembro superior | Dr. Luis Calderón",
   description:
-    "Especialista en pie y tobillo en Quito. Esguinces, fascitis plantar, juanetes y fracturas con enfoque funcional para volver a caminar sin dolor.",
+    "Traumatología de hombro, codo y muñeca en Quito. Manguito rotador, túnel carpiano y lesiones deportivas con enfoque integral.",
 };
 
-export default function FootAnklePage() {
+export default function ShoulderPage() {
   return (
-    <div className="bg-gradient-to-b from-white via-[#f5fbfb] to-white">
+    <div className="bg-gradient-to-b from-white via-[#f6fbfc] to-white">
       <Container className="py-16 sm:py-20 space-y-16">
         <Reveal>
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div className="space-y-4">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
-                La base de todo
+                Miembro superior
               </p>
               <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-                Soluciones para lesiones de pie y tobillo
+                Traumatología deportiva y laboral de hombro, codo y muñeca
               </h1>
               <p className="text-base leading-7 text-foreground/75">
-                Cada paso soporta el peso de tu cuerpo. Un dolor en el pie altera tu forma de caminar y puede afectar rodilla o cadera. Trato desde el deportista que se torció el tobillo hasta deformidades crónicas.
+                Tus brazos son tu herramienta de trabajo y vida. Desde lanzar una pelota hasta usar el mouse, necesitas movimiento sin dolor. Trato lesiones agudas (golpes/caídas) y crónicas (desgaste/uso repetitivo).
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/contacto"
                   className="inline-flex h-11 items-center justify-center rounded-full bg-brand px-6 text-sm font-semibold text-white shadow-sm shadow-black/10 hover:opacity-90"
                 >
-                  Agenda valoración
+                  Agenda tu evaluación
                 </Link>
                 <Link
                   href="/rodilla"
@@ -41,14 +41,14 @@ export default function FootAnklePage() {
               </div>
             </div>
             <div className="rounded-2xl border border-brand/20 bg-white p-7 shadow-lg shadow-black/10">
-              <h2 className="text-lg font-semibold text-foreground">Diagnóstico funcional</h2>
+              <h2 className="text-lg font-semibold text-foreground">Movilidad y fuerza sin dolor</h2>
               <p className="mt-3 text-sm leading-6 text-foreground/70">
-                Evaluación de marcha, estabilidad y alineación. Objetivo: volver a caminar sin dolor y evitar secuelas en cadena.
+                Evaluación clínica, pruebas de fuerza y estudios de imagen para decidir si necesitas tratamiento conservador, infiltraciones o cirugía mínimamente invasiva.
               </p>
               <ul className="mt-4 space-y-2 text-sm text-foreground/75">
-                <li>• Esguinces y tendinitis.</li>
-                <li>• Fascitis plantar y deformidades (juanetes, dedos en garra).</li>
-                <li>• Fracturas de tobillo y pie con planificación precisa.</li>
+                <li>• Manguito rotador, luxaciones y fracturas.</li>
+                <li>• Epicondilitis (tenista/golfista) y túnel carpiano.</li>
+                <li>• Lesiones por sobreuso en oficina o deporte.</li>
               </ul>
             </div>
           </div>
@@ -58,40 +58,43 @@ export default function FootAnklePage() {
           <div className="grid gap-6 lg:grid-cols-3">
             <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-md shadow-black/[0.06]">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
-                Lesiones deportivas y agudas
+                Hombro: movilidad y fuerza
               </p>
-              <h3 className="mt-3 text-lg font-semibold text-foreground">Esguinces de tobillo</h3>
+              <h3 className="mt-3 text-lg font-semibold text-foreground">Manguito rotador</h3>
               <p className="mt-3 text-sm leading-6 text-foreground/70">
-                La lesión deportiva #1. No es “solo una torcedura”. Un esguince mal curado lleva a inestabilidad crónica y desgaste temprano.
+                Dolor profundo al levantar el brazo o dormir sobre ese lado. Puede ser tendinitis o rotura. Muchos casos se resuelven con artroscopia (mínimamente invasiva).
               </p>
-              <p className="mt-4 text-sm font-semibold text-foreground">
-                Implemento rehabilitación funcional para recuperar estabilidad.
+              <h4 className="mt-4 text-sm font-semibold text-foreground">Luxaciones y fracturas</h4>
+              <p className="mt-2 text-sm leading-6 text-foreground/70">
+                Tras caídas o deportes de contacto. Buscamos estabilidad y evitar que el hombro “se salga” repetidamente.
               </p>
             </div>
 
             <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-md shadow-black/[0.06]">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
-                Fracturas y alineación
+                Codo y precisión
               </p>
-              <h3 className="mt-3 text-lg font-semibold text-foreground">Fracturas de tobillo y pie</h3>
+              <h3 className="mt-3 text-lg font-semibold text-foreground">Epicondilitis</h3>
               <p className="mt-3 text-sm leading-6 text-foreground/70">
-                Requieren manejo preciso para asegurar que la articulación quede alineada y evitar artrosis post-traumática.
+                Dolor en la cara externa o interna del codo por sobreuso. Tratamos la inflamación tendinosa para que regreses a tus actividades.
               </p>
-              <p className="mt-4 text-sm font-semibold text-foreground">
-                Plan quirúrgico o conservador según la estabilidad de la fractura.
+              <h4 className="mt-4 text-sm font-semibold text-foreground">Fracturas y lesiones</h4>
+              <p className="mt-2 text-sm leading-6 text-foreground/70">
+                Requieren alineación precisa y rehabilitación para preservar fuerza y movilidad.
               </p>
             </div>
 
             <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-md shadow-black/[0.06]">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
-                Problemas crónicos y deformidades
+                Muñeca: control y sensibilidad
               </p>
-              <h3 className="mt-3 text-lg font-semibold text-foreground">Fascitis plantar y deformidades</h3>
+              <h3 className="mt-3 text-lg font-semibold text-foreground">Síndrome de túnel carpiano</h3>
               <p className="mt-3 text-sm leading-6 text-foreground/70">
-                Dolor punzante en el talón, especialmente al despertar. También corrijo juanetes y dedos en garra cuando el dolor limita tu vida diaria.
+                Adormecimiento y hormigueo en dedos, común en trabajo de oficina. Liberamos el nervio atrapado para recuperar sensibilidad.
               </p>
-              <p className="mt-4 text-sm font-semibold text-foreground">
-                Terapias de estiramiento, plantillas y, si es necesario, corrección quirúrgica.
+              <h4 className="mt-4 text-sm font-semibold text-foreground">Fracturas de muñeca</h4>
+              <p className="mt-2 text-sm leading-6 text-foreground/70">
+                Frecuentes tras una caída. Buscamos alineación perfecta para no perder fuerza de agarre ni movilidad a futuro.
               </p>
             </div>
           </div>
