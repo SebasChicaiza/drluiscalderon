@@ -15,7 +15,7 @@ export default function ArthroscopyMeniscusPage() {
       <section className="relative overflow-hidden bg-white py-14">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_10%_20%,rgba(43,151,162,0.2),transparent_45%),radial-gradient(circle_at_90%_10%,rgba(11,42,69,0.1),transparent_40%)]" />
         <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="space-y-4">
+          <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
               Meniscos y artroscopia
             </p>
@@ -23,9 +23,10 @@ export default function ArthroscopyMeniscusPage() {
               Tratamiento de Meniscos: ¿Reparar o Recortar?
             </h1>
             <p className="max-w-3xl text-sm leading-7 text-foreground/70 sm:text-base">
-              El menisco es el amortiguador de tu rodilla. Las roturas pueden ser
-              traumáticas o por desgaste y generan atrapamiento o bloqueo. Decido
-              entre sutura preservadora o menisectomía parcial según tu resonancia.
+              El menisco es el amortiguador de tu rodilla. Las roturas pueden
+              ser traumáticas o por desgaste y generan atrapamiento o bloqueo.
+              Decido entre sutura preservadora o menisectomía parcial según tu
+              resonancia.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
@@ -44,7 +45,7 @@ export default function ArthroscopyMeniscusPage() {
               </a>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative motion-safe:animate-[fade-up_1s_ease-out_both]">
             <div className="absolute -left-6 -top-6 h-24 w-24 rounded-full bg-brand/15 blur-2xl" />
             <div className="absolute -right-4 bottom-6 h-20 w-20 rounded-full bg-[#0b2a45]/15 blur-2xl" />
             <div className="relative mx-auto max-w-[380px] overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
@@ -62,14 +63,15 @@ export default function ArthroscopyMeniscusPage() {
 
       <section className="bg-white">
         <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="space-y-4">
+          <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
               ¿Cuándo necesitas cirugía de menisco?
             </h2>
             <p className="text-sm leading-7 text-foreground/70 sm:text-base">
-              No todas las lesiones requieren quirófano. Con tu resonancia decido
-              si una sutura preserva el menisco o si una menisectomía parcial es
-              la mejor opción. Preservar protege el cartílago y la estabilidad.
+              No todas las lesiones requieren quirófano. Con tu resonancia
+              decido si una sutura preserva el menisco o si una menisectomía
+              parcial es la mejor opción. Preservar protege el cartílago y la
+              estabilidad.
             </p>
             <div className="grid gap-3 sm:grid-cols-2">
               {[
@@ -87,7 +89,7 @@ export default function ArthroscopyMeniscusPage() {
               ))}
             </div>
           </div>
-          <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18]">
+          <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18] motion-safe:animate-[fade-up_1s_ease-out_both]">
             <h3 className="text-lg font-semibold tracking-tight">
               Pregunta frecuente
             </h3>
@@ -97,8 +99,8 @@ export default function ArthroscopyMeniscusPage() {
             <p className="mt-3 text-sm text-white/80">
               El costo varía según la técnica (sutura preservadora vs.
               menisectomía parcial) y estudios de imagen. Acepto seguros
-              privados, planes internacionales y pago directo para darte claridad
-              desde la primera consulta.
+              privados, planes internacionales y pago directo para darte
+              claridad desde la primera consulta.
             </p>
             <div className="mt-4 rounded-2xl bg-white/10 px-4 py-3 text-sm font-semibold text-white">
               Guía práctica: criterios para operar y plan de rehabilitación.
@@ -107,19 +109,19 @@ export default function ArthroscopyMeniscusPage() {
         </Container>
       </section>
 
-      <section className="bg-[#f8fbfc] py-12">
+      <section className="bg-gradient-to-br from-[#f8fbfc] via-white to-[#f4fbfc] py-12">
         <Container className="grid gap-10 lg:grid-cols-[1fr_1fr]">
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
+          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <h3 className="text-lg font-semibold tracking-tight text-foreground">
               Protocolos mínimamente invasivos
             </h3>
             <p className="mt-2 text-sm leading-6 text-foreground/70">
               Trabajo con artroscopia dirigida, dos pequeñas incisiones y visión
-              directa. Evaluamos, limpiamos la articulación y reparamos el menisco
-              con menos dolor y un retorno más rápido a tus rutinas.
+              directa. Evaluamos, limpiamos la articulación y reparamos el
+              menisco con menos dolor y un retorno más rápido a tus rutinas.
             </p>
           </div>
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
+          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_1s_ease-out_both]">
             <h3 className="text-lg font-semibold tracking-tight text-foreground">
               Recuperación guiada
             </h3>
@@ -146,19 +148,19 @@ export default function ArthroscopyMeniscusPage() {
       </section>
 
       <section className="bg-white">
-        <Container className="mb-16 rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25]">
+        <Container className="mb-16 rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
           <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div className="space-y-3">
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70">
                 Mis recomendaciones
               </p>
               <h3 className="text-2xl font-semibold leading-tight sm:text-3xl">
-                ¿Quieres profundizar? Descarga gratis mi Guía de Rodilla Vol. 1 -
-                2024.
+                ¿Quieres profundizar? Descarga gratis mi Guía de Rodilla Vol. 1
+                - 2024.
               </h3>
               <p className="text-sm text-white/80">
-                Explico criterios entre sutura y menisectomía, ejercicios clave y
-                preguntas que debes hacer antes de operarte.
+                Explico criterios entre sutura y menisectomía, ejercicios clave
+                y preguntas que debes hacer antes de operarte.
               </p>
               <a
                 href="/assets/Cuida tus rodillas con el Dr. Luis Calderón.pdf"

@@ -15,7 +15,7 @@ export default function KneeArthrosisPage() {
       <section className="relative overflow-hidden bg-white py-14">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(43,151,162,0.18),transparent_45%),radial-gradient(circle_at_85%_15%,rgba(11,42,69,0.12),transparent_40%)]" />
         <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="space-y-4">
+          <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
               Artrosis
             </p>
@@ -44,12 +44,12 @@ export default function KneeArthrosisPage() {
               </a>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative motion-safe:animate-[fade-up_1s_ease-out_both]">
             <div className="absolute -left-8 -top-10 h-28 w-28 rounded-full bg-brand/20 blur-2xl" />
             <div className="absolute -right-6 bottom-10 h-20 w-20 rounded-full bg-[#0b2a45]/15 blur-2xl" />
             <div className="relative mx-auto max-w-[380px] overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
               <Image
-                src="/assets/heroimgcouple.webp"
+                src="/assets/adultos-trotando.webp"
                 alt="Caminar sin dolor de rodilla"
                 width={900}
                 height={720}
@@ -62,7 +62,7 @@ export default function KneeArthrosisPage() {
 
       <section className="bg-white">
         <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="space-y-4">
+          <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
               ¿Es la prótesis mi única opción?
             </h2>
@@ -88,13 +88,13 @@ export default function KneeArthrosisPage() {
               ))}
             </div>
           </div>
-          <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18]">
+          <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18] motion-safe:animate-[fade-up_1s_ease-out_both]">
             <h3 className="text-lg font-semibold tracking-tight">
               Cirugía Robótica: tu as bajo la manga
             </h3>
             <p className="mt-3 text-sm text-white/80">
-              La robótica optimiza la colocación de la prótesis para que dure más
-              y duela menos. Reproduce tu biomecánica y mejora el balance
+              La robótica optimiza la colocación de la prótesis para que dure
+              más y duela menos. Reproduce tu biomecánica y mejora el balance
               ligamentario.
             </p>
             <Link
@@ -109,7 +109,7 @@ export default function KneeArthrosisPage() {
 
       <section className="bg-[#f8fbfc] py-12">
         <Container className="grid gap-10 lg:grid-cols-[1fr_1fr]">
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
+          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <h3 className="text-base font-semibold tracking-tight text-foreground">
               Pregunta frecuente
             </h3>
@@ -123,7 +123,7 @@ export default function KneeArthrosisPage() {
               parcial.
             </p>
           </div>
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
+          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_1s_ease-out_both]">
             <h3 className="text-base font-semibold tracking-tight text-foreground">
               Testimonio de pacientes mayores
             </h3>
@@ -137,7 +137,63 @@ export default function KneeArthrosisPage() {
       </section>
 
       <section className="bg-white">
-        <Container className="mb-16 rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25]">
+        <Container className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="rounded-[26px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.08] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+            <h3 className="text-lg font-semibold tracking-tight text-foreground">
+              Señales de alerta y fases de dolor
+            </h3>
+            <p className="mt-2 text-sm text-foreground/70">
+              Dolor al arrancar a caminar, rigidez matutina, crujidos y pérdida
+              de movilidad progresiva son signos de desgaste. Si hay dolor
+              nocturno o limitación funcional, evaluamos prótesis parcial o
+              total.
+            </p>
+            <div className="mt-4 grid gap-3 text-sm text-foreground/80 sm:grid-cols-2">
+              <div className="rounded-2xl border border-black/10 bg-black/5 px-4 py-3">
+                <p className="font-semibold text-foreground">Dolor mecánico</p>
+                <p>Empeora con actividad, mejora con reposo y analgésicos.</p>
+              </div>
+              <div className="rounded-2xl border border-black/10 bg-black/5 px-4 py-3">
+                <p className="font-semibold text-foreground">
+                  Dolor inflamatorio
+                </p>
+                <p>Rigidez matutina prolongada o derrames frecuentes.</p>
+              </div>
+            </div>
+          </div>
+          <div className="rounded-[26px] border border-black/10 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-[#2b97a2] p-7 text-white shadow-2xl shadow-black/[.25] motion-safe:animate-[fade-up_1s_ease-out_both]">
+            <h3 className="text-lg font-semibold tracking-tight">
+              FAQ rápido sobre artrosis
+            </h3>
+            <div className="mt-3 grid gap-3 text-sm text-white/85">
+              <div>
+                <p className="font-semibold">¿Siempre necesito prótesis?</p>
+                <p>
+                  No. Primero uso medidas conservadoras y preservación articular
+                  cuando es posible.
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold">¿Cuándo la robótica es ideal?</p>
+                <p>
+                  En desgaste avanzado o ejes complejos, la robótica mejora
+                  alineación y reduce dolor postoperatorio.
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold">¿Cuánto tiempo estaré en casa?</p>
+                <p>
+                  Con protocolos fast track, 1-2 días de hospitalización y
+                  rehabilitación inmediata.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-white">
+        <Container className="mb-16 rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
           <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div className="space-y-3">
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70">

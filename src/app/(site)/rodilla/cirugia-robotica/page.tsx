@@ -63,7 +63,7 @@ export default function RoboticSurgeryPage() {
         <section className="relative overflow-hidden rounded-[36px] bg-white px-4 py-14 shadow-2xl sm:px-8">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(43,151,162,0.15),transparent_45%),radial-gradient(circle_at_80%_10%,rgba(11,42,69,0.12),transparent_45%)]" />
           <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="space-y-4">
+            <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
               <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand">
                 Tecnología robótica
               </p>
@@ -122,12 +122,14 @@ export default function RoboticSurgeryPage() {
 
         <section className="bg-white">
           <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="rounded-[28px] border border-black/10 bg-white p-8 shadow-lg shadow-black/[.06]">
+            <div className="rounded-[28px] border border-black/10 bg-white p-8 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
               <h2 className="text-2xl font-semibold tracking-tight text-foreground">
                 ¿El robot opera solo?
               </h2>
               <h3 className="mt-2 text-xl font-semibold text-foreground">
-                No es el robot, es el cirujano potenciado por tecnología.
+                <span className="inline-block motion-safe:animate-[typing_1.8s_steps(48)_both]">
+                  No es el robot, es el cirujano potenciado por tecnología.
+                </span>
               </h3>
               <p className="mt-4 text-sm leading-7 text-foreground/70 sm:text-base">
                 Es un error común pensar que el robot opera solo. Yo tengo el
@@ -137,7 +139,7 @@ export default function RoboticSurgeryPage() {
                 tejidos sanos circundantes.
               </p>
             </div>
-            <div className="rounded-[28px] border border-black/10 bg-white p-5 shadow-lg shadow-black/[.06]">
+            <div className="rounded-[28px] border border-black/10 bg-white p-5 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_1s_ease-out_both]">
               <div className="relative h-72 overflow-hidden rounded-[24px] border border-black/5">
                 <Image
                   src="/assets/cirugia-robot.webp"
@@ -156,7 +158,7 @@ export default function RoboticSurgeryPage() {
 
         <section className="bg-[#0b2a45] py-14">
           <Container className="grid gap-10 lg:grid-cols-[1fr_1fr]">
-            <div className="space-y-4">
+            <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand/20">
                 Comparativa
               </p>
@@ -169,7 +171,7 @@ export default function RoboticSurgeryPage() {
                 ves las diferencias clave.
               </p>
             </div>
-            <div className="overflow-hidden rounded-2xl border border-white/15 bg-white/10 backdrop-blur">
+            <div className="overflow-hidden rounded-2xl border border-white/15 bg-white/10 backdrop-blur motion-safe:animate-[fade-up_1s_ease-out_both]">
               <table className="w-full text-left text-sm text-white/90">
                 <thead className="bg-white/10 text-white">
                   <tr>
@@ -218,7 +220,7 @@ export default function RoboticSurgeryPage() {
 
         <section className="bg-white">
           <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
+            <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
               <h2 className="text-2xl font-semibold tracking-tight text-foreground">
                 Cirugía robótica de rodilla en Quito: tu inversión inteligente
               </h2>
@@ -238,7 +240,7 @@ export default function RoboticSurgeryPage() {
                 dispositivos y controles postoperatorios.
               </p>
             </div>
-            <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
+            <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_1s_ease-out_both]">
               <h3 className="text-xl font-semibold tracking-tight text-foreground">
                 Tu ruta rápida con robótica
               </h3>
@@ -279,7 +281,7 @@ export default function RoboticSurgeryPage() {
 
         <section className="bg-[#f8fbfc] py-12">
           <Container>
-            <div className="rounded-[28px] border border-black/10 bg-white p-6 shadow-lg shadow-black/[.06]">
+            <div className="rounded-[28px] border border-black/10 bg-white p-6 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
               <h2 className="text-2xl font-semibold tracking-tight text-foreground">
                 ¿Quién es candidato ideal para esta tecnología?
               </h2>
@@ -303,8 +305,8 @@ export default function RoboticSurgeryPage() {
           </Container>
         </section>
 
-        <section className="rounded-[36px] border border-brand/30 bg-[#0b2a45] p-8 text-white shadow-2xl shadow-black/[.35]">
-          <Container className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <section className="rounded-[36px] border border-brand/30 bg-[#0b2a45] p-8 m-20 text-white shadow-2xl shadow-black/[.35]">
+          <Container className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <div className="space-y-2">
               <h2 className="text-3xl font-semibold tracking-tight">
                 Recupera tu vida con la mejor tecnología disponible

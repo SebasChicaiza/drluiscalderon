@@ -15,17 +15,18 @@ export default function GrowthDeformitiesPage() {
       <section className="relative overflow-hidden bg-white py-14">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(43,151,162,0.18),transparent_45%),radial-gradient(circle_at_88%_15%,rgba(11,42,69,0.12),transparent_40%)]" />
         <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="space-y-4">
+          <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
               Deformidades
             </p>
             <h1 className="text-3xl font-semibold leading-tight sm:text-4xl">
-              Corrección de piernas arqueadas y dolor en adolescentes deportistas.
+              Corrección de piernas arqueadas y dolor en adolescentes
+              deportistas.
             </h1>
             <p className="max-w-3xl text-sm leading-7 text-foreground/70 sm:text-base">
-              Las piernas en “O” o “X” no son solo estética: aceleran la artrosis
-              y afectan el rendimiento. Evaluación temprana, alineación guiada y
-              rehabilitación para evitar desgaste prematuro.
+              Las piernas en “O” o “X” no son solo estética: aceleran la
+              artrosis y afectan el rendimiento. Evaluación temprana, alineación
+              guiada y rehabilitación para evitar desgaste prematuro.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
@@ -44,12 +45,12 @@ export default function GrowthDeformitiesPage() {
               </a>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative motion-safe:animate-[fade-up_1s_ease-out_both]">
             <div className="absolute -left-6 -top-8 h-24 w-24 rounded-full bg-brand/15 blur-2xl" />
             <div className="absolute -right-4 bottom-6 h-20 w-20 rounded-full bg-[#0b2a45]/15 blur-2xl" />
             <div className="relative mx-auto max-w-[380px] overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
               <Image
-                src="/assets/lesion-tobillo.webp"
+                src="/assets/rodillas-valgas.webp"
                 alt="Alineación de piernas"
                 width={900}
                 height={700}
@@ -62,14 +63,15 @@ export default function GrowthDeformitiesPage() {
 
       <section className="bg-white">
         <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="space-y-4">
+          <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-              Dolor de crecimiento vs. lesión (Osgood-Schlatter / Sinding-Larsen)
+              Dolor de crecimiento vs. lesión (Osgood-Schlatter /
+              Sinding-Larsen)
             </h2>
             <p className="text-sm leading-7 text-foreground/70 sm:text-base">
-              Si tu hijo siente dolor al saltar o correr, puede ser inflamación del
-              tendón en crecimiento. Evalúo clínica y radiológicamente para definir
-              reposo activo, fisioterapia y contención.
+              Si tu hijo siente dolor al saltar o correr, puede ser inflamación
+              del tendón en crecimiento. Evalúo clínica y radiológicamente para
+              definir reposo activo, fisioterapia y contención.
             </p>
             <div className="grid gap-3 sm:grid-cols-2">
               {[
@@ -87,14 +89,14 @@ export default function GrowthDeformitiesPage() {
               ))}
             </div>
           </div>
-          <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18]">
+          <div className="rounded-[26px] border border-black/10 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-[#2b97a2] p-7 text-white shadow-2xl shadow-black/[.28] motion-safe:animate-[fade-up_1s_ease-out_both]">
             <h3 className="text-lg font-semibold tracking-tight">
               Pregunta esencial
             </h3>
-            <p className="mt-3 text-sm text-white/80">
+            <p className="mt-4 text-sm font-semibold text-white">
               ¿Cuándo debo corregir las piernas arqueadas?
             </p>
-            <p className="mt-3 text-sm text-white/80">
+            <p className="mt-3 text-sm leading-6 text-white/85">
               Detectar la deformidad antes del desgaste es clave. Si hay dolor,
               desequilibrio en la marcha o limitación deportiva, planifico
               ortesis o cirugía guiada para proteger la articulación.
@@ -103,9 +105,9 @@ export default function GrowthDeformitiesPage() {
         </Container>
       </section>
 
-      <section className="bg-[#f8fbfc] py-12">
+      <section className="bg-gradient-to-br from-[#f8fbfc] via-white to-[#f4fbfc] py-12">
         <Container className="grid gap-8 lg:grid-cols-[1fr_1fr]">
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
+          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <h3 className="text-base font-semibold tracking-tight text-foreground">
               ¿Por qué conectar con artrosis?
             </h3>
@@ -121,7 +123,7 @@ export default function GrowthDeformitiesPage() {
               Ver soluciones para artrosis →
             </Link>
           </div>
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
+          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_1s_ease-out_both]">
             <h3 className="text-base font-semibold tracking-tight text-foreground">
               Plan de acción
             </h3>
@@ -144,18 +146,19 @@ export default function GrowthDeformitiesPage() {
       </section>
 
       <section className="bg-white">
-        <Container className="rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25]">
+        <Container className="mb-16 rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
           <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div className="space-y-3">
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70">
-                Lead magnet
+                Mis recomendaciones
               </p>
               <h3 className="text-2xl font-semibold leading-tight sm:text-3xl">
-                Planea la recuperación con mi Guía de Rodilla Vol. 1 - 2024.
+                ¿Quieres profundizar? Descarga gratis mi Guía de Rodilla Vol. 1
+                - 2024.
               </h3>
               <p className="text-sm text-white/80">
-                Protocolos para adolescentes, ejercicios y casos reales de
-                corrección alineada.
+                Explico criterios entre sutura y menisectomía, ejercicios clave
+                y preguntas que debes hacer antes de operarte.
               </p>
               <a
                 href="/assets/Cuida tus rodillas con el Dr. Luis Calderón.pdf"
@@ -167,11 +170,11 @@ export default function GrowthDeformitiesPage() {
               </a>
             </div>
             <div className="rounded-[24px] border border-white/15 bg-white/10 px-4 py-5 text-sm text-white/85">
-              <p className="font-semibold">Incluye</p>
+              <p className="font-semibold">Lo que encontrarás</p>
               <ul className="mt-2 grid gap-2">
-                <li>• Cuándo usar órtesis y cuándo operar.</li>
-                <li>• Ejercicios seguros en crecimiento.</li>
-                <li>• Señales de alarma de artrosis temprana.</li>
+                <li>• Señales para operar y cuándo no hacerlo.</li>
+                <li>• Rutina de rehabilitación y tiempos estimados.</li>
+                <li>• Checklist de preguntas para tu cirujano.</li>
               </ul>
             </div>
           </div>

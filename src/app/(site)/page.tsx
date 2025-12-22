@@ -368,21 +368,21 @@ export default function HomePage() {
               </p>
 
               <div className="mt-8 grid gap-4 lg:grid-cols-2">
-                <div className="relative rounded-2xl border border-dashed border-black/20 bg-white p-5 shadow-sm shadow-black/[.03]">
+                <Link
+                  href="/recursos/dieta-bajar-peso-sin-hambre"
+                  className="relative block rounded-2xl border border-dashed border-black/20 bg-white p-5 shadow-sm shadow-black/[.03] transition hover:-translate-y-0.5 hover:border-brand"
+                >
                   <h3 className="text-base font-semibold tracking-tight text-foreground">
-                    Dieta creada por mí
+                    Dieta creada para ti
                   </h3>
                   <p className="mt-2 text-sm text-foreground/70">
                     Plan alimenticio para reducir inflamación y proteger tus
-                    articulaciones.
+                    articulaciones sin pasar hambre.
                   </p>
-                  <p className="mt-4 text-xs font-semibold uppercase tracking-[0.3em] text-foreground/40">
-                    Próximo PDF
-                  </p>
-                  <div className="mt-2 inline-flex h-9 items-center justify-center rounded-full border border-brand/30 px-4 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
-                    Guardar en breve
+                  <div className="mt-4 inline-flex h-9 items-center justify-center rounded-full bg-brand/10 px-4 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+                    Ver dieta completa
                   </div>
-                </div>
+                </Link>
                 <div className="rounded-2xl border border-black/10 bg-white p-5 shadow-sm shadow-black/[.03]">
                   <h3 className="text-base font-semibold tracking-tight text-foreground">
                     Video exclusivo
@@ -397,8 +397,8 @@ export default function HomePage() {
                     />
                   </div>
                   <p className="mt-3 text-sm text-foreground/70">
-                    Explicación clara mía sobre cuidados, ejercicios y cómo
-                    puedes cuidar tu rodilla.
+                    Explicación clara sobre cuidados, ejercicios y cómo puedes
+                    cuidar tu rodilla.
                   </p>
                   <a
                     href="https://www.youtube.com/watch?v=STM0fe1r1qU"

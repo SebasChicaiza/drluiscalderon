@@ -15,7 +15,7 @@ export default function LigamentPage() {
       <section className="relative overflow-hidden bg-white py-14">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(43,151,162,0.2),transparent_45%),radial-gradient(circle_at_85%_15%,rgba(11,42,69,0.12),transparent_40%)]" />
         <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="space-y-4">
+          <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
               Ligamentos
             </p>
@@ -24,8 +24,8 @@ export default function LigamentPage() {
             </h1>
             <p className="max-w-3xl text-sm leading-7 text-foreground/70 sm:text-base">
               La rotura del LCA es la pesadilla del deportista: giros bruscos,
-              hinchazón inmediata y sensación de “rodilla floja”. Te acompaño con
-              protocolos acelerados para volver con confianza.
+              hinchazón inmediata y sensación de “rodilla floja”. Te acompaño
+              con protocolos acelerados para volver con confianza.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
@@ -44,12 +44,12 @@ export default function LigamentPage() {
               </a>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative motion-safe:animate-[fade-up_1s_ease-out_both]">
             <div className="absolute -left-6 -top-8 h-24 w-24 rounded-full bg-brand/15 blur-2xl" />
             <div className="absolute -right-4 bottom-6 h-20 w-20 rounded-full bg-[#0b2a45]/15 blur-2xl" />
             <div className="relative mx-auto max-w-[380px] overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
               <Image
-                src="/assets/lesion-hombro.webp"
+                src="/assets/lca.webp"
                 alt="Lesión deportiva"
                 width={900}
                 height={700}
@@ -62,14 +62,14 @@ export default function LigamentPage() {
 
       <section className="bg-white">
         <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="space-y-4">
+          <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
               Inestabilidad rotuliana: ¿sientes que la rodilla “se te sale”?
             </h2>
             <p className="text-sm leading-7 text-foreground/70 sm:text-base">
-              En jóvenes y mujeres es común que la rótula no deslice en su surco.
-              Fortalecimiento, alineación precisa y, si es necesario, reconstrucción
-              anatómica del LCA para estabilizar.
+              En jóvenes y mujeres es común que la rótula no deslice en su
+              surco. Fortalecimiento, alineación precisa y, si es necesario,
+              reconstrucción anatómica del LCA para estabilizar.
             </p>
             <h3 className="text-lg font-semibold tracking-tight text-foreground">
               Tendinopatías: no todo es hueso
@@ -79,7 +79,7 @@ export default function LigamentPage() {
               clave para definir reposo activo, fisioterapia o cirugía.
             </p>
           </div>
-          <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18]">
+          <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18] motion-safe:animate-[fade-up_1s_ease-out_both]">
             <h3 className="text-lg font-semibold tracking-tight">
               Pregunta crucial
             </h3>
@@ -88,8 +88,8 @@ export default function LigamentPage() {
             </p>
             <p className="mt-3 text-sm text-white/80">
               Con protocolos acelerados recuperas estabilidad en 4-6 meses según
-              tu deporte. Incluye fisioterapia guiada, ortesis y monitoreo cercano
-              para evitar recaídas.
+              tu deporte. Incluye fisioterapia guiada, ortesis y monitoreo
+              cercano para evitar recaídas.
             </p>
           </div>
         </Container>
@@ -97,7 +97,7 @@ export default function LigamentPage() {
 
       <section className="bg-[#f8fbfc] py-12">
         <Container className="grid gap-8 lg:grid-cols-[1fr_1fr]">
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
+          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <h3 className="text-base font-semibold tracking-tight text-foreground">
               Protocolos de recuperación acelerada
             </h3>
@@ -116,13 +116,13 @@ export default function LigamentPage() {
               </div>
             </div>
           </div>
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06]">
+          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_1s_ease-out_both]">
             <h3 className="text-base font-semibold tracking-tight text-foreground">
               Mi enfoque integral
             </h3>
             <p className="mt-3 text-sm text-foreground/70">
-              Cirugía mínimamente invasiva, rehabilitación temprana y coaching de
-              retorno deportivo para que vuelvas a competir con seguridad.
+              Cirugía mínimamente invasiva, rehabilitación temprana y coaching
+              de retorno deportivo para que vuelvas a competir con seguridad.
             </p>
             <Link
               href="/contacto"
@@ -135,18 +135,19 @@ export default function LigamentPage() {
       </section>
 
       <section className="bg-white">
-        <Container className="rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25]">
+        <Container className="mb-16 rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
           <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div className="space-y-3">
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70">
-                Lead magnet
+                Mis recomendaciones
               </p>
               <h3 className="text-2xl font-semibold leading-tight sm:text-3xl">
-                Descarga mi Guía de Rodilla Vol. 1 - 2024.
+                ¿Quieres profundizar? Descarga gratis mi Guía de Rodilla Vol. 1
+                - 2024.
               </h3>
               <p className="text-sm text-white/80">
-                Plan de recuperación del LCA, cuidados, ejercicios y checklist
-                antes de volver a la cancha.
+                Explico criterios entre sutura y menisectomía, ejercicios clave
+                y preguntas que debes hacer antes de operarte.
               </p>
               <a
                 href="/assets/Cuida tus rodillas con el Dr. Luis Calderón.pdf"
@@ -158,11 +159,11 @@ export default function LigamentPage() {
               </a>
             </div>
             <div className="rounded-[24px] border border-white/15 bg-white/10 px-4 py-5 text-sm text-white/85">
-              <p className="font-semibold">Incluye</p>
+              <p className="font-semibold">Lo que encontrarás</p>
               <ul className="mt-2 grid gap-2">
-                <li>• Línea de tiempo de rehabilitación.</li>
-                <li>• Ejercicios clave por fases.</li>
-                <li>• Señales de alerta para no recaer.</li>
+                <li>• Señales para operar y cuándo no hacerlo.</li>
+                <li>• Rutina de rehabilitación y tiempos estimados.</li>
+                <li>• Checklist de preguntas para tu cirujano.</li>
               </ul>
             </div>
           </div>
