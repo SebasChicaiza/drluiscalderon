@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { TestimonialsCarousel } from "@/components/sections/TestimonialsCarousel";
+import { Reveal } from "@/components/ui/Reveal";
 import { site } from "@/lib/site";
 
 const physicianJsonLd = {
@@ -136,7 +137,7 @@ export default function HomePage() {
             className="object-cover"
           />
           <div className="relative z-10 flex min-h-[70vh] items-end px-4 pb-8 sm:min-h-[70vh] sm:px-10 sm:pb-12 lg:min-h-[75vh] lg:px-16">
-            <div className="flex w-full max-w-[320px] flex-col gap-4 sm:max-w-md">
+            <div className="flex w-full max-w-[320px] flex-col gap-4 sm:max-w-md motion-safe:animate-[fade-up_0.9s_ease-out_both]">
               <div className="rounded-[26px] bg-[#c9b3a1]/85 p-6 text-white shadow-lg shadow-black/[.12] backdrop-blur-sm sm:p-8">
                 <h1 className="text-2xl font-semibold leading-tight sm:text-3xl">
                   <span className="block">Recupera tu movilidad</span>
@@ -159,124 +160,129 @@ export default function HomePage() {
       </section>
       <section className="bg-brand -mt-2 flex items-center py-10 sm:min-h-[90vh] sm:py-16">
         <div className="w-full px-4 sm:pl-8 sm:pr-0 lg:pl-10">
-          <div className="flex w-full rounded-[28px] bg-white px-6 py-10 shadow-xl shadow-black/[.08] sm:ml-auto sm:min-h-[70vh] sm:items-center sm:rounded-[36px] sm:px-10 sm:py-14 lg:px-12 lg:py-16">
-            <div className="grid w-full gap-10 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-12">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
-                  Sobre mi trayectoria
-                </p>
-                <h2 className="mt-4 text-3xl font-semibold leading-tight text-foreground sm:text-4xl">
-                  Tu bienestar es mi prioridad — traumatología con enfoque
-                  humano y precisión científica.
-                </h2>
-                <p className="mt-4 text-sm font-semibold text-foreground sm:text-base">
-                  Hola, soy el Dr. Luis Calderón.
-                </p>
-                <div className="mt-4 space-y-4 text-sm leading-6 text-foreground/70 sm:text-base">
-                  <p>
-                    Soy traumatólogo en Quito con más de 15 años de experiencia,
-                    profesor de la USFQ y especialista en cirugía de rodilla,
-                    cadera, hombro y tobillo.
+          <Reveal>
+            <div className="flex w-full rounded-[28px] bg-white px-6 py-10 shadow-xl shadow-black/[.08] sm:ml-auto sm:min-h-[70vh] sm:items-center sm:rounded-[36px] sm:px-10 sm:py-14 lg:px-12 lg:py-16">
+              <div className="grid w-full gap-10 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-12">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+                    Sobre mi trayectoria
                   </p>
-                  <p>
-                    No me conformo con operar: me comprometo a que vuelvas a
-                    caminar, correr, jugar y vivir sin dolor, con un plan
-                    personalizado, tecnología avanzada y seguimiento cercano.
+                  <h2 className="mt-4 text-3xl font-semibold leading-tight text-foreground sm:text-4xl">
+                    Tu bienestar es mi prioridad — traumatología con enfoque
+                    humano y precisión científica.
+                  </h2>
+                  <p className="mt-4 text-sm font-semibold text-foreground sm:text-base">
+                    Hola, soy el Dr. Luis Calderón.
                   </p>
-                  <p>
-                    Mi formación con AO Foundation e ISAKOS, y mi experiencia en
-                    cirugía robótica, artroscopia y preservación articular, me
-                    permiten ofrecer resultados seguros y duraderos.
-                  </p>
-                  <p className="font-semibold text-foreground">
-                    Porque tú no eres un caso clínico: eres una persona que
-                    merece recuperar su vida.
-                  </p>
-                </div>
+                  <div className="mt-4 space-y-4 text-sm leading-6 text-foreground/70 sm:text-base">
+                    <p>
+                      Soy traumatólogo en Quito con más de 15 años de
+                      experiencia, profesor de la USFQ y especialista en cirugía
+                      de rodilla, cadera, hombro y tobillo.
+                    </p>
+                    <p>
+                      No me conformo con operar: me comprometo a que vuelvas a
+                      caminar, correr, jugar y vivir sin dolor, con un plan
+                      personalizado, tecnología avanzada y seguimiento cercano.
+                    </p>
+                    <p>
+                      Mi formación con AO Foundation e ISAKOS, y mi experiencia
+                      en cirugía robótica, artroscopia y preservación articular,
+                      me permiten ofrecer resultados seguros y duraderos.
+                    </p>
+                    <p className="font-semibold text-foreground">
+                      Porque tú no eres un caso clínico: eres una persona que
+                      merece recuperar su vida.
+                    </p>
+                  </div>
 
-                <div className="mt-8 flex flex-wrap items-center gap-3 opacity-50 sm:gap-6 md:gap-8 md:max-w-lg">
-                  <Image
-                    src="/assets/ao-fundation.webp"
-                    alt="AO Foundation"
-                    width={80}
-                    height={80}
-                    className="h-14 w-auto object-contain sm:h-16"
-                  />
-                  <Image
-                    src="/assets/isakos.webp"
-                    alt="ISAKOS"
-                    width={150}
-                    height={80}
-                    className="h-12 w-auto object-contain sm:h-14"
-                  />
-                  <Image
-                    src="/assets/logo-usfq1.webp"
-                    alt="USFQ"
-                    width={150}
-                    height={80}
-                    className="h-12 w-auto object-contain sm:h-14"
-                  />
-                </div>
-              </div>
-
-              <div className="flex items-center justify-center">
-                <div className="aspect-square w-full max-w-[360px] rounded-full bg-brand p-5 sm:max-w-[420px] sm:p-6 lg:max-w-[520px] lg:p-7 xl:max-w-[560px]">
-                  <div className="relative h-full w-full overflow-hidden rounded-full bg-white/20">
+                  <div className="mt-8 flex flex-wrap items-center gap-3 opacity-50 sm:gap-6 md:gap-8 md:max-w-lg">
                     <Image
-                      src="/assets/foto-drluis.webp"
-                      alt="Dr. Luis Calderón"
-                      fill
-                      sizes="(min-width: 1280px) 560px, (min-width: 1024px) 520px, (min-width: 640px) 420px, 360px"
-                      className="object-cover object-top"
+                      src="/assets/ao-fundation.webp"
+                      alt="AO Foundation"
+                      width={80}
+                      height={80}
+                      className="h-14 w-auto object-contain sm:h-16"
                     />
+                    <Image
+                      src="/assets/isakos.webp"
+                      alt="ISAKOS"
+                      width={150}
+                      height={80}
+                      className="h-12 w-auto object-contain sm:h-14"
+                    />
+                    <Image
+                      src="/assets/logo-usfq1.webp"
+                      alt="USFQ"
+                      width={150}
+                      height={80}
+                      className="h-12 w-auto object-contain sm:h-14"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-center">
+                  <div className="aspect-square w-full max-w-[360px] rounded-full bg-brand p-5 sm:max-w-[420px] sm:p-6 lg:max-w-[520px] lg:p-7 xl:max-w-[560px]">
+                    <div className="relative h-full w-full overflow-hidden rounded-full bg-white/20">
+                      <Image
+                        src="/assets/foto-drluis.webp"
+                        alt="Dr. Luis Calderón"
+                        fill
+                        sizes="(min-width: 1280px) 560px, (min-width: 1024px) 520px, (min-width: 640px) 420px, 360px"
+                        className="object-cover object-top"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       <section className="bg-white">
         <Container className="py-14 sm:py-20">
-          <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
-              Atención de primera
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-              Especialidades en{" "}
-              <span className="italic text-foreground/80">traumatología</span>
-            </h2>
-          </div>
+          <Reveal>
+            <div className="text-center">
+              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
+                Atención de primera
+              </p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+                Especialidades en{" "}
+                <span className="italic text-foreground/80">traumatología</span>
+              </h2>
+            </div>
+          </Reveal>
         </Container>
 
         <div className="grid w-full grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
           {traumaAreas.map((area, index) => (
-            <Link
-              key={area.title}
-              href={area.href}
-              style={{
-                backgroundColor: area.tone,
-                animationDelay: `${index * 120}ms`,
-              }}
-              className="group relative min-h-[320px] overflow-hidden px-8 py-12 text-white transition-transform duration-300 motion-safe:animate-[fade-up_0.8s_ease-out_both] hover:-translate-y-1 sm:min-h-[380px] lg:min-h-[440px] xl:min-h-[500px]"
-            >
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-[clip-path,transform] duration-[2200ms] ease-[cubic-bezier(0.22,1,0.36,1)] [clip-path:inset(0)] sm:[clip-path:circle(40%_at_50%_62%)] sm:group-hover:[clip-path:circle(150%_at_50%_62%)] sm:group-hover:scale-[1.02]"
-                style={{ backgroundImage: `url(${area.image})` }}
-              />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.2),rgba(0,0,0,0.55))] opacity-40 transition-opacity duration-[2200ms] ease-[cubic-bezier(0.22,1,0.36,1)] sm:opacity-0 sm:group-hover:opacity-100" />
-              <div className="relative z-10 flex items-start justify-between gap-4">
-                <h3 className="text-lg font-semibold leading-snug sm:text-xl">
-                  {area.title}
-                </h3>
-                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/40 text-lg transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
-              </div>
+            <Reveal key={area.title} className="h-full" animationClassName="motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+              <Link
+                href={area.href}
+                style={{
+                  backgroundColor: area.tone,
+                  animationDelay: `${index * 120}ms`,
+                }}
+                className="group relative block min-h-[320px] h-full overflow-hidden px-8 py-12 text-white transition-transform duration-300 hover:-translate-y-1 sm:min-h-[380px] lg:min-h-[440px] xl:min-h-[500px]"
+              >
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-[clip-path,transform] duration-[2200ms] ease-[cubic-bezier(0.22,1,0.36,1)] [clip-path:inset(0)] sm:[clip-path:circle(40%_at_50%_62%)] sm:group-hover:[clip-path:circle(150%_at_50%_62%)] sm:group-hover:scale-[1.02]"
+                  style={{ backgroundImage: `url(${area.image})` }}
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.2),rgba(0,0,0,0.55))] opacity-40 transition-opacity duration-[2200ms] ease-[cubic-bezier(0.22,1,0.36,1)] sm:opacity-0 sm:group-hover:opacity-100" />
+                <div className="relative z-10 flex items-start justify-between gap-4">
+                  <h3 className="text-lg font-semibold leading-snug sm:text-xl">
+                    {area.title}
+                  </h3>
+                  <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/40 text-lg transition-transform duration-300 group-hover:translate-x-1">
+                    →
+                  </span>
+                </div>
 
-              <div className="relative z-10 mt-10 flex justify-center" />
-            </Link>
+                <div className="relative z-10 mt-10 flex justify-center" />
+              </Link>
+            </Reveal>
           ))}
         </div>
       </section>
@@ -291,127 +297,131 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 z-10 bg-[linear-gradient(180deg,rgba(11,42,69,0.35),rgba(11,42,69,0.65))]" />
         <Container className="relative z-20">
-          <div className="text-center text-white">
-            <p className="text-sm italic text-white/80">Testimonios</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-              Los mejores resultados
-            </h2>
-          </div>
+          <Reveal>
+            <div className="text-center text-white">
+              <p className="text-sm italic text-white/80">Testimonios</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+                Los mejores resultados
+              </h2>
+            </div>
 
-          <div className="mt-10">
-            <TestimonialsCarousel items={testimonials} />
-          </div>
+            <div className="mt-10">
+              <TestimonialsCarousel items={testimonials} />
+            </div>
+          </Reveal>
         </Container>
       </section>
 
       <section className="relative overflow-hidden bg-[#f4fbfc] py-16 sm:py-20">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(43,151,162,0.2),transparent_45%),radial-gradient(circle_at_80%_10%,rgba(11,42,69,0.15),transparent_45%)]" />
         <Container className="relative z-10">
-          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-            <div className="relative">
-              <div className="relative overflow-hidden rounded-[28px] bg-[#0b2a45] p-8 text-white shadow-2xl shadow-black/[.2] sm:p-10 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
-                <div className="absolute -right-10 -top-10 h-36 w-36 rounded-full bg-brand/40 blur-2xl" />
-                <div className="absolute -left-10 bottom-8 h-28 w-28 rounded-full bg-white/10 blur-2xl" />
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/70">
-                  Guía de Rodilla Vol. 1 - 2024
-                </p>
-                <h3 className="mt-4 text-2xl font-semibold leading-tight sm:text-3xl">
-                  Recupera tu movilidad con ejercicios prácticos y consejos
-                  médicos.
-                </h3>
-                <p className="mt-4 text-sm text-white/75">
-                  Preparé esta guía para que entiendas tu dolor de rodilla y
-                  empieces a mejorar desde casa con respaldo médico.
-                </p>
-                <a
-                  href="/assets/Cuida tus rodillas con el Dr. Luis Calderón.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                  download
-                  className="mt-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/80 transition hover:bg-white/20"
-                >
-                  PDF gratuito
-                  <span className="text-[0.65em] text-white/60">VER</span>
-                </a>
-              </div>
-            </div>
-
-            <div className="motion-safe:animate-[fade-up_1s_ease-out_both]">
-              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
-                Mis recomendaciones
-              </p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-                ¿Te duele la rodilla? Descarga mi guía gratuita con ejercicios y
-                consejos.
-              </h2>
-              <p className="mt-4 text-sm leading-6 text-foreground/70 sm:text-base">
-                Además recibirás mi dieta para reducir inflamación y un video
-                donde te explico cómo acelerar tu recuperación.
-              </p>
-
-              <form className="mt-6 grid gap-3 sm:grid-cols-[1fr_auto]">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Tu correo electrónico"
-                  className="h-12 w-full rounded-full border border-black/10 bg-white px-5 text-sm outline-none focus:border-black/30"
-                />
-                <button
-                  type="button"
-                  className="inline-flex h-12 items-center justify-center rounded-full bg-brand px-6 text-sm font-semibold text-white hover:opacity-90"
-                >
-                  Descargar guía
-                </button>
-              </form>
-              <p className="mt-3 text-xs text-foreground/60">
-                Sin spam. Puedes darte de baja cuando quieras.
-              </p>
-
-              <div className="mt-8 grid gap-4 lg:grid-cols-2">
-                <Link
-                  href="/recursos/dieta-bajar-peso-sin-hambre"
-                  className="relative block rounded-2xl border border-dashed border-black/20 bg-white p-5 shadow-sm shadow-black/[.03] transition hover:-translate-y-0.5 hover:border-brand"
-                >
-                  <h3 className="text-base font-semibold tracking-tight text-foreground">
-                    Dieta creada para ti
-                  </h3>
-                  <p className="mt-2 text-sm text-foreground/70">
-                    Plan alimenticio para reducir inflamación y proteger tus
-                    articulaciones sin pasar hambre.
+          <Reveal>
+            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+              <div className="relative">
+                <div className="relative overflow-hidden rounded-[28px] bg-[#0b2a45] p-8 text-white shadow-2xl shadow-black/[.2] sm:p-10">
+                  <div className="absolute -right-10 -top-10 h-36 w-36 rounded-full bg-brand/40 blur-2xl" />
+                  <div className="absolute -left-10 bottom-8 h-28 w-28 rounded-full bg-white/10 blur-2xl" />
+                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/70">
+                    Guía de Rodilla Vol. 1 - 2024
                   </p>
-                  <div className="mt-4 inline-flex h-9 items-center justify-center rounded-full bg-brand/10 px-4 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
-                    Ver dieta completa
-                  </div>
-                </Link>
-                <div className="rounded-2xl border border-black/10 bg-white p-5 shadow-sm shadow-black/[.03]">
-                  <h3 className="text-base font-semibold tracking-tight text-foreground">
-                    Video exclusivo
+                  <h3 className="mt-4 text-2xl font-semibold leading-tight sm:text-3xl">
+                    Recupera tu movilidad con ejercicios prácticos y consejos
+                    médicos.
                   </h3>
-                  <div className="mt-3 overflow-hidden rounded-2xl border border-black/5 bg-black/5">
-                    <iframe
-                      className="h-40 w-full"
-                      src="https://www.youtube.com/embed/STM0fe1r1qU"
-                      title="Video del Dr. Luis Calderón - Cirugía de rodilla"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
-                  </div>
-                  <p className="mt-3 text-sm text-foreground/70">
-                    Explicación clara sobre cuidados, ejercicios y cómo puedes
-                    cuidar tu rodilla.
+                  <p className="mt-4 text-sm text-white/75">
+                    Preparé esta guía para que entiendas tu dolor de rodilla y
+                    empieces a mejorar desde casa con respaldo médico.
                   </p>
                   <a
-                    href="https://www.youtube.com/watch?v=STM0fe1r1qU"
+                    href="/assets/Cuida tus rodillas con el Dr. Luis Calderón.pdf"
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-3 inline-flex text-sm font-semibold text-brand underline"
+                    download
+                    className="mt-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/80 transition hover:bg-white/20"
                   >
-                    Ver en YouTube →
+                    PDF gratuito
+                    <span className="text-[0.65em] text-white/60">VER</span>
                   </a>
                 </div>
               </div>
+
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
+                  Mis recomendaciones
+                </p>
+                <h2 className="mt-4 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+                  ¿Te duele la rodilla? Descarga mi guía gratuita con ejercicios
+                  y consejos.
+                </h2>
+                <p className="mt-4 text-sm leading-6 text-foreground/70 sm:text-base">
+                  Además recibirás mi dieta para reducir inflamación y un video
+                  donde te explico cómo acelerar tu recuperación.
+                </p>
+
+                <form className="mt-6 grid gap-3 sm:grid-cols-[1fr_auto]">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Tu correo electrónico"
+                    className="h-12 w-full rounded-full border border-black/10 bg-white px-5 text-sm outline-none focus:border-black/30"
+                  />
+                  <button
+                    type="button"
+                    className="inline-flex h-12 items-center justify-center rounded-full bg-brand px-6 text-sm font-semibold text-white hover:opacity-90"
+                  >
+                    Descargar guía
+                  </button>
+                </form>
+                <p className="mt-3 text-xs text-foreground/60">
+                  Sin spam. Puedes darte de baja cuando quieras.
+                </p>
+
+                <div className="mt-8 grid gap-4 lg:grid-cols-2">
+                  <Link
+                    href="/recursos/dieta-bajar-peso-sin-hambre"
+                    className="relative block rounded-2xl border border-dashed border-black/20 bg-white p-5 shadow-sm shadow-black/[.03] transition hover:-translate-y-0.5 hover:border-brand"
+                  >
+                    <h3 className="text-base font-semibold tracking-tight text-foreground">
+                      Dieta creada para ti
+                    </h3>
+                    <p className="mt-2 text-sm text-foreground/70">
+                      Plan alimenticio para reducir inflamación y proteger tus
+                      articulaciones sin pasar hambre.
+                    </p>
+                    <div className="mt-4 inline-flex h-9 items-center justify-center rounded-full bg-brand/10 px-4 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+                      Ver dieta completa
+                    </div>
+                  </Link>
+                  <div className="rounded-2xl border border-black/10 bg-white p-5 shadow-sm shadow-black/[.03]">
+                    <h3 className="text-base font-semibold tracking-tight text-foreground">
+                      Video exclusivo
+                    </h3>
+                    <div className="mt-3 overflow-hidden rounded-2xl border border-black/5 bg-black/5">
+                      <iframe
+                        className="h-40 w-full"
+                        src="https://www.youtube.com/embed/STM0fe1r1qU"
+                        title="Video del Dr. Luis Calderón - Cirugía de rodilla"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                    <p className="mt-3 text-sm text-foreground/70">
+                      Explicación clara sobre cuidados, ejercicios y cómo puedes
+                      cuidar tu rodilla.
+                    </p>
+                    <a
+                      href="https://www.youtube.com/watch?v=STM0fe1r1qU"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-3 inline-flex text-sm font-semibold text-brand underline"
+                    >
+                      Ver en YouTube →
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+          </Reveal>
         </Container>
       </section>
     </>
