@@ -4,28 +4,29 @@ import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 
 export const metadata: Metadata = {
-  title: "Soluciones para artrosis de rodilla",
+  title: "Trastornos degenerativos de rodilla",
   description:
-    "Soluciones para la artrosis de rodilla en Quito: alternativas conservadoras, artroscopia, prótesis total o parcial y cirugía robótica.",
+    "Soluciones para la artrosis y desgaste de rodilla en Quito: manejo conservador, preservación articular y prótesis total o parcial con navegación o robot.",
 };
 
 export default function KneeArthrosisPage() {
   return (
     <div className="space-y-16 sm:space-y-20">
-      <section className="relative overflow-hidden bg-white py-14">
+      <section className="relative overflow-hidden bg-white py-14 mb-20 rounded-[36px] shadow-2xl">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(43,151,162,0.18),transparent_45%),radial-gradient(circle_at_85%_15%,rgba(11,42,69,0.12),transparent_40%)]" />
         <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
-              Artrosis
+              Trastornos degenerativos
             </p>
             <h1 className="text-3xl font-semibold leading-tight sm:text-4xl">
-              Soluciones para la Artrosis de Rodilla: vive sin dolor.
+              Artrosis y prótesis: soluciones escalonadas para vivir sin dolor.
             </h1>
             <p className="max-w-3xl text-sm leading-7 text-foreground/70 sm:text-base">
               El desgaste cartilaginoso causa rigidez y crujidos, pero no tienes
               que resignarte. Diagnóstico temprano, fortalecimiento y, cuando se
-              necesita, prótesis robótica para recuperar tu movilidad.
+              necesita, prótesis asistida por navegación o robot para recuperar
+              tu movilidad.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
@@ -43,6 +44,9 @@ export default function KneeArthrosisPage() {
                 Descargar guía
               </a>
             </div>
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-foreground/60">
+              Trabajo con todos los seguros mediante reembolso.
+            </p>
           </div>
           <div className="relative motion-safe:animate-[fade-up_1s_ease-out_both]">
             <div className="absolute -left-8 -top-10 h-28 w-28 rounded-full bg-brand/20 blur-2xl" />
@@ -88,14 +92,14 @@ export default function KneeArthrosisPage() {
               ))}
             </div>
           </div>
-          <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18] motion-safe:animate-[fade-up_1s_ease-out_both]">
+          <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18] motion-safe:animate-[fade-up_1s_ease-out_both] flex flex-col justify-center h-full">
             <h3 className="text-lg font-semibold tracking-tight">
-              Cirugía Robótica: tu as bajo la manga
+              Cirugía robótica y navegación: tu as bajo la manga
             </h3>
             <p className="mt-3 text-sm text-white/80">
-              La robótica optimiza la colocación de la prótesis para que dure
-              más y duela menos. Reproduce tu biomecánica y mejora el balance
-              ligamentario.
+              La navegación y el robot optimizan la colocación de la prótesis
+              para que dure más y duela menos. Reproducen tu biomecánica y
+              mejoran el balance ligamentario.
             </p>
             <Link
               href="/rodilla/cirugia-robotica"
@@ -107,31 +111,68 @@ export default function KneeArthrosisPage() {
         </Container>
       </section>
 
-      <section className="bg-[#f8fbfc] py-12">
-        <Container className="grid gap-10 lg:grid-cols-[1fr_1fr]">
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
-            <h3 className="text-base font-semibold tracking-tight text-foreground">
-              Pregunta frecuente
-            </h3>
-            <p className="mt-3 text-sm text-foreground/70">
-              ¿Qué opciones tengo además de una prótesis?
+      <section className="bg-[#f8fbfc] p-10">
+        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] ">
+          <div className="space-y-4 mt-20">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
+              Tecnología asistida
             </p>
-            <p className="mt-2 text-sm text-foreground/70">
-              Conservo tu rodilla a través de fisioterapia especializada,
-              infiltraciones y cirugía de preservación articular. Solo cuando el
-              cartílago ya está severamente dañado propongo reemplazo total o
-              parcial.
-            </p>
+            <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+              Navegación y robot al servicio de la prótesis
+            </h2>
+            <div className="grid gap-3 text-sm text-foreground/75 sm:grid-cols-2 ">
+              {[
+                [
+                  "Planeación 3D",
+                  "Mapeo de tu rodilla para definir cortes y rotación de componentes.",
+                ],
+                [
+                  "Balance ligamentario",
+                  "Tensiones ajustadas para evitar inestabilidad o rigidez.",
+                ],
+                [
+                  "Menos dolor",
+                  "Cortes precisos que respetan tejidos y reducen el dolor postoperatorio.",
+                ],
+                [
+                  "Retorno seguro",
+                  "Fast track con movilización temprana y alta en 1-2 días.",
+                ],
+              ].map(([title, desc]) => (
+                <div
+                  key={title}
+                  className="rounded-2xl border border-black/10 bg-white px-4 py-3 shadow-sm shadow-black/[.04]"
+                >
+                  <p className="font-semibold text-foreground">{title}</p>
+                  <p className="mt-1 leading-6">{desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_1s_ease-out_both]">
-            <h3 className="text-base font-semibold tracking-tight text-foreground">
-              Testimonio de pacientes mayores
+          <div className="rounded-[26px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.08]">
+            <h3 className="text-lg font-semibold tracking-tight text-foreground">
+              Reembolsos y acompañamiento
             </h3>
-            <p className="mt-3 text-sm text-foreground/70">
-              Controlamos el dolor y retomamos movilidad antes de pensar en
-              cirugía. Cuando es el momento, usamos tecnología robótica para un
-              resultado duradero.
+            <p className="mt-3 text-sm leading-6 text-foreground/70">
+              Trabajo con todos los seguros mediante reembolso. Te ayudo con el
+              papeleo y justificativos para que la inversión sea clara desde el
+              inicio.
             </p>
+            <Link
+              href="/rodilla/cirugia-robotica"
+              className="mt-4 inline-flex text-sm font-semibold text-brand underline underline-offset-4"
+            >
+              Conoce el detalle de la tecnología →
+            </Link>
+            <div className="relative h-80 mt-4 mx-auto max-w-[380px] overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
+              <Image
+                src="/drluis/eco-rodilla2.webp"
+                alt="Caminar sin dolor de rodilla"
+                width={900}
+                height={720}
+                className="h-full w-full object-cover object-center"
+              />
+            </div>
           </div>
         </Container>
       </section>
@@ -192,6 +233,85 @@ export default function KneeArthrosisPage() {
         </Container>
       </section>
 
+      <section className="bg-gradient-to-br from-[#f8fbfc] via-white to-[#f4fbfc] py-20 mb-0">
+        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div className="space-y-4">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
+              ¿Quién es candidato?
+            </p>
+            <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+              Decisiones claras para cada escenario
+            </h2>
+            <div className="grid gap-3 text-sm text-foreground/75 sm:grid-cols-2">
+              {[
+                [
+                  "Artrosis inicial",
+                  "Fortalecimiento, peso saludable e infiltraciones selectivas.",
+                ],
+                [
+                  "Desgaste medial localizado",
+                  "Osteotomía o prótesis parcial para preservar cartílago sano.",
+                ],
+                [
+                  "Desgaste tricompartmental",
+                  "Prótesis total con navegación o robot para alineación precisa.",
+                ],
+                [
+                  "Ejes complejos o revisiones",
+                  "Planeación 3D, implantes especiales y soporte de robótica.",
+                ],
+              ].map(([title, desc]) => (
+                <div
+                  key={title}
+                  className="rounded-2xl border border-black/10 bg-white px-4 py-3 shadow-sm shadow-black/[.04]"
+                >
+                  <p className="font-semibold text-foreground">{title}</p>
+                  <p className="mt-1 leading-6">{desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="rounded-[26px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.08]">
+            <h3 className="text-lg font-semibold tracking-tight text-foreground">
+              Preparación y recuperación
+            </h3>
+            <ul className="mt-3 grid gap-3 text-sm text-foreground/70">
+              <li>
+                • Optimización preoperatoria: nutrición, control de glucosa y
+                fuerza muscular.
+              </li>
+              <li>
+                • Fast track: anestesia regional, deambulación temprana y alta
+                en 24-48h.
+              </li>
+              <li>
+                • Rehabilitación estructurada: hitos semanales y control de
+                balance ligamentario.
+              </li>
+            </ul>
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-white hidden">
+        <Container className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center">
+          <div className="rounded-[26px] border border-black/10 bg-white p-6 shadow-lg shadow-black/[.08]">
+            <h3 className="text-lg font-semibold tracking-tight text-foreground">
+              Historias de prótesis
+            </h3>
+            <p className="mt-2 text-sm text-foreground/70">
+              Reemplaza este bloque con fotos de alineación pre y post cirugía,
+              y progresos de pacientes en artrosis avanzada.
+            </p>
+          </div>
+          <div className="rounded-[26px] border border-dashed border-black/15 bg-white/60 p-4 text-center shadow-inner shadow-black/5">
+            <p className="text-sm text-foreground/60">
+              Coloca aquí tu imagen de caso de prótesis.
+            </p>
+          </div>
+        </Container>
+      </section>
+
       <section className="bg-white">
         <Container className="mb-16 rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
           <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
@@ -204,7 +324,7 @@ export default function KneeArthrosisPage() {
               </h3>
               <p className="text-sm text-white/80">
                 Cómo preparar tu rodilla, qué ejercicios hacer y cuándo la
-                prótesis robótica es la mejor opción.
+                prótesis (navegación o robot) es la mejor opción.
               </p>
               <a
                 href="/assets/Cuida tus rodillas con el Dr. Luis Calderón.pdf"

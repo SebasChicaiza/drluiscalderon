@@ -11,7 +11,7 @@ const faqs = [
   {
     question: "¿Qué tipo de lesiones trato?",
     answer:
-      "Me especializo en lesiones de rodilla (meniscos, ligamentos, artrosis), cirugía robótica y preservación articular. También atiendo cadera, hombro y columna.",
+      "Soy especialista en traumatología y ortopedia y experto en cirugía de rodilla (meniscos, ligamentos, artrosis), cirugía asistida por navegación o robot y preservación articular. También atiendo cadera, hombro y columna.",
   },
   {
     question: "¿Qué es la cirugía robótica y qué ventajas ofrece?",

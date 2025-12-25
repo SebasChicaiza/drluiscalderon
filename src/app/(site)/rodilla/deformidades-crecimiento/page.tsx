@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function GrowthDeformitiesPage() {
   return (
     <div className="space-y-16 sm:space-y-20">
-      <section className="relative overflow-hidden bg-white py-14">
+      <section className="relative overflow-hidden bg-white py-14 mb-20 rounded-[36px] shadow-2xl">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(43,151,162,0.18),transparent_45%),radial-gradient(circle_at_88%_15%,rgba(11,42,69,0.12),transparent_40%)]" />
         <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
@@ -27,6 +27,9 @@ export default function GrowthDeformitiesPage() {
               Las piernas en “O” o “X” no son solo estética: aceleran la
               artrosis y afectan el rendimiento. Evaluación temprana, alineación
               guiada y rehabilitación para evitar desgaste prematuro.
+            </p>
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-foreground/60">
+              Trabajo con todos los seguros mediante reembolso.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
@@ -89,7 +92,7 @@ export default function GrowthDeformitiesPage() {
               ))}
             </div>
           </div>
-          <div className="rounded-[26px] border border-black/10 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-[#2b97a2] p-7 text-white shadow-2xl shadow-black/[.28] motion-safe:animate-[fade-up_1s_ease-out_both]">
+          <div className="rounded-[26px] border border-black/10 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-[#2b97a2] p-7 text-white shadow-2xl shadow-black/[.28] motion-safe:animate-[fade-up_1s_ease-out_both] flex flex-col justify-center h-full">
             <h3 className="text-lg font-semibold tracking-tight">
               Pregunta esencial
             </h3>
@@ -146,37 +149,88 @@ export default function GrowthDeformitiesPage() {
       </section>
 
       <section className="bg-white">
-        <Container className="mb-16 rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
-          <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
-            <div className="space-y-3">
-              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70">
-                Mis recomendaciones
-              </p>
-              <h3 className="text-2xl font-semibold leading-tight sm:text-3xl">
-                ¿Quieres profundizar? Descarga gratis mi Guía de Rodilla Vol. 1
-                - 2024.
-              </h3>
-              <p className="text-sm text-white/80">
-                Explico criterios entre sutura y menisectomía, ejercicios clave
-                y preguntas que debes hacer antes de operarte.
-              </p>
-              <a
-                href="/assets/Cuida tus rodillas con el Dr. Luis Calderón.pdf"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex h-12 w-full items-center justify-center rounded-full bg-white text-sm font-semibold text-brand transition hover:bg-white/90 sm:w-auto sm:px-6"
-              >
-                Descargar guía gratis
-              </a>
+        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div className="space-y-4">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
+              Cirugía guiada y cuidados
+            </p>
+            <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+              ¿Cómo corrijo las deformidades y qué pasa después?
+            </h2>
+            <div className="grid gap-3 text-sm text-foreground/75 sm:grid-cols-2">
+              {[
+                [
+                  "Guías de crecimiento",
+                  "Hemiepifisiodesis para redirigir el crecimiento en niños y adolescentes.",
+                ],
+                [
+                  "Osteotomías",
+                  "Cortes precisos para reorientar la carga y proteger el cartílago.",
+                ],
+                [
+                  "Rehabilitación",
+                  "Fisioterapia, plantillas y control de marcha para consolidar la corrección.",
+                ],
+                [
+                  "Seguimiento",
+                  "Rx seriadas hasta cierre de fisis o consolidación completa.",
+                ],
+              ].map(([title, desc]) => (
+                <div
+                  key={title}
+                  className="rounded-2xl border border-black/10 bg-white px-4 py-3 shadow-sm shadow-black/[.04]"
+                >
+                  <p className="font-semibold text-foreground">{title}</p>
+                  <p className="mt-1 leading-6">{desc}</p>
+                </div>
+              ))}
             </div>
-            <div className="rounded-[24px] border border-white/15 bg-white/10 px-4 py-5 text-sm text-white/85">
-              <p className="font-semibold">Lo que encontrarás</p>
-              <ul className="mt-2 grid gap-2">
-                <li>• Señales para operar y cuándo no hacerlo.</li>
-                <li>• Rutina de rehabilitación y tiempos estimados.</li>
-                <li>• Checklist de preguntas para tu cirujano.</li>
-              </ul>
+          </div>
+          <div className="rounded-[26px] border border-black/10 bg-[#f8fbfc] p-7 shadow-lg shadow-black/[.08]">
+            <h3 className="text-lg font-semibold tracking-tight text-foreground">
+              Preguntas clave de los padres
+            </h3>
+            <ul className="mt-3 grid gap-3 text-sm text-foreground/70">
+              <li>
+                • ¿Afecta la estatura final? Planeo para no comprometer el
+                crecimiento global.
+              </li>
+              <li>
+                • ¿Cuánto tiempo usa ortesis? Depende del grado y la respuesta;
+                lo reviso en controles.
+              </li>
+              <li>
+                • ¿Cuándo puede volver al deporte? Según alineación y fuerza;
+                usualmente tras completar la rehabilitación.
+              </li>
+            </ul>
+            <div className="relative h-90 mt-4 w-full overflow-hidden rounded-[18px] border border-black/15 bg-white/60">
+              <Image
+                src="/drluis/drluis-conferencia-caminando.webp"
+                alt="Placeholder trauma de rodilla"
+                fill
+                className="object-cover opacity-90 object-[50%_85%]"
+              />
             </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="hidden relative overflow-hidden bg-gradient-to-br from-[#f8fbfc] via-white to-[#f4fbfc] py-12">
+        <Container className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center">
+          <div className="rounded-[26px] border border-black/10 bg-white p-6 shadow-lg shadow-black/[.08]">
+            <h3 className="text-lg font-semibold tracking-tight text-foreground">
+              Historias de corrección
+            </h3>
+            <p className="mt-2 text-sm text-foreground/70">
+              Reemplaza este bloque con fotos de alineación pre y post
+              corrección, y seguimiento de crecimiento.
+            </p>
+          </div>
+          <div className="relative rounded-[26px] border border-dashed border-black/15 bg-white/60 p-4 shadow-inner shadow-black/5">
+            <p className="text-sm text-foreground/60 text-center">
+              Coloca aquí tu imagen de corrección de deformidades.
+            </p>
           </div>
         </Container>
       </section>

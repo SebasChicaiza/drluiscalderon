@@ -2,7 +2,7 @@ export const site = {
   name: "Dr. Luis Calderón",
   profession: "Traumatólogo - Cirugía de Rodilla",
   description:
-    "Soy traumatólogo en Quito especializado en cirugía de rodilla, artroscopia y preservación articular. Atiendo con un enfoque centrado en cada paciente.",
+    "Soy traumatólogo y ortopedista en Quito, experto en cirugía de rodilla, artroscopia y preservación articular. Atiendo con un enfoque centrado en cada paciente.",
   url: "https://drluiscalderon.com",
   image: "/assets/foto-drluis.webp",
   logo: {
@@ -36,13 +36,17 @@ export const navigation: NavigationItem[] = [
     label: "Rodilla",
     href: "/rodilla",
     children: [
-      { label: "Cirugía robótica", href: "/rodilla/cirugia-robotica" },
-      { label: "Artrosis y prótesis", href: "/rodilla/artrosis-protesis" },
       {
-        label: "Meniscos y artroscopia",
-        href: "/rodilla/artroscopia-meniscos",
+        label: "Cirugía robótica y prótesis",
+        href: "/rodilla/cirugia-robotica",
       },
-      { label: "Ligamentos y LCA", href: "/rodilla/ligamento-cruzado-lca" },
+      { label: "Trauma de rodilla", href: "/rodilla/lesiones" },
+      { label: "Medicina deportiva", href: "/rodilla/ligamento-cruzado-lca" },
+      { label: "Artroscopia", href: "/rodilla/artroscopia" },
+      {
+        label: "Trastornos degenerativos",
+        href: "/rodilla/artrosis-protesis",
+      },
       {
         label: "Deformidades y crecimiento",
         href: "/rodilla/deformidades-crecimiento",

@@ -66,45 +66,47 @@ export default function RoboticSurgeryPage() {
           <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
             <Reveal>
               <div className="space-y-4">
-              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand">
-                Tecnología robótica
-              </p>
-              <h1 className="text-3xl font-semibold leading-tight text-foreground sm:text-4xl">
-                Cirugía Robótica de Rodilla en Quito: tu implante con precisión
-                milimétrica.
-              </h1>
-              <p className="max-w-3xl text-sm leading-7 text-foreground/70 sm:text-base">
-                Menos dolor, recuperación acelerada y mayor durabilidad de tu
-                prótesis. Tecnología de vanguardia guiada por mi experiencia en
-                cirugía de rodilla.
-              </p>
-              <div className="flex flex-wrap gap-3 text-xs font-semibold uppercase tracking-[0.35em] text-foreground/80">
-                <span className="rounded-full bg-brand/10 px-4 py-2 text-brand">
-                  Quito
-                </span>
-                <span className="rounded-full bg-brand/10 px-4 py-2 text-brand">
-                  Fast track
-                </span>
-                <span className="rounded-full bg-brand/10 px-4 py-2 text-brand">
-                  Robot Mako®
-                </span>
-              </div>
-              <div className="flex flex-wrap gap-3">
-                <Link
-                  href="/contacto"
-                  className="inline-flex h-12 items-center justify-center rounded-full bg-brand px-6 text-sm font-semibold text-white transition hover:opacity-90"
-                >
-                  Agendar evaluación
-                </Link>
-                <Link
-                  href="/assets/Cuida tus rodillas con el Dr. Luis Calderón.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex h-12 items-center justify-center rounded-full border border-brand px-6 text-sm font-semibold text-brand transition hover:bg-brand/5"
-                >
-                  Descargar guía
-                </Link>
-              </div>
+                <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand">
+                  Cirugía robótica y prótesis
+                </p>
+                <h1 className="text-3xl font-semibold leading-tight text-foreground sm:text-4xl">
+                  Cirugía Robótica de Rodilla en Quito: tu implante con
+                  precisión milimétrica.
+                </h1>
+                <p className="max-w-3xl text-sm leading-7 text-foreground/70 sm:text-base">
+                  Menos dolor, recuperación acelerada y mayor durabilidad de tu
+                  prótesis. Tecnología de vanguardia guiada por mi experiencia
+                  en cirugía de rodilla, incluyendo navegación quirúrgica cuando
+                  el robot no está disponible. Parte de la ruta de trastornos
+                  degenerativos y artrosis.
+                </p>
+                <div className="flex flex-wrap gap-3 text-xs font-semibold uppercase tracking-[0.35em] text-foreground/80">
+                  <span className="rounded-full bg-brand/10 px-4 py-2 text-brand">
+                    Quito
+                  </span>
+                  <span className="rounded-full bg-brand/10 px-4 py-2 text-brand">
+                    Fast track
+                  </span>
+                  <span className="rounded-full bg-brand/10 px-4 py-2 text-brand">
+                    Robot Mako®
+                  </span>
+                </div>
+                <div className="flex flex-wrap gap-3">
+                  <Link
+                    href="/contacto"
+                    className="inline-flex h-12 items-center justify-center rounded-full bg-brand px-6 text-sm font-semibold text-white transition hover:opacity-90"
+                  >
+                    Agendar evaluación
+                  </Link>
+                  <Link
+                    href="/assets/Cuida tus rodillas con el Dr. Luis Calderón.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex h-12 items-center justify-center rounded-full border border-brand px-6 text-sm font-semibold text-brand transition hover:bg-brand/5"
+                  >
+                    Descargar guía
+                  </Link>
+                </div>
               </div>
             </Reveal>
             <div className="relative">
@@ -112,7 +114,7 @@ export default function RoboticSurgeryPage() {
               <div className="absolute -right-6 bottom-4 h-24 w-24 rounded-full bg-[#0b2a45]/15 blur-2xl sm:h-32 sm:w-32" />
               <div className="relative mx-auto aspect-[4/5] max-w-[360px] overflow-hidden rounded-[32px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
                 <Image
-                  src="/assets/foto-drluis.webp"
+                  src="/drluis/drluis-con-rodilla-en-mano.webp"
                   alt="Dr. Luis Calderón"
                   fill
                   sizes="360px"
@@ -143,7 +145,7 @@ export default function RoboticSurgeryPage() {
               </p>
             </div>
             <div className="rounded-[28px] border border-black/10 bg-white p-5 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_1s_ease-out_both]">
-              <div className="relative h-72 overflow-hidden rounded-[24px] border border-black/5">
+              <div className="relative h-80 overflow-hidden rounded-[24px] border border-black/5">
                 <Image
                   src="/assets/cirugia-robot.webp"
                   alt="Dr. Luis Calderón con visor quirúrgico"
@@ -235,8 +237,8 @@ export default function RoboticSurgeryPage() {
               <p className="mt-3 rounded-2xl border border-brand/40 bg-brand/5 px-4 py-3 text-sm font-semibold text-brand">
                 Mientras que en EE.UU. este procedimiento supera los $35,000, en
                 Ecuador el rango de inversión es significativamente menor
-                (aprox. $10,000 - $14,000 según el caso y la clínica). Acepto la
-                mayoría de seguros médicos con reembolso.
+                (aprox. $10,000 - $14,000 según el caso y la clínica). Trabajo
+                con todos los seguros mediante reembolso.
               </p>
               <p className="text-sm text-foreground/70">
                 Incluye honorarios quirúrgicos, 1-2 días de hospitalización,
@@ -316,7 +318,7 @@ export default function RoboticSurgeryPage() {
               </h2>
               <p className="text-sm text-white/80">
                 No dejes que el miedo te paralice. La tecnología está aquí para
-                ayudarte a caminar de nuevo.
+                ayudarte a recuperar movilidad con seguridad.
               </p>
             </div>
             <Link
@@ -325,6 +327,95 @@ export default function RoboticSurgeryPage() {
             >
               Agendar Evaluación para Robótica
             </Link>
+          </Container>
+        </section>
+
+        <section className="bg-white">
+          <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+            <div className="space-y-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
+                Antes y después de la robótica
+              </p>
+              <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+                Checklist preoperatorio y ruta de recuperación
+              </h2>
+              <div className="grid gap-3 text-sm text-foreground/75 sm:grid-cols-2">
+                {[
+                  [
+                    "Preparación",
+                    "Optimizo tu salud (peso, glucosa, fuerza) y gestiono reembolsos de tu seguro.",
+                  ],
+                  [
+                    "Planeación 3D",
+                    "Mapeo de tu rodilla para cortes y orientación milimétrica.",
+                  ],
+                  [
+                    "Día de la cirugía",
+                    "Anestesia regional, incisiones precisas y balance ligamentario guiado.",
+                  ],
+                  [
+                    "Recuperación",
+                    "Fast track: deambulación en 24-48h, fisioterapia inmediata y hitos claros.",
+                  ],
+                ].map(([title, desc]) => (
+                  <div
+                    key={title}
+                    className="rounded-2xl border border-black/10 bg-white px-4 py-3 shadow-sm shadow-black/[.04]"
+                  >
+                    <p className="font-semibold text-foreground">{title}</p>
+                    <p className="mt-1 leading-6">{desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="rounded-[26px] border border-black/10 bg-[#f8fbfc] p-7 shadow-lg shadow-black/[.08]">
+              <div className="mt-5 rounded-[20px] border border-double border-black/20 bg-white/60 text-center text-sm text-foreground/60">
+                <div className="relative h-140 overflow-hidden rounded-[24px] m-0 p-0 border border-black/5 ">
+                  <video
+                    src="/drluis/dr-con-robot-rodilla.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    controls={false}
+                    className="w-full rounded-lg"
+                    preload="metadata"
+                  />
+                </div>
+              </div>
+            </div>
+          </Container>
+        </section>
+
+        <section className="relative overflow-hidden bg-gradient-to-br from-[#f8fbfc] via-white to-[#f4fbfc] py-12">
+          <Container className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center">
+            <div className="rounded-[26px] border border-black/10 bg-white p-6 shadow-lg shadow-black/[.08]">
+              <h3 className="text-lg font-semibold tracking-tight text-foreground">
+                Galería de fotos
+              </h3>
+              <div className="mt-5 rounded-[20px] border border-double border-black/20 bg-white/60 text-center text-sm text-foreground/60">
+                <div className="relative h-96 overflow-hidden rounded-[24px] m-0 p-0 border border-black/5">
+                  <Image
+                    src="/drluis/tres-rodillas.webp"
+                    alt="Dr. Luis Calderón con visor quirúrgico"
+                    fill
+                    sizes="520px"
+                    className="object-cover object-top"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="mt-5 rounded-[20px] border border-double border-black/20 bg-white/60 text-center text-sm text-foreground/60">
+              <div className="relative h-136 overflow-hidden rounded-[24px] m-0 p-0 border border-black/5">
+                <Image
+                  src="/drluis/rodilla-envivo.webp"
+                  alt="Dr. Luis Calderón con visor quirúrgico"
+                  fill
+                  sizes="520px"
+                  className="object-cover object-center"
+                />
+              </div>
+            </div>
           </Container>
         </section>
       </div>

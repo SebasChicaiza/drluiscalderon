@@ -118,7 +118,7 @@ export default function OtherAreasPage() {
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {areas.map((area, index) => (
                 <Reveal
-                  key={area.href}
+                  key={`${area.href}-${area.title}`}
                   animationClassName="motion-safe:animate-[fade-up_0.9s_ease-out_both]"
                 >
                   <Link

@@ -7,27 +7,39 @@ import { Reveal } from "@/components/ui/Reveal";
 export const metadata: Metadata = {
   title: "Centro de rodilla en Quito",
   description:
-    "Centro especializado en cirugía y rehabilitación de rodilla en Quito. Tecnologías robóticas, artroscopia y preservación articular.",
+    "Centro de cirugía y rehabilitación de rodilla en Quito. Tecnologías de navegación, robótica, artroscopia y preservación articular.",
 };
 
 const sections = [
   {
-    title: "Meniscos y artroscopia",
-    href: "/rodilla/artroscopia-meniscos",
+    title: "Cirugía robótica y prótesis",
+    href: "/rodilla/cirugia-robotica",
     summary:
-      "Decido entre sutura preservadora o menisectomía parcial según tu lesión y resonancia.",
+      "Parte de la ruta de artrosis: precisión milimétrica con navegación o robot para implantes de rodilla y recuperación acelerada.",
   },
   {
-    title: "Ligamentos y lesiones deportivas",
+    title: "Trauma de rodilla",
+    href: "/rodilla/lesiones",
+    summary:
+      "Fracturas, luxaciones y lesiones agudas con prioridad en preservar tejido y recuperar estabilidad.",
+  },
+  {
+    title: "Medicina deportiva",
     href: "/rodilla/ligamento-cruzado-lca",
     summary:
-      "Reconstrucción de LCA con protocolos acelerados para volver al deporte con confianza.",
+      "Lesiones ligamentarias y retornos deportivos seguros con protocolos acelerados.",
   },
   {
-    title: "Artrosis y prótesis",
+    title: "Artroscopia",
+    href: "/rodilla/artroscopia",
+    summary:
+      "Diagnóstico y reparación mínimamente invasiva de meniscos y cartílago con incisiones pequeñas.",
+  },
+  {
+    title: "Trastornos degenerativos",
     href: "/rodilla/artrosis-protesis",
     summary:
-      "Alternativas conservadoras y cirugía robótica cuando el desgaste ya limita tu vida diaria.",
+      "Alternativas conservadoras y prótesis (navegación o robot) cuando el desgaste ya limita tu vida diaria.",
   },
   {
     title: "Deformidades y crecimiento",
@@ -46,12 +58,14 @@ export default function KneePage() {
             Rodilla
           </p>
           <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Especializado en Cirugía y Rehabilitación de Rodilla
+            Experto en cirugía y rehabilitación de rodilla
           </h1>
           <p className="mt-4 text-sm leading-7 text-foreground/70 sm:text-base">
             Las rodillas son clave para tu movilidad. Desde lesiones deportivas
-            hasta desgaste por edad, mi enfoque combina tecnología robótica con
-            preservación articular y rehabilitación personalizada.
+            hasta desgaste por edad, mi enfoque combina cirugía asistida por
+            navegación o robot, artroscopia y preservación articular con
+            rehabilitación personalizada. Trabajo con todos los seguros mediante
+            reembolsos para que el proceso sea claro.
           </p>
         </div>
       </Reveal>
@@ -67,10 +81,10 @@ export default function KneePage() {
               humano.
             </h2>
             <p className="text-sm leading-7 text-foreground/70 sm:text-base">
-              Organizo tu diagnóstico, tratamiento y recuperación en cuatro
-              grandes áreas: meniscos, ligamentos, artrosis y deformidades.
-              Elige la ruta que necesitas y acompaño cada paso con protocolos
-              claros.
+              Organizo tu diagnóstico, tratamiento y recuperación en cinco
+              grandes áreas: trauma, medicina deportiva, artroscopia, trastornos
+              degenerativos (artrosis y prótesis robótica) y deformidades. Elige
+              la ruta que necesitas y te acompaño con protocolos claros.
             </p>
           </div>
           <div className="hidden w-full max-w-md lg:block">
@@ -102,22 +116,6 @@ export default function KneePage() {
               </span>
             </Link>
           ))}
-          <Link
-            href="/rodilla/cirugia-robotica"
-            style={{ animationDelay: `${sections.length * 80}ms` }}
-            className="group sm:col-span-2 rounded-[26px] border border-black/8 bg-white px-6 py-7 text-left shadow-lg shadow-black/[.08] transition hover:-translate-y-1 hover:border-brand motion-safe:animate-[fade-up_0.9s_ease-out_both]"
-          >
-            <h3 className="text-lg font-semibold tracking-tight text-foreground sm:text-xl">
-              Cirugía robótica
-            </h3>
-            <p className="mt-3 text-sm text-foreground/70">
-              Precisión milimétrica, menos dolor y recuperación acelerada para
-              implantes de rodilla con tecnología asistida.
-            </p>
-            <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand">
-              Leer más →
-            </span>
-          </Link>
         </div>
       </section>
 

@@ -21,12 +21,23 @@ const stats = [
 const timeline = [
   {
     year: "2025",
-    title: "Máster en Cirugía Avanzada de Rodilla (en curso)",
-    desc: "La formación nunca termina. Magister en Educación para enseñar mejor.",
+    title: "Máster en Cirugía Avanzada de Rodilla",
+    desc: "Formación completa en técnicas complejas, navegación y preservación articular.",
+  },
+  {
+    year: "2024",
+    title: "Máster en Educación Mediada por TIC - PUCE",
+    desc: "Integré tecnología educativa para formar mejor a residentes y pacientes.",
+  },
+  {
+    year: "2022",
+    title: "Experto universitario en Ecografía Musculoesquelética - UNIR",
+    desc: "Diagnóstico inmediato en consultorio para decisiones más precisas.",
   },
   {
     year: "2014 - Presente",
-    title: "Director y Profesor de Posgrado de Traumatología (USFQ) y Tutor UCE",
+    title:
+      "Director y Profesor de Posgrado de Traumatología (USFQ) y Tutor UCE",
     desc: "Formando a la siguiente generación de especialistas.",
   },
   {
@@ -41,7 +52,8 @@ const timeline = [
   },
   {
     year: "2014 - 2015",
-    title: "Jefe de Ortopedia, Hospital Carlos Andrade Marín (HECAM)",
+    title:
+      "Jefe del Servicio de Traumatología y Ortopedia, Hospital Carlos Andrade Marín (HECAM)",
     desc: "Liderazgo en cirugía de alta complejidad.",
   },
   {
@@ -91,7 +103,10 @@ export default function CareerPage() {
       />
 
       <section className="relative overflow-hidden bg-[#0b1417] text-white">
-        <div className="absolute inset-0 bg-fixed bg-cover bg-center opacity-70" style={{ backgroundImage: "url(/assets/consultorio.webp)" }} />
+        <div
+          className="absolute inset-0 bg-fixed bg-cover bg-center opacity-70"
+          style={{ backgroundImage: "url(/assets/consultorio.webp)" }}
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/45 to-black/75" />
         <Container className="relative z-10 grid gap-10 py-16 sm:py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <Reveal>
@@ -100,10 +115,12 @@ export default function CareerPage() {
                 El maestro detrás del bisturí
               </p>
               <h1 className="text-4xl font-bold leading-tight sm:text-5xl">
-                Dr. Luis Calderón: Traumatólogo, Cirujano y Profesor Universitario en Quito.
+                Dr. Luis Calderón: Traumatólogo, Cirujano y Profesor
+                Universitario en Quito.
               </h1>
               <p className="text-lg leading-7 text-white/80 sm:max-w-2xl">
-                Más de 15 años formando a nuevos especialistas y devolviendo la movilidad a mis pacientes con rigor científico y calidad humana.
+                Más de 15 años formando a nuevos especialistas y devolviendo la
+                movilidad a mis pacientes con rigor científico y calidad humana.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -165,10 +182,15 @@ export default function CareerPage() {
                 Tratarte como a mi propia familia.
               </h2>
               <p className="text-base leading-7 text-foreground/75">
-                Entiendo que operarse es una decisión difícil. Mi promesa es simple: ética y claridad. No recibirás términos médicos confusos, sino una explicación precisa de tu diagnóstico.
+                Entiendo que operarse es una decisión difícil. Mi promesa es
+                simple: ética y claridad. No recibirás términos médicos
+                confusos, sino una explicación precisa de tu diagnóstico.
               </p>
               <p className="text-base leading-7 text-foreground/75">
-                Como profesor universitario, mi vocación es enseñar; te explicaré tu lesión para decidir juntos la mejor ruta, cuidándote con la misma dedicación que ofrecería a mis seres queridos.
+                Como profesor universitario, mi vocación es enseñar; te
+                explicaré tu lesión para decidir juntos la mejor ruta,
+                cuidándote con la misma dedicación que ofrecería a mis seres
+                queridos.
               </p>
             </div>
             <div className="flex items-center justify-center">
@@ -200,7 +222,9 @@ export default function CareerPage() {
                 {timeline.map((item, idx) => (
                   <div key={item.title} className="relative pl-8">
                     <span className="absolute left-0 top-2 h-3 w-3 rounded-full bg-brand shadow-[0_0_0_6px_rgba(43,151,162,0.15)]" />
-                    <p className="text-sm font-semibold text-brand">{item.year}</p>
+                    <p className="text-sm font-semibold text-brand">
+                      {item.year}
+                    </p>
                     <h3 className="text-lg font-semibold leading-snug text-foreground">
                       {item.title}
                     </h3>
@@ -220,12 +244,19 @@ export default function CareerPage() {
         <Reveal>
           <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div className="rounded-[26px] border border-black/10 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-7 text-white shadow-2xl shadow-black/20">
-              <h2 className="text-2xl font-semibold">Diagnóstico preciso con tecnología avanzada.</h2>
+              <h2 className="text-2xl font-semibold">
+                Diagnóstico preciso con tecnología avanzada.
+              </h2>
               <p className="mt-3 text-sm leading-6 text-white/80">
-                Además de la cirugía, cuento con certificación en Ecografía Musculoesquelética (UNIR). Esto me permite diagnosticar lesiones de tejidos blandos en el consultorio, sin esperas, complementando mi práctica en cirugía robótica.
+                Además de la cirugía, cuento con certificación en Ecografía
+                Musculoesquelética (UNIR). Esto me permite diagnosticar lesiones
+                de tejidos blandos en el consultorio, sin esperas,
+                complementando mi práctica en cirugía robótica.
               </p>
               <p className="mt-3 text-sm leading-6 text-white/80">
-                La tecnología es una extensión de mi ojo clínico: combina ecografía, planeación 3D y cirugía asistida para resultados más seguros.
+                La tecnología es una extensión de mi ojo clínico: combina
+                ecografía, planeación 3D y cirugía asistida para resultados más
+                seguros.
               </p>
               <Link
                 href="/rodilla/cirugia-robotica"

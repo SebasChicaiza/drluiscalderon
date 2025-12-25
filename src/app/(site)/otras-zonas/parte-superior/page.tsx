@@ -12,48 +12,60 @@ export const metadata: Metadata = {
 export default function ShoulderPage() {
   return (
     <div className="bg-gradient-to-b from-white via-[#f6fbfc] to-white">
-      <Container className="py-16 sm:py-20 space-y-16">
-        <Reveal>
-          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-            <div className="space-y-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
-                Miembro superior
-              </p>
-              <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-                Traumatología deportiva y laboral de hombro, codo y muñeca
-              </h1>
-              <p className="text-base leading-7 text-foreground/75">
-                Tus brazos son tu herramienta de trabajo y vida. Desde lanzar una pelota hasta usar el mouse, necesitas movimiento sin dolor. Trato lesiones agudas (golpes/caídas) y crónicas (desgaste/uso repetitivo).
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <Link
-                  href="/contacto"
-                  className="inline-flex h-11 items-center justify-center rounded-full bg-brand px-6 text-sm font-semibold text-white shadow-sm shadow-black/10 hover:opacity-90"
-                >
-                  Agenda tu evaluación
-                </Link>
-                <Link
-                  href="/rodilla"
-                  className="inline-flex h-11 items-center justify-center rounded-full border border-brand px-6 text-sm font-semibold text-brand hover:bg-brand/10"
-                >
-                  Ver especialidad en rodilla
-                </Link>
-              </div>
-            </div>
-            <div className="rounded-2xl border border-brand/20 bg-white p-7 shadow-lg shadow-black/10">
-              <h2 className="text-lg font-semibold text-foreground">Movilidad y fuerza sin dolor</h2>
-              <p className="mt-3 text-sm leading-6 text-foreground/70">
-                Evaluación clínica, pruebas de fuerza y estudios de imagen para decidir si necesitas tratamiento conservador, infiltraciones o cirugía mínimamente invasiva.
-              </p>
-              <ul className="mt-4 space-y-2 text-sm text-foreground/75">
-                <li>• Manguito rotador, luxaciones y fracturas.</li>
-                <li>• Epicondilitis (tenista/golfista) y túnel carpiano.</li>
-                <li>• Lesiones por sobreuso en oficina o deporte.</li>
-              </ul>
+      <section className="relative overflow-hidden bg-white py-14 mb-20 rounded-[36px] shadow-2xl">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(43,151,162,0.18),transparent_45%),radial-gradient(circle_at_88%_15%,rgba(11,42,69,0.12),transparent_40%)]" />
+        <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+          <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
+              Miembro superior
+            </p>
+            <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+              Traumatología deportiva y laboral de hombro, codo y muñeca
+            </h1>
+            <p className="text-base leading-7 text-foreground/75">
+              Tus brazos son tu herramienta de trabajo y vida. Desde lanzar una
+              pelota hasta usar el mouse, necesitas movimiento sin dolor. Trato
+              lesiones agudas (golpes/caídas) y crónicas (desgaste/uso
+              repetitivo).
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/contacto"
+                className="inline-flex h-11 items-center justify-center rounded-full bg-brand px-6 text-sm font-semibold text-white shadow-sm shadow-black/10 hover:opacity-90"
+              >
+                Agenda tu evaluación
+              </Link>
+              <Link
+                href="/rodilla"
+                className="inline-flex h-11 items-center justify-center rounded-full border border-brand px-6 text-sm font-semibold text-brand hover:bg-brand/10"
+              >
+                Ver especialidad en rodilla
+              </Link>
             </div>
           </div>
-        </Reveal>
+          <div className="relative motion-safe:animate-[fade-up_1s_ease-out_both]">
+            <div className="absolute -left-6 -top-8 h-24 w-24 rounded-full bg-brand/15 blur-2xl" />
+            <div className="absolute -right-4 bottom-6 h-20 w-20 rounded-full bg-[#0b2a45]/15 blur-2xl" />
+            <div className="relative overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12] p-8">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#0b2a45]/85 via-[#0b2a45]/75 to-brand/80" />
+              <div className="relative space-y-3 text-white">
+                <h2 className="text-xl font-semibold">Movilidad y fuerza sin dolor</h2>
+                <p className="text-sm text-white/85">
+                  Evaluación clínica, pruebas de fuerza e imagen para decidir si
+                  necesitas manejo conservador, infiltraciones o cirugía mínima.
+                </p>
+                <ul className="space-y-2 text-sm leading-6">
+                  <li>• Manguito rotador, luxaciones y fracturas.</li>
+                  <li>• Epicondilitis (tenista/golfista) y túnel carpiano.</li>
+                  <li>• Lesiones por sobreuso en oficina o deporte.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
 
+      <Container className="pb-16 sm:pb-20 space-y-16">
         <Reveal>
           <div className="grid gap-6 lg:grid-cols-3">
             <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-md shadow-black/[0.06]">
@@ -104,7 +116,7 @@ export default function ShoulderPage() {
           <div className="rounded-[26px] border border-black/10 bg-gradient-to-r from-[#0b2a45] via-[#0b2a45] to-brand p-6 text-white shadow-2xl shadow-black/25">
             <h3 className="text-lg font-semibold">Visión integral</h3>
             <p className="mt-2 text-sm leading-6 text-white/80">
-              ¿Sabías que el cuerpo es una cadena conectada? A veces, una mala pisada afecta tu rodilla, o una cadera rígida provoca dolor lumbar. Como Traumatólogo Especialista en Rodilla y Cirugía Robótica, mi visión es integral: no solo trato el síntoma, busco el origen biomecánico del dolor para ofrecerte una solución definitiva.
+              ¿Sabías que el cuerpo es una cadena conectada? A veces, una mala pisada afecta tu rodilla, o una cadera rígida provoca dolor lumbar. Como traumatólogo y ortopedista, experto en cirugía de rodilla y robótica, mi visión es integral: no solo trato el síntoma, busco el origen biomecánico del dolor para ofrecerte una solución definitiva.
             </p>
             <Link
               href="/rodilla"

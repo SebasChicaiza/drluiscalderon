@@ -127,7 +127,8 @@ export default function ArthroscopyMeniscusPage() {
             </h3>
             <p className="mt-2 text-sm leading-6 text-foreground/70">
               Incluye fisioterapia dirigida, fortalecimiento del cuádriceps y
-              seguimiento para que vuelvas a caminar, correr o jugar sin miedo.
+              seguimiento para ayudarte a recuperar la marcha, correr o jugar
+              con confianza.
             </p>
             <div className="mt-4 grid gap-2 text-sm text-foreground/70">
               <div className="flex items-start gap-2">
