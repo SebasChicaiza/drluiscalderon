@@ -53,6 +53,7 @@ export function SiteHeader() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
+  const [isSpanish, setIsSpanish] = useState(true);
 
   const phoneHref = `tel:${site.contact.phone.replace(/\s+/g, "")}`;
 
@@ -65,13 +66,28 @@ export function SiteHeader() {
     };
   }, [mobileOpen]);
 
+  useEffect(() => {
+    if (typeof navigator === "undefined") return;
+    const lang = navigator.language?.toLowerCase() || "";
+    setIsSpanish(lang.startsWith("es"));
+  }, []);
+
   return (
     <div className="sticky top-0 z-50">
       <div className="bg-brand text-white">
         <Container className="flex items-center justify-center py-2 text-center text-xs font-semibold sm:text-sm">
-          <Link href="/trayectoria#turismo-medico" className="hover:opacity-90">
-            ¿Paciente Internacional? Te explico por qué operarte en Quito
-            (Ahorro + Tecnología Robótica) 🇺🇸 🇪🇨
+          <Link
+            href={{
+              pathname: "/trayectoria",
+              query: isSpanish ? undefined : { intl: "1" },
+              hash: "turismo-medico",
+            }}
+            className="hover:opacity-90"
+            prefetch
+          >
+            {isSpanish
+              ? "¿Paciente Internacional? Te explico por qué operarte en Quito (Ahorro + Tecnología Robótica) 🇺🇸 🇪🇨"
+              : "International patient? I explain why to have surgery in Quito (Savings + Robotic Tech) 🇺🇸 🇪🇨"}
           </Link>
         </Container>
       </div>

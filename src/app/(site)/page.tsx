@@ -358,24 +358,6 @@ export default function HomePage() {
                 donde te explico cómo acelerar tu recuperación.
               </p>
 
-              <form className="mt-6 grid gap-3 sm:grid-cols-[1fr_auto]">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Tu correo electrónico"
-                  className="h-12 w-full rounded-full border border-black/10 bg-white px-5 text-sm outline-none focus:border-black/30"
-                />
-                <button
-                  type="button"
-                  className="inline-flex h-12 items-center justify-center rounded-full bg-brand px-6 text-sm font-semibold text-white hover:opacity-90"
-                >
-                  Descargar guía
-                </button>
-              </form>
-              <p className="mt-3 text-xs text-foreground/60">
-                Sin spam. Puedes darte de baja cuando quieras.
-              </p>
-
               <div className="mt-8 grid gap-4 lg:grid-cols-2">
                 <Link
                   href="/recursos/dieta-bajar-peso-sin-hambre"

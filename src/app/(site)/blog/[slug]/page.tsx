@@ -4,19 +4,21 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { Container } from "@/components/layout/Container";
 import { blogPosts } from "@/content/blog";
+import { marked } from "marked";
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+export const dynamicParams = true;
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
-export function generateStaticParams() {
-  return blogPosts.map((post) => ({ slug: post.slug }));
-}
-
-export function generateMetadata({ params }: Props): Metadata {
-  const post = blogPosts.find((item) => item.slug === params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const post = blogPosts.find((item) => item.slug === slug);
   if (!post) return { title: "Blog" };
   return {
     title: post.title,
@@ -24,13 +26,20 @@ export function generateMetadata({ params }: Props): Metadata {
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      images: post.heroImage ? [{ url: post.heroImage, alt: post.heroAlt }] : [],
+      images: post.heroImage
+        ? [{ url: post.heroImage, alt: post.heroAlt }]
+        : [],
     },
   };
 }
 
-export default function BlogPostPage({ params }: Props) {
-  const post = blogPosts.find((item) => item.slug === params.slug);
+export function generateStaticParams() {
+  return blogPosts.map((post) => ({ slug: post.slug }));
+}
+
+export default async function BlogPostPage({ params }: Props) {
+  const { slug } = await params;
+  const post = blogPosts.find((item) => item.slug === slug);
   if (!post) notFound();
 
   const heroImg = post.heroImage || "/assets/consultorio.webp";
@@ -43,6 +52,13 @@ export default function BlogPostPage({ params }: Props) {
         year: "numeric",
       }).format(new Date(post.date))
     : null;
+
+  marked.setOptions({ gfm: true, breaks: true });
+  const normalizedMd = post.content
+    .join("\n\n")
+    .replace(/^##(?=\S)/gm, "## ")
+    .replace(/^###(?=\S)/gm, "### ");
+  const html = marked.parse(normalizedMd);
 
   return (
     <div className="bg-background text-foreground">
@@ -61,7 +77,9 @@ export default function BlogPostPage({ params }: Props) {
               {post.excerpt}
             </p>
             <div className="flex flex-wrap items-center gap-3 text-sm text-white/70">
-              <span className="font-semibold text-white">Dr. Luis Calderón</span>
+              <span className="font-semibold text-white">
+                Dr. Luis Calderón
+              </span>
               <span className="text-white/50">|</span>
               <span>{formattedDate || "Actualizado recientemente"}</span>
             </div>
@@ -97,24 +115,15 @@ export default function BlogPostPage({ params }: Props) {
             </>
           ) : null}
         </div>
-        <article className="grid gap-6 text-lg leading-8 text-foreground/80">
-          {post.content.map((paragraph, idx) => (
-            <p
-              key={paragraph}
-              className={`${
-                idx === 0
-                  ? "first-letter:float-left first-letter:mr-3 first-letter:text-5xl first-letter:font-semibold first-letter:text-brand"
-                  : ""
-              }`}
-            >
-              {paragraph}
-            </p>
-          ))}
-        </article>
+        <article
+          className="prose prose-lg prose-neutral max-w-none [&_strong]:text-foreground [&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:mt-10 [&_h2]:mb-4 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:mt-8 [&_h3]:mb-3 [&_p]:mt-0 [&_p]:mb-4 [&_p]:leading-8 [&_ul]:my-4 [&_ol]:my-4 [&_li]:mb-2 [&_li]:leading-7"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
         <div className="mt-10 rounded-2xl border border-black/10 bg-brand/5 p-5 text-sm text-foreground/70">
           <p className="font-semibold text-brand">Recuerda:</p>
           <p className="mt-1">
-            Esta información es educativa y no reemplaza una consulta. Si tienes dolor o dudas, agenda una evaluación personalizada.
+            Esta información es educativa y no reemplaza una consulta. Si tienes
+            dolor o dudas, agenda una evaluación personalizada.
           </p>
         </div>
       </Container>
