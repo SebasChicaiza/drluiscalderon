@@ -51,7 +51,7 @@ export default function GrowthDeformitiesPage() {
           <div className="relative motion-safe:animate-[fade-up_1s_ease-out_both]">
             <div className="absolute -left-6 -top-8 h-24 w-24 rounded-full bg-brand/15 blur-2xl" />
             <div className="absolute -right-4 bottom-6 h-20 w-20 rounded-full bg-[#0b2a45]/15 blur-2xl" />
-            <div className="relative mx-auto max-w-[380px] overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
+            <div className="relative mx-auto max-w-[380px] overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12] transition-transform duration-700 ease-out hover:-translate-y-1">
               <Image
                 src="/assets/rodillas-valgas.webp"
                 alt="Alineación de piernas"
@@ -65,7 +65,7 @@ export default function GrowthDeformitiesPage() {
       </section>
 
       <section className="bg-white">
-        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
           <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
               Dolor de crecimiento vs. lesión (Osgood-Schlatter /
@@ -85,14 +85,14 @@ export default function GrowthDeformitiesPage() {
               ].map((item) => (
                 <div
                   key={item}
-                  className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-foreground/75 shadow-sm shadow-black/[.04]"
+                  className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-foreground/75 shadow-sm shadow-black/[.04] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.08]"
                 >
                   {item}
                 </div>
               ))}
             </div>
           </div>
-          <div className="rounded-[26px] border border-black/10 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-[#2b97a2] p-7 text-white shadow-2xl shadow-black/[.28] motion-safe:animate-[fade-up_1s_ease-out_both] flex flex-col justify-center h-full">
+          <div className="rounded-[26px] border border-black/10 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-[#2b97a2] p-7 text-white shadow-2xl shadow-black/[.28] motion-safe:animate-[fade-up_1s_ease-out_both] flex flex-col justify-center h-full transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.34]">
             <h3 className="text-lg font-semibold tracking-tight">
               Pregunta esencial
             </h3>
@@ -109,8 +109,8 @@ export default function GrowthDeformitiesPage() {
       </section>
 
       <section className="bg-gradient-to-br from-[#f8fbfc] via-white to-[#f4fbfc] py-12">
-        <Container className="grid gap-8 lg:grid-cols-[1fr_1fr]">
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+        <Container className="grid gap-8 lg:grid-cols-[1fr_1fr] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_0.9s_ease-out_both] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.12]">
             <h3 className="text-base font-semibold tracking-tight text-foreground">
               ¿Por qué conectar con artrosis?
             </h3>
@@ -126,7 +126,7 @@ export default function GrowthDeformitiesPage() {
               Ver soluciones para artrosis →
             </Link>
           </div>
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_1s_ease-out_both]">
+          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_1s_ease-out_both] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.12]">
             <h3 className="text-base font-semibold tracking-tight text-foreground">
               Plan de acción
             </h3>
@@ -149,7 +149,7 @@ export default function GrowthDeformitiesPage() {
       </section>
 
       <section className="bg-white">
-        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center motion-safe:animate-[fade-up_0.9s_ease-out_both]">
           <div className="space-y-4">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
               Cirugía guiada y cuidados
@@ -178,7 +178,7 @@ export default function GrowthDeformitiesPage() {
               ].map(([title, desc]) => (
                 <div
                   key={title}
-                  className="rounded-2xl border border-black/10 bg-white px-4 py-3 shadow-sm shadow-black/[.04]"
+                  className="rounded-2xl border border-black/10 bg-white px-4 py-3 shadow-sm shadow-black/[.04] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.08]"
                 >
                   <p className="font-semibold text-foreground">{title}</p>
                   <p className="mt-1 leading-6">{desc}</p>
@@ -186,7 +186,7 @@ export default function GrowthDeformitiesPage() {
               ))}
             </div>
           </div>
-          <div className="rounded-[26px] border border-black/10 bg-[#f8fbfc] p-7 shadow-lg shadow-black/[.08]">
+          <div className="rounded-[26px] border border-black/10 bg-[#f8fbfc] p-7 shadow-lg shadow-black/[.08] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.14]">
             <h3 className="text-lg font-semibold tracking-tight text-foreground">
               Preguntas clave de los padres
             </h3>
@@ -204,7 +204,7 @@ export default function GrowthDeformitiesPage() {
                 usualmente tras completar la rehabilitación.
               </li>
             </ul>
-            <div className="relative h-90 mt-4 w-full overflow-hidden rounded-[18px] border border-black/15 bg-white/60">
+            <div className="relative h-90 mt-4 w-full overflow-hidden rounded-[18px] border border-black/15 bg-white/60 transition-transform duration-700 ease-out hover:-translate-y-1">
               <Image
                 src="/drluis/drluis-conferencia-caminando.webp"
                 alt="Placeholder trauma de rodilla"

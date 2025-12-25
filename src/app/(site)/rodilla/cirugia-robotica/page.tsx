@@ -109,10 +109,10 @@ export default function RoboticSurgeryPage() {
                 </div>
               </div>
             </Reveal>
-            <div className="relative">
+            <div className="relative motion-safe:animate-[fade-up_1s_ease-out_both]">
               <div className="absolute -left-10 -top-8 h-28 w-28 rounded-full bg-brand/20 blur-2xl sm:h-36 sm:w-36" />
               <div className="absolute -right-6 bottom-4 h-24 w-24 rounded-full bg-[#0b2a45]/15 blur-2xl sm:h-32 sm:w-32" />
-              <div className="relative mx-auto aspect-[4/5] max-w-[360px] overflow-hidden rounded-[32px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
+              <div className="relative mx-auto aspect-[4/5] max-w-[360px] overflow-hidden rounded-[32px] border border-black/5 bg-white shadow-xl shadow-black/[.12] transition-transform duration-700 ease-out hover:-translate-y-1">
                 <Image
                   src="/drluis/drluis-con-rodilla-en-mano.webp"
                   alt="Dr. Luis Calderón"
@@ -126,8 +126,8 @@ export default function RoboticSurgeryPage() {
         </section>
 
         <section className="bg-white">
-          <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="rounded-[28px] border border-black/10 bg-white p-8 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+          <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+            <div className="rounded-[28px] border border-black/10 bg-white p-8 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_0.9s_ease-out_both] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.12]">
               <h2 className="text-2xl font-semibold tracking-tight text-foreground">
                 ¿El robot opera solo?
               </h2>
@@ -144,8 +144,8 @@ export default function RoboticSurgeryPage() {
                 tejidos sanos circundantes.
               </p>
             </div>
-            <div className="rounded-[28px] border border-black/10 bg-white p-5 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_1s_ease-out_both]">
-              <div className="relative h-80 overflow-hidden rounded-[24px] border border-black/5">
+            <div className="rounded-[28px] border border-black/10 bg-white p-5 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_1s_ease-out_both] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.12]">
+              <div className="relative h-80 overflow-hidden rounded-[24px] border border-black/5 transition-transform duration-700 ease-out hover:-translate-y-1">
                 <Image
                   src="/assets/cirugia-robot.webp"
                   alt="Dr. Luis Calderón con visor quirúrgico"
@@ -162,7 +162,7 @@ export default function RoboticSurgeryPage() {
         </section>
 
         <section className="bg-[#0b2a45] py-14">
-          <Container className="grid gap-10 lg:grid-cols-[1fr_1fr]">
+          <Container className="grid gap-10 lg:grid-cols-[1fr_1fr] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand/20">
                 Comparativa

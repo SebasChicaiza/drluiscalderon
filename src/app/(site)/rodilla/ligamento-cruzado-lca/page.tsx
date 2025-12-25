@@ -66,7 +66,7 @@ export default function LigamentPage() {
       </section>
 
       <section className="bg-white">
-        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
           <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
               Inestabilidad rotuliana: ¿sientes que la rodilla “se te sale”?
@@ -84,7 +84,7 @@ export default function LigamentPage() {
               clave para definir reposo activo, fisioterapia o cirugía.
             </p>
           </div>
-          <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18] motion-safe:animate-[fade-up_1s_ease-out_both]">
+          <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18] motion-safe:animate-[fade-up_1s_ease-out_both] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.26]">
             <h3 className="text-lg font-semibold tracking-tight">
               Pregunta crucial
             </h3>
@@ -101,8 +101,8 @@ export default function LigamentPage() {
       </section>
 
       <section className="bg-[#f8fbfc] py-12">
-        <Container className="grid gap-8 lg:grid-cols-[1fr_1fr]">
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+        <Container className="grid gap-8 lg:grid-cols-[1fr_1fr] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_0.9s_ease-out_both] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.12]">
             <h3 className="text-base font-semibold tracking-tight text-foreground">
               Protocolos de recuperación acelerada
             </h3>
@@ -121,7 +121,7 @@ export default function LigamentPage() {
               </div>
             </div>
           </div>
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_1s_ease-out_both]">
+          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_1s_ease-out_both] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.12]">
             <h3 className="text-base font-semibold tracking-tight text-foreground">
               Mi enfoque integral
             </h3>
@@ -140,7 +140,7 @@ export default function LigamentPage() {
       </section>
 
       <section className="bg-white">
-        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center motion-safe:animate-[fade-up_0.9s_ease-out_both]">
           <div className="space-y-4">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
               Elección del injerto
@@ -169,7 +169,7 @@ export default function LigamentPage() {
               ].map(([title, desc]) => (
                 <div
                   key={title}
-                  className="rounded-2xl border border-black/10 bg-white px-4 py-3 shadow-sm shadow-black/[.04]"
+                  className="rounded-2xl border border-black/10 bg-white px-4 py-3 shadow-sm shadow-black/[.04] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.08]"
                 >
                   <p className="font-semibold text-foreground">{title}</p>
                   <p className="mt-1 leading-6">{desc}</p>
@@ -177,7 +177,7 @@ export default function LigamentPage() {
               ))}
             </div>
           </div>
-          <div className="rounded-[26px] border border-black/10 bg-[#f8fbfc] p-7 shadow-lg shadow-black/[.08]">
+          <div className="rounded-[26px] border border-black/10 bg-[#f8fbfc] p-7 shadow-lg shadow-black/[.08] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.14]">
             <h3 className="text-lg font-semibold tracking-tight text-foreground">
               Métricas de retorno deportivo
             </h3>
@@ -190,7 +190,7 @@ export default function LigamentPage() {
                 • Control neuromuscular y confianza reportada por el paciente.
               </li>
             </ul>
-            <div className="relative h-60 mt-4 w-full overflow-hidden rounded-[18px] border border-black/15 bg-white/60">
+            <div className="relative h-60 mt-4 w-full overflow-hidden rounded-[18px] border border-black/15 bg-white/60 transition-transform duration-700 ease-out hover:-translate-y-1">
               <Image
                 src="/drluis/adultos-corriendo-maraton.webp"
                 alt="Placeholder trauma de rodilla"

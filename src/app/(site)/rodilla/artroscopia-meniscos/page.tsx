@@ -48,7 +48,7 @@ export default function ArthroscopyMeniscusPage() {
           <div className="relative motion-safe:animate-[fade-up_1s_ease-out_both]">
             <div className="absolute -left-6 -top-6 h-24 w-24 rounded-full bg-brand/15 blur-2xl" />
             <div className="absolute -right-4 bottom-6 h-20 w-20 rounded-full bg-[#0b2a45]/15 blur-2xl" />
-            <div className="relative mx-auto max-w-[380px] overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
+            <div className="relative mx-auto max-w-[380px] overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12] transition-transform duration-700 ease-out hover:-translate-y-1">
               <Image
                 src="/assets/lesion-rodilla.webp"
                 alt="Dolor de menisco en la rodilla"
@@ -62,7 +62,7 @@ export default function ArthroscopyMeniscusPage() {
       </section>
 
       <section className="bg-white">
-        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
           <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
               ¿Cuándo necesitas cirugía de menisco?
@@ -82,14 +82,14 @@ export default function ArthroscopyMeniscusPage() {
               ].map((item) => (
                 <div
                   key={item}
-                  className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-foreground/75 shadow-sm shadow-black/[.04]"
+                  className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-foreground/75 shadow-sm shadow-black/[.04] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.08]"
                 >
                   {item}
                 </div>
               ))}
             </div>
           </div>
-          <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18] motion-safe:animate-[fade-up_1s_ease-out_both]">
+          <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18] motion-safe:animate-[fade-up_1s_ease-out_both] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.26]">
             <h3 className="text-lg font-semibold tracking-tight">
               Pregunta frecuente
             </h3>
@@ -110,8 +110,8 @@ export default function ArthroscopyMeniscusPage() {
       </section>
 
       <section className="bg-gradient-to-br from-[#f8fbfc] via-white to-[#f4fbfc] py-12">
-        <Container className="grid gap-10 lg:grid-cols-[1fr_1fr]">
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+        <Container className="grid gap-10 lg:grid-cols-[1fr_1fr] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_0.9s_ease-out_both] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.12]">
             <h3 className="text-lg font-semibold tracking-tight text-foreground">
               Protocolos mínimamente invasivos
             </h3>
@@ -121,7 +121,7 @@ export default function ArthroscopyMeniscusPage() {
               menisco con menos dolor y un retorno más rápido a tus rutinas.
             </p>
           </div>
-          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_1s_ease-out_both]">
+          <div className="rounded-[28px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.06] motion-safe:animate-[fade-up_1s_ease-out_both] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.12]">
             <h3 className="text-lg font-semibold tracking-tight text-foreground">
               Recuperación guiada
             </h3>
@@ -149,7 +149,7 @@ export default function ArthroscopyMeniscusPage() {
       </section>
 
       <section className="bg-white">
-        <Container className="mb-16 rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+        <Container className="mb-16 rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25] motion-safe:animate-[fade-up_0.9s_ease-out_both] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.32]">
           <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div className="space-y-3">
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70">

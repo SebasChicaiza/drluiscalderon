@@ -51,9 +51,9 @@ const sections = [
 
 export default function KneePage() {
   return (
-    <Container className="py-16 sm:py-20">
+    <Container className="py-16 sm:py-20 space-y-10">
       <Reveal>
-        <div className="max-w-4xl">
+        <div className="max-w-4xl motion-safe:animate-[fade-up_0.9s_ease-out_both]">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-foreground/70">
             Rodilla
           </p>
@@ -70,7 +70,7 @@ export default function KneePage() {
         </div>
       </Reveal>
 
-      <section className="mt-12 grid gap-10 rounded-[32px] bg-gradient-to-br from-white via-[#f4fbfc] to-white p-4 lg:grid-cols-[1.05fr_1.15fr] lg:items-start lg:p-6">
+      <section className="mt-2 grid gap-10 rounded-[32px] bg-gradient-to-br from-white via-[#f4fbfc] to-white p-4 lg:grid-cols-[1.05fr_1.15fr] lg:items-start lg:p-6 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
         <div className="space-y-6">
           <div className="space-y-4">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
@@ -87,7 +87,7 @@ export default function KneePage() {
               la ruta que necesitas y te acompaño con protocolos claros.
             </p>
           </div>
-          <div className="hidden w-full max-w-md lg:block">
+          <div className="hidden w-full max-w-md lg:block transition-transform duration-700 ease-out hover:-translate-y-1">
             <Image
               src="/assets/cirugia-rodilla.webp"
               alt="Cirugía de rodilla"
@@ -119,8 +119,8 @@ export default function KneePage() {
         </div>
       </section>
 
-      <section className="mt-16 rounded-[32px] bg-[#0b2a45] py-14">
-        <Container className="space-y-6">
+      <section className="mt-6 rounded-[32px] bg-[#0b2a45] py-14">
+        <Container className="space-y-6 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
           <div className="space-y-2">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
               El núcleo
@@ -176,7 +176,7 @@ export default function KneePage() {
               <Link
                 key={item.title}
                 href={item.link}
-                className="group flex flex-col justify-between rounded-[26px] border border-white/20 bg-white/95 px-6 py-7 text-left shadow-lg shadow-black/[.18] transition hover:-translate-y-1 hover:border-brand motion-safe:animate-[fade-up_0.9s_ease-out_both]"
+                className="group flex flex-col justify-between rounded-[26px] border border-white/20 bg-white/95 px-6 py-7 text-left shadow-lg shadow-black/[.18] transition duration-500 ease-out hover:-translate-y-1.5 hover:border-brand motion-safe:animate-[fade-up_0.9s_ease-out_both]"
               >
                 <div className="space-y-3">
                   <h3 className="text-lg font-semibold tracking-tight text-foreground sm:text-xl">
@@ -193,7 +193,7 @@ export default function KneePage() {
         </Container>
       </section>
 
-      <section className="mt-14 bg-[#f8fbfc] py-12">
+      <section className="mt-10 bg-[#f8fbfc] py-12">
         <Container className="space-y-6 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
           <div className="space-y-2">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
@@ -225,7 +225,7 @@ export default function KneePage() {
             ].map((item) => (
               <details
                 key={item.q}
-                className="group rounded-2xl border border-black/10 bg-white px-5 py-4 shadow-sm shadow-black/[.04] transition hover:border-brand/60"
+                className="group rounded-2xl border border-black/10 bg-white px-5 py-4 shadow-sm shadow-black/[.04] transition duration-400 ease-out hover:-translate-y-0.5 hover:border-brand/60 motion-safe:animate-[fade-up_0.9s_ease-out_both]"
               >
                 <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-semibold text-foreground">
                   {item.q}
@@ -240,7 +240,7 @@ export default function KneePage() {
         </Container>
       </section>
       <section className="bg-white">
-        <Container className="mb-16 rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25]">
+        <Container className="mb-16 rounded-[30px] border border-brand/25 bg-gradient-to-br from-[#0b2a45] via-[#0b2a45] to-brand p-8 text-white shadow-2xl shadow-black/[.25] motion-safe:animate-[fade-up_0.9s_ease-out_both] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.32]">
           <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div className="space-y-3">
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70">

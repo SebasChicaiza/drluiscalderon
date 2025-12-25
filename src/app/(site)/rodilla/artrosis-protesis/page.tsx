@@ -65,7 +65,7 @@ export default function KneeArthrosisPage() {
       </section>
 
       <section className="bg-white">
-        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
           <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
               ¿Es la prótesis mi única opción?
@@ -85,14 +85,14 @@ export default function KneeArthrosisPage() {
               ].map((item) => (
                 <div
                   key={item}
-                  className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-foreground/75 shadow-sm shadow-black/[.04]"
+                  className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-foreground/75 shadow-sm shadow-black/[.04] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.08]"
                 >
                   {item}
                 </div>
               ))}
             </div>
           </div>
-          <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18] motion-safe:animate-[fade-up_1s_ease-out_both] flex flex-col justify-center h-full">
+          <div className="rounded-[26px] border border-black/10 bg-[#0b2a45] p-6 text-white shadow-xl shadow-black/[.18] motion-safe:animate-[fade-up_1s_ease-out_both] flex flex-col justify-center h-full transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.24]">
             <h3 className="text-lg font-semibold tracking-tight">
               Cirugía robótica y navegación: tu as bajo la manga
             </h3>
@@ -112,7 +112,7 @@ export default function KneeArthrosisPage() {
       </section>
 
       <section className="bg-[#f8fbfc] p-10">
-        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] ">
+        <Container className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
           <div className="space-y-4 mt-20">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
               Tecnología asistida
@@ -141,7 +141,7 @@ export default function KneeArthrosisPage() {
               ].map(([title, desc]) => (
                 <div
                   key={title}
-                  className="rounded-2xl border border-black/10 bg-white px-4 py-3 shadow-sm shadow-black/[.04]"
+                  className="rounded-2xl border border-black/10 bg-white px-4 py-3 shadow-sm shadow-black/[.04] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.08]"
                 >
                   <p className="font-semibold text-foreground">{title}</p>
                   <p className="mt-1 leading-6">{desc}</p>
@@ -149,7 +149,7 @@ export default function KneeArthrosisPage() {
               ))}
             </div>
           </div>
-          <div className="rounded-[26px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.08]">
+          <div className="rounded-[26px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.08] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.14]">
             <h3 className="text-lg font-semibold tracking-tight text-foreground">
               Reembolsos y acompañamiento
             </h3>
@@ -164,7 +164,7 @@ export default function KneeArthrosisPage() {
             >
               Conoce el detalle de la tecnología →
             </Link>
-            <div className="relative h-80 mt-4 mx-auto max-w-[380px] overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
+            <div className="relative h-80 mt-4 mx-auto max-w-[380px] overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12] transition-transform duration-700 ease-out hover:-translate-y-1">
               <Image
                 src="/drluis/eco-rodilla2.webp"
                 alt="Caminar sin dolor de rodilla"
@@ -178,8 +178,8 @@ export default function KneeArthrosisPage() {
       </section>
 
       <section className="bg-white">
-        <Container className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="rounded-[26px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.08] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+        <Container className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+          <div className="rounded-[26px] border border-black/10 bg-white p-7 shadow-lg shadow-black/[.08] motion-safe:animate-[fade-up_0.9s_ease-out_both] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.14]">
             <h3 className="text-lg font-semibold tracking-tight text-foreground">
               Señales de alerta y fases de dolor
             </h3>
@@ -190,11 +190,11 @@ export default function KneeArthrosisPage() {
               total.
             </p>
             <div className="mt-4 grid gap-3 text-sm text-foreground/80 sm:grid-cols-2">
-              <div className="rounded-2xl border border-black/10 bg-black/5 px-4 py-3">
+              <div className="rounded-2xl border border-black/10 bg-black/5 px-4 py-3 transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.08]">
                 <p className="font-semibold text-foreground">Dolor mecánico</p>
                 <p>Empeora con actividad, mejora con reposo y analgésicos.</p>
               </div>
-              <div className="rounded-2xl border border-black/10 bg-black/5 px-4 py-3">
+              <div className="rounded-2xl border border-black/10 bg-black/5 px-4 py-3 transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[.08]">
                 <p className="font-semibold text-foreground">
                   Dolor inflamatorio
                 </p>

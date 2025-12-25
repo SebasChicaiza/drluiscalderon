@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { Counter } from "@/components/ui/Counter";
 import { Reveal } from "@/components/ui/Reveal";
+import { GalleryCarousel } from "@/components/trayectoria/GalleryCarousel";
 
 export const metadata: Metadata = {
   title: "Trayectoria | Dr. Luis Calderón",
@@ -60,6 +61,29 @@ const timeline = [
     year: "2003",
     title: "Mejor egresado – Doctor en Medicina y Cirugía (PUCE)",
     desc: "Excelencia académica desde el inicio.",
+  },
+];
+
+const gallery = [
+  {
+    src: "/drluis/drluis-colegas.webp",
+    alt: "Dr. Luis con colegas",
+    caption: "Congreso internacional de cirugía de rodilla",
+  },
+  {
+    src: "/drluis/drluis-conferencia.webp",
+    alt: "Dr. Luis dando una conferencia",
+    caption: "Conferencia internacional de rodilla",
+  },
+  {
+    src: "/drluis/drluis-en-quirofano.webp",
+    alt: "Dr. Luis en quirófano",
+    caption: "Artroscopia con equipo multidisciplinario",
+  },
+  {
+    src: "/drluis/dr-operando.webp",
+    alt: "Dr. Luis operando",
+    caption: "Cirugía robótica y navegación en acción",
   },
 ];
 
@@ -197,8 +221,8 @@ export default function CareerPage() {
               <div className="aspect-square w-full max-w-[420px] rounded-full bg-brand p-5 sm:max-w-[480px] sm:p-6">
                 <div className="relative h-full w-full overflow-hidden rounded-full bg-white/10">
                   <Image
-                    src="/assets/foto-drluis.webp"
-                    alt="Dr. Luis Calderón con modelo anatómico"
+                    src="/drluis/drluis-selfie.webp"
+                    alt="Dr. Luis Calderón selfie"
                     fill
                     sizes="(min-width: 1024px) 480px, 100vw"
                     className="object-cover object-center"
@@ -239,6 +263,22 @@ export default function CareerPage() {
               </div>
             </div>
           </div>
+        </Reveal>
+        <Reveal>
+          <section className="space-y-3">
+            <div className="space-y-1 text-foreground">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
+                Trayectoria
+              </p>
+              <h2 className="text-2xl font-semibold leading-tight sm:text-3xl">
+                Momentos que cuentan la historia
+              </h2>
+              <p className="text-sm text-foreground/70">
+                Fotos dentro del quirófano, congresos y equipo.
+              </p>
+            </div>
+            <GalleryCarousel items={gallery} />
+          </section>
         </Reveal>
 
         <Reveal>
