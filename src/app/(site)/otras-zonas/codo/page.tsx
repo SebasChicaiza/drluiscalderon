@@ -64,7 +64,7 @@ export default function ElbowPage() {
       </section>
 
       <Container className="pb-16 sm:pb-20 space-y-6">
-        <div className="rounded-2xl border border-black/10 bg-white p-6 shadow-lg shadow-black/[0.06]">
+        <div className="rounded-2xl border border-black/10 bg-white p-6 shadow-lg shadow-black/[0.06] motion-safe:animate-[fade-up_0.9s_ease-out_both] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[0.12]">
           <h2 className="text-lg font-semibold text-foreground">
             Alivia el dolor y vuelve a tu rutina
           </h2>

@@ -62,8 +62,8 @@ export default function SpinePage() {
 
       <Container className="pb-16 sm:pb-20 space-y-16">
         <Reveal>
-          <div className="grid gap-6 lg:grid-cols-3">
-            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-md shadow-black/[0.06]">
+          <div className="grid gap-6 lg:grid-cols-3 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-md shadow-black/[0.06] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[0.12]">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Hernias discales y ciática
               </p>
@@ -78,7 +78,7 @@ export default function SpinePage() {
                 Cirugía solo cuando no hay alivio o existe pérdida de fuerza.
               </p>
             </div>
-            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-md shadow-black/[0.06]">
+            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-md shadow-black/[0.06] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[0.12]">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Estenosis lumbar
               </p>
@@ -94,7 +94,7 @@ export default function SpinePage() {
                 calidad de vida.
               </p>
             </div>
-            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-md shadow-black/[0.06]">
+            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-md shadow-black/[0.06] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[0.12]">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Lumbalgia mecánica
               </p>
@@ -114,7 +114,7 @@ export default function SpinePage() {
         </Reveal>
 
         <Reveal>
-          <div className="rounded-[26px] border border-black/10 bg-gradient-to-r from-[#0b2a45] via-[#0b2a45] to-brand p-6 text-white shadow-2xl shadow-black/25">
+          <div className="rounded-[26px] border border-black/10 bg-gradient-to-r from-[#0b2a45] via-[#0b2a45] to-brand p-6 text-white shadow-2xl shadow-black/25 motion-safe:animate-[fade-up_0.9s_ease-out_both] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[0.3]">
             <h3 className="text-lg font-semibold">Visión integral</h3>
             <p className="mt-2 text-sm leading-6 text-white/80">
               ¿Sabías que el cuerpo es una cadena conectada? A veces, una mala

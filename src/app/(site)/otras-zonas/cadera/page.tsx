@@ -62,8 +62,8 @@ export default function HipPage() {
 
       <Container className="pb-16 sm:pb-20 space-y-16">
         <Reveal>
-          <div className="grid gap-6 lg:grid-cols-3">
-            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-lg shadow-black/[0.05]">
+          <div className="grid gap-6 lg:grid-cols-3 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-lg shadow-black/[0.05] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[0.1]">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 1. Artrosis de cadera
               </p>
@@ -80,7 +80,7 @@ export default function HipPage() {
                 alta durabilidad.
               </p>
             </div>
-            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-lg shadow-black/[0.05]">
+            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-lg shadow-black/[0.05] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[0.1]">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 2. Choque femoroacetabular
               </p>
@@ -97,7 +97,7 @@ export default function HipPage() {
                 menudo vía artroscopia) y prevención del desgaste prematuro.
               </p>
             </div>
-            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-lg shadow-black/[0.05]">
+            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-lg shadow-black/[0.05] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[0.1]">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 3. Fracturas de cadera
               </p>
@@ -117,8 +117,8 @@ export default function HipPage() {
         </Reveal>
 
         <Reveal>
-          <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-            <div className="rounded-2xl border border-brand/20 bg-brand/5 p-6 shadow-inner shadow-black/5">
+          <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+            <div className="rounded-2xl border border-brand/20 bg-brand/5 p-6 shadow-inner shadow-black/5 transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/10">
               <h3 className="text-lg font-semibold text-foreground">
                 Señales de alerta: ¿es cadera o columna?
               </h3>
@@ -141,7 +141,7 @@ export default function HipPage() {
                 </li>
               </ul>
             </div>
-            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-lg shadow-black/[0.07]">
+            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-lg shadow-black/[0.07] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[0.12]">
               <h3 className="text-lg font-semibold text-foreground">
                 Tu plan, paso a paso
               </h3>

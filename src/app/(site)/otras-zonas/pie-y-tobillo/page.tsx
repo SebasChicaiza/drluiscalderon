@@ -62,8 +62,8 @@ export default function FootAnklePage() {
 
       <Container className="pb-16 sm:pb-20 space-y-16">
         <Reveal>
-          <div className="grid gap-6 lg:grid-cols-3">
-            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-md shadow-black/[0.06]">
+          <div className="grid gap-6 lg:grid-cols-3 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
+            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-md shadow-black/[0.06] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[0.12]">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Lesiones deportivas y agudas
               </p>
@@ -79,7 +79,7 @@ export default function FootAnklePage() {
               </p>
             </div>
 
-            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-md shadow-black/[0.06]">
+            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-md shadow-black/[0.06] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[0.12]">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Fracturas y alineación
               </p>
@@ -96,7 +96,7 @@ export default function FootAnklePage() {
               </p>
             </div>
 
-            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-md shadow-black/[0.06]">
+            <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-md shadow-black/[0.06] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-black/[0.12]">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Problemas crónicos y deformidades
               </p>

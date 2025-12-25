@@ -84,7 +84,7 @@ export default function OtherAreasPage() {
         </Container>
       </section>
 
-      <Container className="py-14 sm:py-18">
+      <Container className="py-14 sm:py-18 bg-white">
         <Reveal>
           <div className="grid gap-8 lg:grid-cols-[0.55fr_1fr] lg:items-start">
             <div className="rounded-[24px] border border-black/10 bg-white p-6 mt-30 shadow-lg shadow-black/[.06] flex flex-col justify-center">
