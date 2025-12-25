@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Pie y tobillo | Dr. Luis Calderón",
@@ -43,27 +44,19 @@ export default function FootAnklePage() {
               </Link>
             </div>
           </div>
-          <div className="relative motion-safe:animate-[fade-up_1s_ease-out_both]">
-            <div className="absolute -left-6 -top-8 h-24 w-24 rounded-full bg-brand/15 blur-2xl" />
-            <div className="absolute -right-4 bottom-6 h-20 w-20 rounded-full bg-[#0b2a45]/15 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12] p-8">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#0b2a45]/85 via-[#0b2a45]/75 to-brand/80" />
-              <div className="relative space-y-3 text-white">
-                <h2 className="text-xl font-semibold">Diagnóstico funcional</h2>
-                <p className="text-sm text-white/85">
-                  Evaluación de marcha, estabilidad y alineación. Objetivo:
-                  volver a caminar sin dolor y evitar secuelas en cadena.
-                </p>
-                <ul className="space-y-2 text-sm leading-6">
-                  <li>• Esguinces y tendinitis.</li>
-                  <li>• Fascitis plantar y deformidades.</li>
-                  <li>
-                    • Fracturas de tobillo y pie con planificación precisa.
-                  </li>
-                </ul>
+          <Reveal>
+            <div className="relative">
+              <div className="relative mx-auto h-100 max-w-[600px] overflow-hidden rounded-[32px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
+                <Image
+                  src="/assets/lesion-tobillo.webp"
+                  alt="Dr. Luis Calderón"
+                  fill
+                  sizes="1000px"
+                  className="object-cover object-left"
+                />
               </div>
             </div>
-          </div>
+          </Reveal>
         </Container>
       </section>
 
@@ -74,9 +67,12 @@ export default function FootAnklePage() {
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Lesiones deportivas y agudas
               </p>
-              <h3 className="mt-3 text-lg font-semibold text-foreground">Esguinces de tobillo</h3>
+              <h3 className="mt-3 text-lg font-semibold text-foreground">
+                Esguinces de tobillo
+              </h3>
               <p className="mt-3 text-sm leading-6 text-foreground/70">
-                La lesión deportiva #1. No es “solo una torcedura”. Un esguince mal curado lleva a inestabilidad crónica y desgaste temprano.
+                La lesión deportiva #1. No es “solo una torcedura”. Un esguince
+                mal curado lleva a inestabilidad crónica y desgaste temprano.
               </p>
               <p className="mt-4 text-sm font-semibold text-foreground">
                 Implemento rehabilitación funcional para recuperar estabilidad.
@@ -87,12 +83,16 @@ export default function FootAnklePage() {
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Fracturas y alineación
               </p>
-              <h3 className="mt-3 text-lg font-semibold text-foreground">Fracturas de tobillo y pie</h3>
+              <h3 className="mt-3 text-lg font-semibold text-foreground">
+                Fracturas de tobillo y pie
+              </h3>
               <p className="mt-3 text-sm leading-6 text-foreground/70">
-                Requieren manejo preciso para asegurar que la articulación quede alineada y evitar artrosis post-traumática.
+                Requieren manejo preciso para asegurar que la articulación quede
+                alineada y evitar artrosis post-traumática.
               </p>
               <p className="mt-4 text-sm font-semibold text-foreground">
-                Plan quirúrgico o conservador según la estabilidad de la fractura.
+                Plan quirúrgico o conservador según la estabilidad de la
+                fractura.
               </p>
             </div>
 
@@ -100,12 +100,17 @@ export default function FootAnklePage() {
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Problemas crónicos y deformidades
               </p>
-              <h3 className="mt-3 text-lg font-semibold text-foreground">Fascitis plantar y deformidades</h3>
+              <h3 className="mt-3 text-lg font-semibold text-foreground">
+                Fascitis plantar y deformidades
+              </h3>
               <p className="mt-3 text-sm leading-6 text-foreground/70">
-                Dolor punzante en el talón, especialmente al despertar. También corrijo juanetes y dedos en garra cuando el dolor limita tu vida diaria.
+                Dolor punzante en el talón, especialmente al despertar. También
+                corrijo juanetes y dedos en garra cuando el dolor limita tu vida
+                diaria.
               </p>
               <p className="mt-4 text-sm font-semibold text-foreground">
-                Terapias de estiramiento, plantillas y, si es necesario, corrección quirúrgica.
+                Terapias de estiramiento, plantillas y, si es necesario,
+                corrección quirúrgica.
               </p>
             </div>
           </div>
@@ -115,7 +120,12 @@ export default function FootAnklePage() {
           <div className="rounded-[26px] border border-black/10 bg-gradient-to-r from-[#0b2a45] via-[#0b2a45] to-brand p-6 text-white shadow-2xl shadow-black/25">
             <h3 className="text-lg font-semibold">Visión integral</h3>
             <p className="mt-2 text-sm leading-6 text-white/80">
-              ¿Sabías que el cuerpo es una cadena conectada? A veces, una mala pisada afecta tu rodilla, o una cadera rígida provoca dolor lumbar. Como traumatólogo y ortopedista, experto en cirugía de rodilla y robótica, mi visión es integral: no solo trato el síntoma, busco el origen biomecánico del dolor para ofrecerte una solución definitiva.
+              ¿Sabías que el cuerpo es una cadena conectada? A veces, una mala
+              pisada afecta tu rodilla, o una cadera rígida provoca dolor
+              lumbar. Como traumatólogo y ortopedista, experto en cirugía de
+              rodilla y robótica, mi visión es integral: no solo trato el
+              síntoma, busco el origen biomecánico del dolor para ofrecerte una
+              solución definitiva.
             </p>
             <Link
               href="/rodilla"

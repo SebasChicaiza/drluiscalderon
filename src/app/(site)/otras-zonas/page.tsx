@@ -45,7 +45,7 @@ const areas = [
 
 export default function OtherAreasPage() {
   return (
-    <div className="bg-gradient-to-b from-[#0b1417] via-[#0b1417] to-white text-foreground">
+    <div className="bg-gradient-to-b from-[#16282e] via-[#0b1417] to-cyan-600 text-foreground">
       <section className="relative overflow-hidden text-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(43,151,162,0.35),transparent_40%),radial-gradient(circle_at_80%_0%,rgba(11,42,69,0.5),transparent_45%)]" />
         <Container className="relative z-10 grid gap-10 py-14 sm:py-18 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
@@ -71,7 +71,7 @@ export default function OtherAreasPage() {
           <Reveal>
             <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-white/5 shadow-2xl shadow-black/30">
               <Image
-                src="/assets/consultorio.webp"
+                src="/drluis/dr-luis-sonriendo.webp"
                 alt="Consultorio y evaluación integral"
                 width={1200}
                 height={900}
@@ -87,7 +87,7 @@ export default function OtherAreasPage() {
       <Container className="py-14 sm:py-18">
         <Reveal>
           <div className="grid gap-8 lg:grid-cols-[0.55fr_1fr] lg:items-start">
-            <div className="rounded-[24px] border border-black/10 bg-white p-6 shadow-lg shadow-black/[.06]">
+            <div className="rounded-[24px] border border-black/10 bg-white p-6 mt-30 shadow-lg shadow-black/[.06] flex flex-col justify-center">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
                 Cómo trabajamos
               </p>

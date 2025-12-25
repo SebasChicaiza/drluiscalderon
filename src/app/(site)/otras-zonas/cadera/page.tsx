@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Cadera | Dr. Luis Calderón",
@@ -43,62 +44,73 @@ export default function HipPage() {
               </Link>
             </div>
           </div>
-          <div className="relative motion-safe:animate-[fade-up_1s_ease-out_both]">
-            <div className="absolute -left-6 -top-8 h-24 w-24 rounded-full bg-brand/15 blur-2xl" />
-            <div className="absolute -right-4 bottom-6 h-20 w-20 rounded-full bg-[#0b2a45]/15 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12] p-8">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#0b2a45]/85 via-[#0b2a45]/75 to-brand/80" />
-              <div className="relative space-y-3 text-white">
-                <h2 className="text-xl font-semibold">
-                  ¿Qué condiciones tratamos?
-                </h2>
-                <p className="text-sm text-white/85">
-                  Enfoque escalonado: diagnóstico claro, manejo conservador y
-                  cirugía cuando es la mejor opción.
-                </p>
-                <ul className="space-y-2 text-sm leading-6">
-                  <li>• Artrosis de cadera y choque femoroacetabular.</li>
-                  <li>• Fracturas de cadera y urgencias en adulto mayor.</li>
-                  <li>• Preservación articular siempre que sea posible.</li>
-                </ul>
+          <Reveal>
+            <div className="relative">
+              <div className="relative mx-auto h-100 aspect-[4/5] max-w-[600px] overflow-hidden rounded-[32px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
+                <Image
+                  src="/drluis/problemas-cadera.webp"
+                  alt="Dr. Luis Calderón"
+                  fill
+                  sizes="1000px"
+                  className="object-cover object-top"
+                />
               </div>
             </div>
-          </div>
+          </Reveal>
         </Container>
       </section>
 
       <Container className="pb-16 sm:pb-20 space-y-16">
-
         <Reveal>
           <div className="grid gap-6 lg:grid-cols-3">
             <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-lg shadow-black/[0.05]">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">1. Artrosis de cadera</p>
-              <h3 className="mt-3 text-lg font-semibold text-foreground">Dolor inguinal y rigidez</h3>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+                1. Artrosis de cadera
+              </p>
+              <h3 className="mt-3 text-lg font-semibold text-foreground">
+                Dolor inguinal y rigidez
+              </h3>
               <p className="mt-3 text-sm leading-6 text-foreground/70">
-                Desgaste del cartílago con roce “hueso con hueso”. Dolor en ingle que irradia a muslo o rodilla y rigidez al levantarte.
+                Desgaste del cartílago con roce “hueso con hueso”. Dolor en
+                ingle que irradia a muslo o rodilla y rigidez al levantarte.
               </p>
               <p className="mt-4 text-sm font-semibold text-foreground">
-                Solución: manejo con infiltraciones en etapas iniciales y Prótesis Total de Cadera en casos avanzados con implantes de alta durabilidad.
+                Solución: manejo con infiltraciones en etapas iniciales y
+                Prótesis Total de Cadera en casos avanzados con implantes de
+                alta durabilidad.
               </p>
             </div>
             <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-lg shadow-black/[0.05]">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">2. Choque femoroacetabular</p>
-              <h3 className="mt-3 text-lg font-semibold text-foreground">El dolor del joven adulto</h3>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+                2. Choque femoroacetabular
+              </p>
+              <h3 className="mt-3 text-lg font-semibold text-foreground">
+                El dolor del joven adulto
+              </h3>
               <p className="mt-3 text-sm leading-6 text-foreground/70">
-                Roce anormal entre cabeza del fémur y pelvis. Común en deportistas jóvenes con “pinchazos” en la ingle tras el ejercicio.
+                Roce anormal entre cabeza del fémur y pelvis. Común en
+                deportistas jóvenes con “pinchazos” en la ingle tras el
+                ejercicio.
               </p>
               <p className="mt-4 text-sm font-semibold text-foreground">
-                Solución: diagnóstico temprano, corrección de la forma ósea (a menudo vía artroscopia) y prevención del desgaste prematuro.
+                Solución: diagnóstico temprano, corrección de la forma ósea (a
+                menudo vía artroscopia) y prevención del desgaste prematuro.
               </p>
             </div>
             <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-lg shadow-black/[0.05]">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">3. Fracturas de cadera</p>
-              <h3 className="mt-3 text-lg font-semibold text-foreground">Urgencia en adulto mayor</h3>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+                3. Fracturas de cadera
+              </p>
+              <h3 className="mt-3 text-lg font-semibold text-foreground">
+                Urgencia en adulto mayor
+              </h3>
               <p className="mt-3 text-sm leading-6 text-foreground/70">
-                Una caída puede derivar en fractura grave. El tiempo es oro para evitar complicaciones por postración.
+                Una caída puede derivar en fractura grave. El tiempo es oro para
+                evitar complicaciones por postración.
               </p>
               <p className="mt-4 text-sm font-semibold text-foreground">
-                Solución: estabilización quirúrgica rápida para que el paciente se ponga de pie lo antes posible y reduzca riesgos.
+                Solución: estabilización quirúrgica rápida para que el paciente
+                se ponga de pie lo antes posible y reduzca riesgos.
               </p>
             </div>
           </div>
@@ -107,23 +119,44 @@ export default function HipPage() {
         <Reveal>
           <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div className="rounded-2xl border border-brand/20 bg-brand/5 p-6 shadow-inner shadow-black/5">
-              <h3 className="text-lg font-semibold text-foreground">Señales de alerta: ¿es cadera o columna?</h3>
+              <h3 className="text-lg font-semibold text-foreground">
+                Señales de alerta: ¿es cadera o columna?
+              </h3>
               <p className="mt-3 text-sm leading-6 text-foreground/70">
-                Muchas veces el dolor de cadera se confunde con ciática. Realizo un examen físico exhaustivo y estudios de imagen para no tratar la zona equivocada.
+                Muchas veces el dolor de cadera se confunde con ciática. Realizo
+                un examen físico exhaustivo y estudios de imagen para no tratar
+                la zona equivocada.
               </p>
               <ul className="mt-4 space-y-2 text-sm text-foreground/75">
-                <li>• Dolor en ingle que aumenta al rotar la pierna: probable cadera.</li>
-                <li>• Dolor con corrientazo que baja por la pierna: evaluar columna.</li>
-                <li>• Rigidez matutina y chasquidos al caminar: posible artrosis.</li>
+                <li>
+                  • Dolor en ingle que aumenta al rotar la pierna: probable
+                  cadera.
+                </li>
+                <li>
+                  • Dolor con corrientazo que baja por la pierna: evaluar
+                  columna.
+                </li>
+                <li>
+                  • Rigidez matutina y chasquidos al caminar: posible artrosis.
+                </li>
               </ul>
             </div>
             <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-lg shadow-black/[0.07]">
-              <h3 className="text-lg font-semibold text-foreground">Tu plan, paso a paso</h3>
+              <h3 className="text-lg font-semibold text-foreground">
+                Tu plan, paso a paso
+              </h3>
               <ol className="mt-3 space-y-3 text-sm leading-6 text-foreground/75">
                 <li>1) Diagnóstico preciso con examen clínico e imagen.</li>
-                <li>2) Opciones conservadoras: fisioterapia, bloqueos, analgésicos selectivos.</li>
-                <li>3) Decisión quirúrgica cuando el dolor limita tu vida diaria.</li>
-                <li>4) Rehabilitación guiada para volver a caminar sin dolor.</li>
+                <li>
+                  2) Opciones conservadoras: fisioterapia, bloqueos, analgésicos
+                  selectivos.
+                </li>
+                <li>
+                  3) Decisión quirúrgica cuando el dolor limita tu vida diaria.
+                </li>
+                <li>
+                  4) Rehabilitación guiada para volver a caminar sin dolor.
+                </li>
               </ol>
               <Link
                 href="/rodilla"
@@ -139,7 +172,12 @@ export default function HipPage() {
           <div className="rounded-[26px] border border-black/10 bg-gradient-to-r from-[#0b2a45] via-[#0b2a45] to-brand p-6 text-white shadow-2xl shadow-black/25">
             <h3 className="text-lg font-semibold">Visión integral</h3>
             <p className="mt-2 text-sm leading-6 text-white/80">
-              ¿Sabías que el cuerpo es una cadena conectada? A veces, una mala pisada afecta tu rodilla, o una cadera rígida provoca dolor lumbar. Como traumatólogo y ortopedista, experto en cirugía de rodilla y robótica, mi visión es integral: no solo trato el síntoma, busco el origen biomecánico del dolor para ofrecerte una solución definitiva.
+              ¿Sabías que el cuerpo es una cadena conectada? A veces, una mala
+              pisada afecta tu rodilla, o una cadera rígida provoca dolor
+              lumbar. Como traumatólogo y ortopedista, experto en cirugía de
+              rodilla y robótica, mi visión es integral: no solo trato el
+              síntoma, busco el origen biomecánico del dolor para ofrecerte una
+              solución definitiva.
             </p>
             <Link
               href="/rodilla"

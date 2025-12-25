@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Columna | Dr. Luis Calderón",
@@ -17,7 +18,7 @@ export default function SpinePage() {
         <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-4 motion-safe:animate-[fade-up_0.9s_ease-out_both]">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
-              El eje del cuerpo
+              Columna - El eje del cuerpo
             </p>
             <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
               Diagnóstico y tratamiento del dolor de espalda y columna
@@ -43,27 +44,19 @@ export default function SpinePage() {
               </Link>
             </div>
           </div>
-          <div className="relative motion-safe:animate-[fade-up_1s_ease-out_both]">
-            <div className="absolute -left-6 -top-8 h-24 w-24 rounded-full bg-brand/15 blur-2xl" />
-            <div className="absolute -right-4 bottom-6 h-20 w-20 rounded-full bg-[#0b2a45]/15 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12] p-8">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#0b2a45]/85 via-[#0b2a45]/75 to-brand/80" />
-              <div className="relative space-y-3 text-white">
-                <h2 className="text-xl font-semibold">
-                  Patologías lumbares frecuentes
-                </h2>
-                <p className="text-sm text-white/85">
-                  Evaluación clínica, estudios de imagen cuando aporta y
-                  tratamiento escalonado.
-                </p>
-                <ul className="space-y-2 text-sm leading-6">
-                  <li>• Dolor lumbar agudo o crónico.</li>
-                  <li>• Ciática y hormigueo en pierna.</li>
-                  <li>• Pesadez al caminar por estenosis lumbar.</li>
-                </ul>
+          <Reveal>
+            <div className="relative">
+              <div className="relative mx-auto h-100 max-w-[600px] overflow-hidden rounded-[32px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
+                <Image
+                  src="/drluis/dolor-espalda.webp"
+                  alt="Dr. Luis Calderón"
+                  fill
+                  sizes="1000px"
+                  className="object-cover object-left"
+                />
               </div>
             </div>
-          </div>
+          </Reveal>
         </Container>
       </section>
 
@@ -113,8 +106,8 @@ export default function SpinePage() {
                 muscular.
               </p>
               <p className="mt-4 text-sm font-semibold text-foreground">
-                Reeducación postural, fortalecimiento de core y control del dolor
-                agudo.
+                Reeducación postural, fortalecimiento de core y control del
+                dolor agudo.
               </p>
             </div>
           </div>
@@ -125,11 +118,11 @@ export default function SpinePage() {
             <h3 className="text-lg font-semibold">Visión integral</h3>
             <p className="mt-2 text-sm leading-6 text-white/80">
               ¿Sabías que el cuerpo es una cadena conectada? A veces, una mala
-              pisada afecta tu rodilla, o una cadera rígida provoca dolor lumbar.
-              Como traumatólogo y ortopedista, experto en cirugía de rodilla y
-              robótica, mi visión es integral: no solo trato el síntoma, busco
-              el origen biomecánico del dolor para ofrecerte una solución
-              definitiva.
+              pisada afecta tu rodilla, o una cadera rígida provoca dolor
+              lumbar. Como traumatólogo y ortopedista, experto en cirugía de
+              rodilla y robótica, mi visión es integral: no solo trato el
+              síntoma, busco el origen biomecánico del dolor para ofrecerte una
+              solución definitiva.
             </p>
             <Link
               href="/rodilla"

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Miembro superior | Dr. Luis Calderón",
@@ -43,25 +44,19 @@ export default function ShoulderPage() {
               </Link>
             </div>
           </div>
-          <div className="relative motion-safe:animate-[fade-up_1s_ease-out_both]">
-            <div className="absolute -left-6 -top-8 h-24 w-24 rounded-full bg-brand/15 blur-2xl" />
-            <div className="absolute -right-4 bottom-6 h-20 w-20 rounded-full bg-[#0b2a45]/15 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[30px] border border-black/5 bg-white shadow-xl shadow-black/[.12] p-8">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#0b2a45]/85 via-[#0b2a45]/75 to-brand/80" />
-              <div className="relative space-y-3 text-white">
-                <h2 className="text-xl font-semibold">Movilidad y fuerza sin dolor</h2>
-                <p className="text-sm text-white/85">
-                  Evaluación clínica, pruebas de fuerza e imagen para decidir si
-                  necesitas manejo conservador, infiltraciones o cirugía mínima.
-                </p>
-                <ul className="space-y-2 text-sm leading-6">
-                  <li>• Manguito rotador, luxaciones y fracturas.</li>
-                  <li>• Epicondilitis (tenista/golfista) y túnel carpiano.</li>
-                  <li>• Lesiones por sobreuso en oficina o deporte.</li>
-                </ul>
+          <Reveal>
+            <div className="relative">
+              <div className="relative mx-auto h-100 max-w-[600px] overflow-hidden rounded-[32px] border border-black/5 bg-white shadow-xl shadow-black/[.12]">
+                <Image
+                  src="/drluis/dolor-muneca.webp"
+                  alt="Dr. Luis Calderón"
+                  fill
+                  sizes="1000px"
+                  className="object-cover object-left"
+                />
               </div>
             </div>
-          </div>
+          </Reveal>
         </Container>
       </section>
 
@@ -72,13 +67,20 @@ export default function ShoulderPage() {
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Hombro: movilidad y fuerza
               </p>
-              <h3 className="mt-3 text-lg font-semibold text-foreground">Manguito rotador</h3>
+              <h3 className="mt-3 text-lg font-semibold text-foreground">
+                Manguito rotador
+              </h3>
               <p className="mt-3 text-sm leading-6 text-foreground/70">
-                Dolor profundo al levantar el brazo o dormir sobre ese lado. Puede ser tendinitis o rotura. Muchos casos se resuelven con artroscopia (mínimamente invasiva).
+                Dolor profundo al levantar el brazo o dormir sobre ese lado.
+                Puede ser tendinitis o rotura. Muchos casos se resuelven con
+                artroscopia (mínimamente invasiva).
               </p>
-              <h4 className="mt-4 text-sm font-semibold text-foreground">Luxaciones y fracturas</h4>
+              <h4 className="mt-4 text-sm font-semibold text-foreground">
+                Luxaciones y fracturas
+              </h4>
               <p className="mt-2 text-sm leading-6 text-foreground/70">
-                Tras caídas o deportes de contacto. Buscamos estabilidad y evitar que el hombro “se salga” repetidamente.
+                Tras caídas o deportes de contacto. Buscamos estabilidad y
+                evitar que el hombro “se salga” repetidamente.
               </p>
             </div>
 
@@ -86,13 +88,20 @@ export default function ShoulderPage() {
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Codo y precisión
               </p>
-              <h3 className="mt-3 text-lg font-semibold text-foreground">Epicondilitis</h3>
+              <h3 className="mt-3 text-lg font-semibold text-foreground">
+                Epicondilitis
+              </h3>
               <p className="mt-3 text-sm leading-6 text-foreground/70">
-                Dolor en la cara externa o interna del codo por sobreuso. Tratamos la inflamación tendinosa para que regreses a tus actividades.
+                Dolor en la cara externa o interna del codo por sobreuso.
+                Tratamos la inflamación tendinosa para que regreses a tus
+                actividades.
               </p>
-              <h4 className="mt-4 text-sm font-semibold text-foreground">Fracturas y lesiones</h4>
+              <h4 className="mt-4 text-sm font-semibold text-foreground">
+                Fracturas y lesiones
+              </h4>
               <p className="mt-2 text-sm leading-6 text-foreground/70">
-                Requieren alineación precisa y rehabilitación para preservar fuerza y movilidad.
+                Requieren alineación precisa y rehabilitación para preservar
+                fuerza y movilidad.
               </p>
             </div>
 
@@ -100,13 +109,20 @@ export default function ShoulderPage() {
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
                 Muñeca: control y sensibilidad
               </p>
-              <h3 className="mt-3 text-lg font-semibold text-foreground">Síndrome de túnel carpiano</h3>
+              <h3 className="mt-3 text-lg font-semibold text-foreground">
+                Síndrome de túnel carpiano
+              </h3>
               <p className="mt-3 text-sm leading-6 text-foreground/70">
-                Adormecimiento y hormigueo en dedos, común en trabajo de oficina. Liberamos el nervio atrapado para recuperar sensibilidad.
+                Adormecimiento y hormigueo en dedos, común en trabajo de
+                oficina. Liberamos el nervio atrapado para recuperar
+                sensibilidad.
               </p>
-              <h4 className="mt-4 text-sm font-semibold text-foreground">Fracturas de muñeca</h4>
+              <h4 className="mt-4 text-sm font-semibold text-foreground">
+                Fracturas de muñeca
+              </h4>
               <p className="mt-2 text-sm leading-6 text-foreground/70">
-                Frecuentes tras una caída. Buscamos alineación perfecta para no perder fuerza de agarre ni movilidad a futuro.
+                Frecuentes tras una caída. Buscamos alineación perfecta para no
+                perder fuerza de agarre ni movilidad a futuro.
               </p>
             </div>
           </div>
@@ -116,7 +132,12 @@ export default function ShoulderPage() {
           <div className="rounded-[26px] border border-black/10 bg-gradient-to-r from-[#0b2a45] via-[#0b2a45] to-brand p-6 text-white shadow-2xl shadow-black/25">
             <h3 className="text-lg font-semibold">Visión integral</h3>
             <p className="mt-2 text-sm leading-6 text-white/80">
-              ¿Sabías que el cuerpo es una cadena conectada? A veces, una mala pisada afecta tu rodilla, o una cadera rígida provoca dolor lumbar. Como traumatólogo y ortopedista, experto en cirugía de rodilla y robótica, mi visión es integral: no solo trato el síntoma, busco el origen biomecánico del dolor para ofrecerte una solución definitiva.
+              ¿Sabías que el cuerpo es una cadena conectada? A veces, una mala
+              pisada afecta tu rodilla, o una cadera rígida provoca dolor
+              lumbar. Como traumatólogo y ortopedista, experto en cirugía de
+              rodilla y robótica, mi visión es integral: no solo trato el
+              síntoma, busco el origen biomecánico del dolor para ofrecerte una
+              solución definitiva.
             </p>
             <Link
               href="/rodilla"

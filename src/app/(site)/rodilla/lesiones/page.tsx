@@ -49,7 +49,7 @@ export default function KneeInjuriesPage() {
             </p>
           </div>
           <div className="space-y-4">
-            <div className="relative rounded-[26px] border border-black/10 bg-white/60 p-4 shadow-lg shadow-black/[.08] backdrop-blur motion-safe:animate-[fade-up_1s_ease-out_both]">
+            <div className="relative rounded-[26px] border border-black/10 bg-white/60 shadow-lg shadow-black/[.08] backdrop-blur motion-safe:animate-[fade-up_1s_ease-out_both]">
               <div className="relative h-96 w-full overflow-hidden rounded-[18px] border border-black/15 bg-white/60 transition-transform duration-700 ease-out hover:-translate-y-1">
                 <Image
                   src="/drluis/dr-luis-sonriendo.webp"
