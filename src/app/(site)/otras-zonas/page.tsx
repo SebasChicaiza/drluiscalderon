@@ -82,76 +82,76 @@ export default function OtherAreasPage() {
             </div>
           </Reveal>
         </Container>
-      </section>
-
-      <Container className="py-14 sm:py-18 bg-transparent">
-        <Reveal>
-          <div className="grid gap-8 lg:grid-cols-[0.55fr_1fr] lg:items-start">
-            <div className="rounded-[24px] border border-black/10 bg-white p-6 shadow-lg shadow-black/[.06] flex flex-col justify-center">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
-                Cómo trabajamos
-              </p>
-              <h2 className="mt-3 text-2xl font-semibold leading-tight text-foreground">
-                Diagnóstico claro, plan escalonado y seguimiento.
-              </h2>
-              <ul className="mt-4 space-y-3 text-sm leading-6 text-foreground/75">
-                <li>
-                  • Examen físico detallado y estudios de imagen cuando aporta.
-                </li>
-                <li>
-                  • Tratamientos conservadores primero; cirugía sólo cuando es
-                  la mejor opción.
-                </li>
-                <li>
-                  • Rehabilitación guiada para volver a tus actividades con
-                  confianza.
-                </li>
-              </ul>
-              <Link
-                href="/contacto"
-                className="mt-5 inline-flex h-11 items-center justify-center rounded-full bg-brand px-6 text-sm font-semibold text-white shadow-lg shadow-black/10 hover:opacity-90"
-              >
-                Agenda tu valoración
-              </Link>
-            </div>
-
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {areas.map((area, index) => (
-                <Reveal
-                  key={`${area.href}-${area.title}`}
-                  animationClassName="motion-safe:animate-[fade-up_0.9s_ease-out_both]"
+        <Container className="py-14 sm:py-18 bg-transparent">
+          <Reveal>
+            <div className="grid gap-8 lg:grid-cols-[0.55fr_1fr] lg:items-start">
+              <div className="rounded-[24px] border border-black/10 bg-white p-6 shadow-lg shadow-black/[.06] flex flex-col justify-center">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand">
+                  Cómo trabajamos
+                </p>
+                <h2 className="mt-3 text-2xl font-semibold leading-tight text-foreground">
+                  Diagnóstico claro, plan escalonado y seguimiento.
+                </h2>
+                <ul className="mt-4 space-y-3 text-sm leading-6 text-foreground/75">
+                  <li>
+                    • Examen físico detallado y estudios de imagen cuando
+                    aporta.
+                  </li>
+                  <li>
+                    • Tratamientos conservadores primero; cirugía sólo cuando es
+                    la mejor opción.
+                  </li>
+                  <li>
+                    • Rehabilitación guiada para volver a tus actividades con
+                    confianza.
+                  </li>
+                </ul>
+                <Link
+                  href="/contacto"
+                  className="mt-5 inline-flex h-11 items-center justify-center rounded-full bg-brand px-6 text-sm font-semibold text-white shadow-lg shadow-black/10 hover:opacity-90"
                 >
-                  <Link
-                    href={area.href}
-                    style={{ animationDelay: `${index * 80}ms` }}
-                    className="group flex h-full flex-col justify-between rounded-2xl border border-black/10 bg-white p-5 shadow-lg shadow-black/[.06] transition hover:-translate-y-1 hover:border-brand hover:shadow-2xl"
+                  Agenda tu valoración
+                </Link>
+              </div>
+
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {areas.map((area, index) => (
+                  <Reveal
+                    key={`${area.href}-${area.title}`}
+                    animationClassName="motion-safe:animate-[fade-up_0.9s_ease-out_both]"
                   >
-                    <div className="flex items-start justify-between gap-2">
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand">
-                          {area.title}
-                        </p>
-                        <h3 className="mt-2 text-lg font-semibold text-foreground group-hover:text-brand">
-                          {area.title}
-                        </h3>
+                    <Link
+                      href={area.href}
+                      style={{ animationDelay: `${index * 80}ms` }}
+                      className="group flex h-full flex-col justify-between rounded-2xl border border-black/10 bg-white p-5 shadow-lg shadow-black/[.06] transition hover:-translate-y-1 hover:border-brand hover:shadow-2xl"
+                    >
+                      <div className="flex items-start justify-between gap-2">
+                        <div>
+                          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand">
+                            {area.title}
+                          </p>
+                          <h3 className="mt-2 text-lg font-semibold text-foreground group-hover:text-brand">
+                            {area.title}
+                          </h3>
+                        </div>
+                        <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand/10 text-brand transition group-hover:translate-x-1">
+                          →
+                        </span>
                       </div>
-                      <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand/10 text-brand transition group-hover:translate-x-1">
-                        →
-                      </span>
-                    </div>
-                    <p className="mt-3 text-sm leading-6 text-foreground/70">
-                      {area.desc}
-                    </p>
-                    <div className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand">
-                      Ver más →
-                    </div>
-                  </Link>
-                </Reveal>
-              ))}
+                      <p className="mt-3 text-sm leading-6 text-foreground/70">
+                        {area.desc}
+                      </p>
+                      <div className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand">
+                        Ver más →
+                      </div>
+                    </Link>
+                  </Reveal>
+                ))}
+              </div>
             </div>
-          </div>
-        </Reveal>
-      </Container>
+          </Reveal>
+        </Container>
+      </section>
     </div>
   );
 }

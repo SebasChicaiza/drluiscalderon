@@ -173,15 +173,25 @@ const profileSchema = {
   },
 };
 
-export default async function CareerPage() {
+type PageProps = {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+};
+
+export default async function CareerPage({ searchParams }: PageProps) {
   const headersList = await headers();
   const acceptLanguage =
     typeof headersList?.get === "function"
       ? headersList.get("accept-language")?.toLowerCase() || ""
       : "";
-  const intlParam = headersList.get("x-internal-intl") || "";
-  const forcedIntl = intlParam === "en";
-  const isSpanish = !forcedIntl && acceptLanguage.startsWith("es");
+
+  const params = await searchParams;
+  const intlParam = params?.intl;
+  const forcedEnglish =
+    intlParam === "1" ||
+    (Array.isArray(intlParam) && intlParam.includes("1")) ||
+    (typeof intlParam === "string" && intlParam.length > 0);
+
+  const isSpanish = !forcedEnglish && acceptLanguage.startsWith("es");
   if (!isSpanish) return <CareerPageEn />;
   return (
     <div className="bg-white text-foreground">
