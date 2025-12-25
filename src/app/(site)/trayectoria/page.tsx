@@ -307,7 +307,7 @@ export default async function CareerPage() {
                 <div className="absolute left-4 top-0 h-full w-[3px] rounded-full bg-gradient-to-b from-brand via-brand/60 to-brand/20" />
               </div>
               <div className="space-y-6">
-                {timeline.map((item, idx) => (
+                {timelineEs.map((item, idx) => (
                   <div key={item.title} className="relative pl-8">
                     <span className="absolute left-0 top-2 h-3 w-3 rounded-full bg-brand shadow-[0_0_0_6px_rgba(43,151,162,0.15)]" />
                     <p className="text-sm font-semibold text-brand">
@@ -319,7 +319,7 @@ export default async function CareerPage() {
                     <p className="mt-2 text-sm leading-6 text-foreground/70">
                       {item.desc}
                     </p>
-                    {idx !== timeline.length - 1 ? (
+                    {idx !== timelineEs.length - 1 ? (
                       <div className="absolute left-1.5 top-6 h-[90%] w-px bg-brand/30" />
                     ) : null}
                   </div>
