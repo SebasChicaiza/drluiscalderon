@@ -245,7 +245,7 @@ export default async function CareerPage() {
         <Container className="py-10 sm:py-14">
           <Reveal>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {stats.map((item) => (
+              {statsEs.map((item) => (
                 <Counter
                   key={item.label}
                   value={item.value}
