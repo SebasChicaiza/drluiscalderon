@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ContactForm } from "@/components/forms/ContactForm";
 import { Container } from "@/components/layout/Container";
 import { site } from "@/lib/site";
 import { Reveal } from "@/components/ui/Reveal";
 import Image from "next/image";
+import { LiteMap } from "@/components/ui/LiteMap";
 
 export const metadata: Metadata = {
   title: "Contacto",
@@ -106,13 +106,12 @@ export default function ContactPage() {
               <p className="mt-2 text-sm text-white/75">
                 Consultorio en Fortune Plaza, Av. Eloy Alfaro N29-235 (Quito).
               </p>
-              <div className="mt-4 overflow-hidden rounded-2xl border border-white/10 shadow-lg shadow-black/30">
-                <iframe
+              <div className="mt-4">
+                <LiteMap
                   title="Mapa del consultorio"
                   src="https://www.google.com/maps?q=-0.19319111976258832,-78.49135299097524&output=embed"
-                  className="h-64 w-full"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
+                  staticImage="/assets/consultorio.webp"
+                  openLink="https://maps.google.com/?q=-0.19319111976258832,-78.49135299097524"
                 />
               </div>
             </div>

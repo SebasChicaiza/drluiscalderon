@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { TestimonialsCarousel } from "@/components/sections/TestimonialsCarousel";
 import { site } from "@/lib/site";
+import { LiteVideo } from "@/components/ui/LiteVideo";
 
 const physicianJsonLd = {
   "@context": "https://schema.org",
@@ -379,12 +380,9 @@ export default function HomePage() {
                     Video exclusivo
                   </h3>
                   <div className="mt-3 overflow-hidden rounded-2xl border border-black/5 bg-black/5">
-                    <iframe
-                      className="h-40 w-full"
-                      src="https://www.youtube.com/embed/STM0fe1r1qU"
+                    <LiteVideo
+                      videoId="STM0fe1r1qU"
                       title="Video del Dr. Luis Calderón - Cirugía de rodilla"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
                     />
                   </div>
                   <p className="mt-3 text-sm text-foreground/70">
