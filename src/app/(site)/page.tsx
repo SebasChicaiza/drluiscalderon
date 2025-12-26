@@ -68,13 +68,13 @@ const traumaAreas = [
   },
   {
     title: "Problemas de cadera y columna",
-    href: "/otras-zonas/columna",
+    href: "/otras-zonas/cadera",
     image: "/assets/lesion-cadera.webp",
     tone: "#34a6b1",
   },
   {
     title: "Problemas hombro, codo y muñeca",
-    href: "/otras-zonas/hombro",
+    href: "/otras-zonas/parte-superior",
     image: "/assets/lesion-hombro.webp",
     tone: "#8ed3dc",
   },
