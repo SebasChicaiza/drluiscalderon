@@ -1,15 +1,55 @@
 [
-  { "source": "/trayectoria-traumatologo", "destination": "/trayectoria", "permanent": true },
-  { "source": "/columna", "destination": "/otras-zonas/columna", "permanent": true },
-  { "source": "/mano", "destination": "/otras-zonas/muneca", "permanent": true },
-  { "source": "/ejercicios-de-rodilla", "destination": "/recursos", "permanent": true },
-  { "source": "/codo", "destination": "/otras-zonas/codo", "permanent": true },
-  { "source": "/dolor-de-rodilla", "destination": "/rodilla", "permanent": true },
-  { "source": "/evita-el-dolor-de-rodillas", "destination": "/rodilla", "permanent": true },
-  { "source": "/servicios", "destination": "/servicios", "permanent": true },
-  { "source": "/hombro", "destination": "/otras-zonas/parte-superior", "permanent": true },
-  { "source": "/about-2", "destination": "/sobre-mi", "permanent": true },
-  { "source": "/cadera", "destination": "/otras-zonas/cadera", "permanent": true },
-  { "source": "/pie-tobillo", "destination": "/otras-zonas/pie-y-tobillo", "permanent": true },
-  { "source": "/about-3", "destination": "/rodilla", "permanent": true }
+  {
+    "source": "/trayectoria-traumatologo",
+    "destination": "/trayectoria",
+    "permanent": true
+  },
+  {
+    "source": "/columna",
+    "destination": "/otras-zonas/columna",
+    "permanent": true
+  },
+  {
+    "source": "/mano",
+    "destination": "/otras-zonas/parte-superior",
+    "permanent": true
+  },
+  {
+    "source": "/ejercicios-de-rodilla",
+    "destination": "/recursos",
+    "permanent": true
+  },
+  {
+    "source": "/codo",
+    "destination": "/otras-zonas/parte-superior",
+    "permanent": true
+  },
+  {
+    "source": "/dolor-de-rodilla",
+    "destination": "/rodilla",
+    "permanent": true
+  },
+  {
+    "source": "/evita-el-dolor-de-rodillas",
+    "destination": "/rodilla",
+    "permanent": true
+  },
+  { "source": "/servicios", "destination": "/", "permanent": true },
+  {
+    "source": "/hombro",
+    "destination": "/otras-zonas/parte-superior",
+    "permanent": true
+  },
+  { "source": "/about-2", "destination": "/trayectoria", "permanent": true },
+  {
+    "source": "/cadera",
+    "destination": "/otras-zonas/cadera",
+    "permanent": true
+  },
+  {
+    "source": "/pie-tobillo",
+    "destination": "/otras-zonas/pie-y-tobillo",
+    "permanent": true
+  },
+  { "source": "/about-3", "destination": "/trayectoria", "permanent": true }
 ]
