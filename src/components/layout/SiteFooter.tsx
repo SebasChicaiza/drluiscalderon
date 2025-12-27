@@ -1,7 +1,20 @@
+"use client";
+
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { Container } from "./Container";
+
+const LiteMap = dynamic(
+  () => import("../ui/LiteMap").then((mod) => mod.LiteMap),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="h-56 w-full rounded-2xl bg-white/5 animate-pulse" />
+    ),
+  }
+);
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -103,14 +116,12 @@ export function SiteFooter() {
                 Horario: {site.consultation.schedule}
               </p>
             </div>
-            <div className="mt-4 overflow-hidden rounded-2xl border border-white/10">
-              <iframe
+            <div className="mt-4">
+              <LiteMap
                 title="Mapa del consultorio - Fortune Plaza"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.8978098653345!2d-78.49249024751127!3d-0.19327694996126887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bff1c4fd471%3A0x314c7a94aa6219e2!2sFortune%20Plaza%20Business%20Center!5e0!3m2!1sen!2sec!4v1766333177124!5m2!1sen!2sec"
-                className="h-56 w-full"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                allowFullScreen
+                staticImage="/assets/consultorio.webp"
+                openLink={mapHref}
               />
             </div>
             <a
