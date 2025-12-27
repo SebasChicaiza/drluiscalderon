@@ -11,8 +11,7 @@ export const site = {
   },
   consultation: {
     modality: "Presencial y online",
-    location:
-      "Av. Eloy Alfaro N29-235 entre Alemania e Italia. Fortune Plaza, piso 11.",
+    location: "Av. Eloy Alfaro N143 y Los Shyris. Fortune Plaza, piso 11.",
     schedule: "Lun–Vie 09:00–18:00",
   },
   contact: {
@@ -20,7 +19,7 @@ export const site = {
     whatsapp: "+593 998041843",
     email: "drluiscalderon@gmail.com",
     address:
-      "Av. Eloy Alfaro N29-235 entre Alemania e Italia.\nEdificio Fortune Plaza. Piso 11. Oficina 1103.\nQuito – Ecuador.",
+      "Av. Eloy Alfaro N143 y Los Shyris.\nEdificio Fortune Plaza. Piso 11. Oficina 1103.\nQuito – Ecuador.",
   },
   social: {
     instagram: "https://www.instagram.com/drluiscalderons/",

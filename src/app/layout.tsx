@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
 import { site } from "@/lib/site";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -14,7 +15,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: "Dr. Luis Calderón | Especialista en Rodilla y Traumatología Quito",
+    default: "Dr. Luis Calderón: Especialista en Rodilla en Quito",
     template: `%s | Dr. Luis Calderón`,
   },
   description:
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     canonical: site.url,
   },
   openGraph: {
-    title: "Dr. Luis Calderón | Especialista en Rodilla Quito",
+    title: "Dr. Luis Calderón: Especialista en Rodilla en Quito",
     description:
       "Experto en cirugía de rodilla, meniscos y prótesis robótica. Agenda tu cita en el Norte de Quito.",
     url: site.url,
@@ -57,6 +58,7 @@ export default function RootLayout({
           <SiteFooter />
           <WhatsAppFloat />
         </div>
+        <GoogleAnalytics gaId="G-XXXXXXX" />
       </body>
     </html>
   );

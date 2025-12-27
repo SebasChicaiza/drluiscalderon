@@ -82,7 +82,7 @@ export function SiteFooter() {
                 className="space-y-1"
               >
                 <p itemProp="streetAddress">
-                  Edificio Fortune Plaza, Av. Eloy Alfaro n143, Quito 170102
+                  Av. Eloy Alfaro N143 y Los Shyris, Edificio Fortune Plaza
                 </p>
                 <p>
                   <span itemProp="addressLocality">Quito</span>,{" "}
