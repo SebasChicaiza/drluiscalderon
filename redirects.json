@@ -34,7 +34,6 @@
     "destination": "/rodilla",
     "permanent": true
   },
-  { "source": "/servicios", "destination": "/", "permanent": true },
   {
     "source": "/hombro",
     "destination": "/otras-zonas/parte-superior",

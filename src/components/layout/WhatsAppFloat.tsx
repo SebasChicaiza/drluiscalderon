@@ -10,14 +10,15 @@ export function WhatsAppFloat() {
       target="_blank"
       rel="noreferrer"
       aria-label="WhatsApp"
-      className="fixed bottom-5 right-5 z-50 inline-flex h-18 w-18 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[.15] transition-transform hover:scale-105"
+      className="fixed bottom-5 right-5 z-50 inline-flex items-center gap-3 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-black/20 transition-transform hover:scale-105"
     >
+      <span className="leading-none">Contáctame por WhatsApp</span>
       <Image
         src="/assets/wppicon.webp"
         alt="WhatsApp"
-        width={48}
-        height={48}
-        className="object-contain"
+        width={28}
+        height={28}
+        className="object-contain drop-shadow"
       />
     </a>
   );

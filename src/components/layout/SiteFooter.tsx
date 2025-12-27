@@ -64,12 +64,45 @@ export function SiteFooter() {
             <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
               Consultorio
             </h3>
-            <p className="mt-4 whitespace-pre-line text-sm text-white/70">
-              {site.contact.address}
-            </p>
-            <p className="mt-3 text-sm text-white/70">
-              Horario: {site.consultation.schedule}
-            </p>
+            <div
+              className="mt-4 space-y-2 text-sm text-white/80"
+              itemScope
+              itemType="https://schema.org/Physician"
+            >
+              <h3
+                className="text-base font-semibold text-white"
+                itemProp="name"
+              >
+                Dr. Luis Calderón
+              </h3>
+              <div
+                itemProp="address"
+                itemScope
+                itemType="https://schema.org/PostalAddress"
+                className="space-y-1"
+              >
+                <p itemProp="streetAddress">
+                  Edificio Fortune Plaza, Av. Eloy Alfaro n143, Quito 170102
+                </p>
+                <p>
+                  <span itemProp="addressLocality">Quito</span>,{" "}
+                  <span itemProp="postalCode">170102</span>
+                </p>
+              </div>
+              <p>
+                Tel:{" "}
+                <a
+                  href="tel:+593998041843"
+                  itemProp="telephone"
+                  className="font-semibold text-white"
+                >
+                  099 804 1843
+                </a>
+              </p>
+              <p className="text-white/70">
+                Horario: {site.consultation.schedule}
+              </p>
+            </div>
             <div className="mt-4 overflow-hidden rounded-2xl border border-white/10">
               <iframe
                 title="Mapa del consultorio - Fortune Plaza"
@@ -112,12 +145,43 @@ export function SiteFooter() {
               <a href={phoneHref} className="font-semibold text-white">
                 {site.contact.phone}
               </a>
-              <a href={emailHref} className="hover:text-white">
-                {site.contact.email}
-              </a>
+              <span className="hover:text-white">
+                drluiscalderon [arroba] gmail [punto] com
+              </span>
               <a href={whatsappHref} className="hover:text-white">
                 WhatsApp directo
               </a>
+            </div>
+            <div className="mt-4">
+              <h4 className="text-xs font-semibold uppercase tracking-[0.15em] text-white/60">
+                Redes
+              </h4>
+              <div className="mt-2 flex flex-wrap gap-3 text-sm text-white/80">
+                <a
+                  href={site.social.instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-white"
+                >
+                  Instagram
+                </a>
+                <a
+                  href={site.social.facebook}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-white"
+                >
+                  Facebook
+                </a>
+                <a
+                  href={site.social.youtube}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-white"
+                >
+                  YouTube
+                </a>
+              </div>
             </div>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link

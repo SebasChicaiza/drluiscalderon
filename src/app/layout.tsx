@@ -14,10 +14,31 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: site.name,
-    template: `%s | ${site.name}`,
+    default: "Dr. Luis Calderón | Especialista en Rodilla y Traumatología Quito",
+    template: `%s | Dr. Luis Calderón`,
   },
-  description: site.description,
+  description:
+    "Traumatólogo en Quito especializado en rodilla, artroscopia, prótesis robótica y preservación articular. Agenda tu cita en Fortune Plaza.",
+  alternates: {
+    canonical: site.url,
+  },
+  openGraph: {
+    title: "Dr. Luis Calderón | Especialista en Rodilla Quito",
+    description:
+      "Experto en cirugía de rodilla, meniscos y prótesis robótica. Agenda tu cita en el Norte de Quito.",
+    url: site.url,
+    siteName: site.name,
+    images: [
+      {
+        url: "/assets/foto-drluis.webp",
+        width: 1200,
+        height: 630,
+        alt: "Dr. Luis Calderón, especialista en rodilla en Quito",
+      },
+    ],
+    locale: "es_EC",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

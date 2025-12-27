@@ -22,6 +22,11 @@ export const site = {
     address:
       "Av. Eloy Alfaro N29-235 entre Alemania e Italia.\nEdificio Fortune Plaza. Piso 11. Oficina 1103.\nQuito – Ecuador.",
   },
+  social: {
+    instagram: "https://www.instagram.com/drluiscalderons/",
+    facebook: "https://www.facebook.com/dr.artroscopia",
+    youtube: "https://www.youtube.com/@luisrenecalderon7900",
+  },
 } as const;
 
 export type NavigationItem = {
